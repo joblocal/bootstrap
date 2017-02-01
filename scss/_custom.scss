@@ -3,20 +3,6 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
-// Colors
-//
-// Grayscale and brand colors for use across Bootstrap.
-
-$gray-dark:                 #323a45;
-
-// @see http://www.colourlovers.com/palette/1416354/GiorgosPalette1
-$brand-primary:             #099;
-$brand-success:             #97c133;
-$brand-info:                #57d9c7;
-$brand-warning:             #f2a900;
-$brand-danger:              #e55c00;
-
-
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -24,3 +10,36 @@ $brand-danger:              #e55c00;
 $enable-flex:               true;
 $enable-shadows:            true;
 $enable-transitions:        true;
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-dark:                 #323a45;
+
+// @see http://www.colourlovers.com/palette/1416354/GiorgosPalette1
+$brand-primary:             #009999;
+$brand-secondary:           #f2a900;
+$brand-success:             #97c133;
+$brand-info:                #57d9c7;
+$brand-warning:             #f2a900;
+$brand-danger:              #e55C00;
+$brand-inverse:             #222222;
+
+// Type
+$font-family-sans-serif: 'Open Sans', open-sans, sans-serif;
+
+// Headings
+$headings-font-weight: 300;
+
+// Navbar
+$navbar-border-radius: 0;
+
+// Card
+$card-spacer-x: .5rem;
+$card-spacer-y: .5rem;
+$card-border-width: 0;
+
+// Buttons
+$btn-secondary-border: $gray-light;
