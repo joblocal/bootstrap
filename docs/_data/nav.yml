@@ -6,7 +6,6 @@
     - title: Browsers & devices
     - title: JavaScript
     - title: Options
-    - title: Flexbox
     - title: Build tools
     - title: Best practices
     - title: Accessibility
@@ -15,9 +14,9 @@
   pages:
     - title: Overview
     - title: Grid
-    - title: Flexbox grid
     - title: Media object
     - title: Responsive utilities
+    - title: Sections
 
 - title: Content
   pages:
@@ -31,6 +30,7 @@
 - title: Components
   pages:
     - title: Alerts
+    - title: Badge
     - title: Breadcrumb
     - title: Buttons
     - title: Button group
@@ -49,14 +49,32 @@
     - title: Popovers
     - title: Progress
     - title: Scrollspy
-    - title: Tag
+    - title: Slider
     - title: Tooltips
-    - title: Utilities
+    - title: Tags
 
-# - title: Extend
-#   pages:
-#     - title: Approach
-#     - title: Icon fonts
+- title: Utilities
+  pages:
+    - title: Borders
+    - title: Clearfix
+    - title: Close icon
+    - title: Colors
+    - title: Flexbox
+    - title: Display property
+    - title: Image replacement
+    - title: Invisible content
+    - title: Position
+    - title: Responsive helpers
+    - title: Screenreaders
+    - title: Sizing
+    - title: Spacing
+    - title: Typography
+    - title: Vertical align
+
+- title: Extend
+  pages:
+    # - title: Approach
+    - title: Icons
 
 - title: About
   pages:

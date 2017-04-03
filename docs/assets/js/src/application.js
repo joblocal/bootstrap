@@ -3,17 +3,17 @@
 // ++++++++++++++++++++++++++++++++++++++++++
 
 /*!
- * JavaScript for Bootstrap's docs (http://getbootstrap.com)
- * Copyright 2011-2016 The Bootstrap Authors
- * Copyright 2011-2016 Twitter, Inc.
+ * JavaScript for Bootstrap's docs (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
  * Licensed under the Creative Commons Attribution 3.0 Unported License. For
  * details, see https://creativecommons.org/licenses/by/3.0/.
  */
 
 /* global Clipboard, anchors */
 
-!function ($) {
-  'use strict';
+(function ($) {
+  'use strict'
 
   $(function () {
 
@@ -33,7 +33,7 @@
     $('.bd-example-indeterminate [type="checkbox"]').prop('indeterminate', true)
 
     // Disable empty links in docs examples
-    $('.bd-example [href="#"]').click(function (e) {
+    $('.bd-content [href="#"]').click(function (e) {
       e.preventDefault()
     })
 
@@ -46,6 +46,11 @@
       var $modal = $(this)
       $modal.find('.modal-title').text('New message to ' + recipient)
       $modal.find('.modal-body input').val(recipient)
+    })
+
+    // Activate animated progress bar
+    $('.bd-toggle-animated-progress').on('click', function () {
+      $(this).siblings('.progress').find('.progress-bar-striped').toggleClass('progress-bar-animated')
     })
 
     // Insert copy to clipboard button before .highlight
@@ -73,7 +78,8 @@
     })
 
     clipboard.on('error', function (e) {
-      var fallbackMsg = /Mac/i.test(navigator.userAgent) ? 'Press \u2318 to copy' : 'Press Ctrl-C to copy'
+      var modifierKey = /Mac/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl-'
+      var fallbackMsg = 'Press ' + modifierKey + 'C to copy'
 
       $(e.trigger)
         .attr('title', fallbackMsg)
@@ -85,11 +91,59 @@
 
   })
 
-}(jQuery)
+}(jQuery))
 
 ;(function () {
-  'use strict';
+  'use strict'
 
-  anchors.options.placement = 'left';
+  anchors.options.placement = 'left'
   anchors.add('.bd-content > h1, .bd-content > h2, .bd-content > h3, .bd-content > h4, .bd-content > h5')
-})();
+}())
+
+// Slick Init
+;(function () {
+  'use strict'
+
+  $(".slider .slider-inner").slick({
+
+    // general
+    infinite: true,
+    speed: 200,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    touchThreshold: 20,
+    swipeToSlide: true,
+    slide: '.slider-item',
+
+    // controls
+    dots: true,
+    appendDots: $('.slider-control-indicators'),
+    arrows: true,
+    prevArrow: $('.slider-control-prev'),
+    nextArrow: $('.slider-control-next'),
+
+    // responsive
+    mobileFirst: true,
+    responsive: [{
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 3,
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      }
+    },{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      }
+    },{
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+      }
+    },],
+  });
+}())
