@@ -20,7 +20,7 @@ Default Search Agent in horizontal alignment
 <div class="card">
   <div class="card-block search-agent">
     <div class="row">
-      <div class="col-12 col-sm-6 push-sm-6">
+      <div class="col-12 col-sm-6 order-last">
         <div class="search-agent-body">
           <p class="search-agent-byline">Suchagent</p>
           <p class="search-agent-title">Direkt in Deinen Posteingang</p>
@@ -28,7 +28,7 @@ Default Search Agent in horizontal alignment
           <button type="button" class="btn btn-primary">Benachrichtigung anlegen</button>
         </div>
       </div>
-      <div class="col-12 col-sm-6 pull-sm-6">
+      <div class="col-12 col-sm-6 order-first">
         <div class="search-agent-visual">
           <img class="search-agent-image" data-src="holder.js/360x412?auto=yes&bg=777&fg=555&text=Image" alt="Image">
         </div>
