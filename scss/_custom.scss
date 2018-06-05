@@ -322,7 +322,7 @@ $list-inline-padding: 5px;
 //
 //
 
-$icons-font-path: "/assets/fonts/icons";
+$icons-font-path: "/assets/fonts/icons" !default;
 
 $icon-arrow-top: "\e900";
 $icon-arrow-right: "\e901";
