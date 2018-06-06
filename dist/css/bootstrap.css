@@ -51,7 +51,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 @-ms-viewport {
@@ -10195,7 +10195,7 @@ a.card-body:hover, a.card-body:focus {
 }
 
 .btn-cta {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
   background-repeat: repeat-x;
   background-blend-mode: overlay;
   font-weight: 600;
@@ -10561,13 +10561,10 @@ a.card-body:hover, a.card-body:focus {
 }
 
 .modal-full .modal-content {
-  /* stylelint-disable-line */
-  /* stylelint-disable-line */
   display: -ms-flexbox;
-  /* stylelint-disable-line */
-  /* stylelint-disable-line */
-  -moz-flex-direction: column;
-  /* stylelint-disable-line */
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   border: none;
@@ -10576,24 +10573,15 @@ a.card-body:hover, a.card-body:focus {
 
 .modal-full .modal-header,
 .modal-full .modal-footer {
-  /* stylelint-disable-line */
-  /* stylelint-disable-line */
   display: -ms-flexbox;
-  /* stylelint-disable-line */
+  display: flex;
   width: 100%;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.24);
 }
 
 .modal-full .modal-body {
-  /* stylelint-disable-line */
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  /* stylelint-disable-line */
-  /* Safari 6.1+. iOS 7.1+, BB10 */
   -ms-flex: 1;
-  /* stylelint-disable-line */
-  /* IE 10 */
   flex: 1;
-  /* NEW, Spec - Firefox, Chrome, Opera */
   width: 100%;
   height: 100%;
   overflow-x: hidden;

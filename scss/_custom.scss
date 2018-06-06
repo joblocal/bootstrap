@@ -117,13 +117,13 @@ $gray-lightest: #f6f6f6 !default;
 $gray-card:     #eaeaea !default;
 
 // Reassign color vars to semantic color scheme
-$primary:             $joblocal-orange;
-$secondary:           $joblocal-gray;
-$success:             $green;
-$info:                $cyan;
-$warning:             $orange;
-$danger:              $red;
-$inverse:             $joblocal-gray;
+$primary:             $joblocal-orange !default;
+$secondary:           $joblocal-gray !default;
+$success:             $green !default;
+$info:                $cyan !default;
+$warning:             $orange !default;
+$danger:              $red !default;
+$inverse:             $joblocal-gray !default;
 
 $theme-colors: (
   "primary":    $primary,
