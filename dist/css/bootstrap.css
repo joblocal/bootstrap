@@ -11279,6 +11279,7 @@ a.card-body:hover, a.card-body:focus {
 
 .application-form-header .application-form-title {
   font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .application-form-header::after {
