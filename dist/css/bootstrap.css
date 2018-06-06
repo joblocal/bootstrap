@@ -11270,6 +11270,7 @@ a.card-body:hover, a.card-body:focus {
 .application-form-header {
   position: relative;
   padding: 1.5rem;
+  color: rgba(255, 255, 255, 0.65);
   background: #f8ae00;
 }
 
