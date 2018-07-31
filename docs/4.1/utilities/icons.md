@@ -357,6 +357,86 @@ All icons that are currently available for use
         <code>.icon-external</code>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="icon-application"></p>
+      </td>
+      <td>
+        <code>.icon-application</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-arrow-filled-down"></p>
+      </td>
+      <td>
+        <code>.icon-arrow-filled-down</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-bookmark"></p>
+      </td>
+      <td>
+        <code>.icon-bookmark</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-company"></p>
+      </td>
+      <td>
+        <code>.icon-company</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-cv"></p>
+      </td>
+      <td>
+        <code>.icon-cv</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-gear"></p>
+      </td>
+      <td>
+        <code>.icon-gear</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-job"></p>
+      </td>
+      <td>
+        <code>.icon-job</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-logout"></p>
+      </td>
+      <td>
+        <code>.icon-logout</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-overview"></p>
+      </td>
+      <td>
+        <code>.icon-overview</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-company-profile-settings"></p>
+      </td>
+      <td>
+        <code>.icon-company-profile-settings</code>
+      </td>
+    </tr>
   </body>
 </table>
 
