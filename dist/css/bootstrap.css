@@ -51,7 +51,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @-ms-viewport {
@@ -9569,6 +9569,46 @@ a.text-inverse:hover, a.text-inverse:focus {
   content: "";
 }
 
+.icon-application::before {
+  content: "";
+}
+
+.icon-arrow-filled-down::before {
+  content: "";
+}
+
+.icon-bookmark::before {
+  content: "";
+}
+
+.icon-company::before {
+  content: "";
+}
+
+.icon-cv::before {
+  content: "";
+}
+
+.icon-gear::before {
+  content: "";
+}
+
+.icon-job::before {
+  content: "";
+}
+
+.icon-logout::before {
+  content: "";
+}
+
+.icon-overview::before {
+  content: "";
+}
+
+.icon-company-profile-settings::before {
+  content: "";
+}
+
 .icon-xs::before {
   font-size: 0.625rem;
 }
@@ -10195,7 +10235,7 @@ a.card-body:hover, a.card-body:focus {
 }
 
 .btn-cta {
-  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
   background-repeat: repeat-x;
   background-blend-mode: overlay;
   font-weight: 600;
