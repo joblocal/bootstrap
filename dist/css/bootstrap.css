@@ -9609,6 +9609,14 @@ a.text-inverse:hover, a.text-inverse:focus {
   content: "";
 }
 
+.icon-eye::before {
+  content: "";
+}
+
+.icon-eye-hidden::before {
+  content: "";
+}
+
 .icon-xs::before {
   font-size: 0.625rem;
 }
