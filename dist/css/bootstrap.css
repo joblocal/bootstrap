@@ -51,7 +51,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 @-ms-viewport {
@@ -9617,6 +9617,38 @@ a.text-inverse:hover, a.text-inverse:focus {
   content: "";
 }
 
+.icon-instagram::before {
+  content: "";
+}
+
+.icon-twitter::before {
+  content: "";
+}
+
+.icon-pinterest::before {
+  content: "";
+}
+
+.icon-linkedin::before {
+  content: "";
+}
+
+.icon-facebook::before {
+  content: "";
+}
+
+.icon-xing::before {
+  content: "";
+}
+
+.icon-youtube::before {
+  content: "";
+}
+
+.icon-social-media-placeholder::before {
+  content: "";
+}
+
 .icon-xs::before {
   font-size: 0.625rem;
 }
@@ -10243,7 +10275,7 @@ a.card-body:hover, a.card-body:focus {
 }
 
 .btn-cta {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
   background-repeat: repeat-x;
   background-blend-mode: overlay;
   font-weight: 600;
@@ -10621,6 +10653,7 @@ a.card-body:hover, a.card-body:focus {
 
 .modal-full .modal-header,
 .modal-full .modal-footer {
+  z-index: 1;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
