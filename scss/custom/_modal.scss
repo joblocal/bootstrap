@@ -22,8 +22,8 @@
   .modal-header,
   .modal-footer {
     // Fixed for older phones
-    display: flex;
     z-index: 1;
+    display: flex;
 
     width: 100%;
     box-shadow: $modal-full-shadow;
