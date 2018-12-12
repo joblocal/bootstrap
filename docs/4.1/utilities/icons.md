@@ -437,6 +437,86 @@ All icons that are currently available for use
         <code>.icon-company-profile-settings</code>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="icon-eye"></p>
+      </td>
+      <td>
+        <code>.icon-eye</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-eye-hidden"></p>
+      </td>
+      <td>
+        <code>.icon-eye-hidden</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-instagram"></p>
+      </td>
+      <td>
+        <code>.icon-instagram</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-twitter"></p>
+      </td>
+      <td>
+        <code>.icon-twitter</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-pinterest"></p>
+      </td>
+      <td>
+        <code>.icon-pinterest</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-linkedin"></p>
+      </td>
+      <td>
+        <code>.icon-linkedin</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-facebook"></p>
+      </td>
+      <td>
+        <code>.icon-facebook</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-xing"></p>
+      </td>
+      <td>
+        <code>.icon-xing</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-youtube"></p>
+      </td>
+      <td>
+        <code>.icon-youtube</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-social-media-placeholder"></p>
+      </td>
+      <td>
+        <code>.icon-social-media-placeholder</code>
+      </td>
+    </tr>
   </body>
 </table>
 
