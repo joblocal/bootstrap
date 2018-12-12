@@ -13,8 +13,8 @@ source:         "."
 destination:    ./_gh_pages
 host:           0.0.0.0
 port:           9001
-baseurl:        ""
-url:            "https://getbootstrap.com"
+baseurl:        "/bootstrap"
+url:            "https://styleguide.joblocal.de"
 encoding:       UTF-8
 exclude:
   - .git/
