@@ -49,6 +49,11 @@
   }
 }
 
+.card-body-slim {
+  flex: 1 1 auto;
+  padding: 0 $card-spacer-x 0 $card-spacer-x;
+}
+
 .card-header {
   background-color: transparent;
   border-bottom: 0;
