@@ -47,6 +47,19 @@ The building block of a card is the `.card-body`. Use it whenever you need a pad
 {% endcapture %}
 {% include example.html content=example %}
 
+### Body
+
+To have smaller version of our card-body, we provide a card-body-slim class.
+
+{% capture example %}
+<div class="card">
+  <div class="card-body-slim">
+    This is some text within a card body.
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ### Titles, text, and links
 
 Card titles are used by adding `.card-title` to a `<h*>` tag. In the same way, links are added and placed next to each other by adding `.card-link` to an `<a>` tag.
