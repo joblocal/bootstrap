@@ -53,7 +53,7 @@ To have smaller version of our card-body, we provide a card-body-slim class.
 
 {% capture example %}
 <div class="card">
-  <div class="card-body-slim">
+  <div class="card-body card-body-slim">
     This is some text within a card body.
   </div>
 </div>
