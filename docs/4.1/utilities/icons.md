@@ -517,6 +517,14 @@ All icons that are currently available for use
         <code>.icon-social-media-placeholder</code>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="icon-burger-menu"></p>
+      </td>
+      <td>
+        <code>.icon-burger-menu</code>
+      </td>
+    </tr>
   </body>
 </table>
 
