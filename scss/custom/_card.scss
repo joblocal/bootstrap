@@ -173,7 +173,7 @@ a.card-body { /* stylelint-disable-line selector-no-qualifying-type */
 
   .card {
     display: flex;
-    flex: 1 0 256px;
+    flex-basis: 256px;
     flex-direction: column;
   }
 }
