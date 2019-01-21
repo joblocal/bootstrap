@@ -11,7 +11,7 @@
 
 <!-- Bootstrap core CSS -->
 
-<link href="/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-3TkfZEmzYvBVd+1vHr6ifxJIIW5U9rPTUq4ulalZmhHHehekhKN+V06eGYVniMRL" crossorigin="anonymous">
+<link href="/dist/css/bootstrap.css" rel="stylesheet">
 
 
 <!-- Documentation extras -->
@@ -415,6 +415,7 @@
 <li class="toc-entry toc-h2"><a href="#content-types">Content types</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#body">Body</a></li>
+<li class="toc-entry toc-h3"><a href="#body-1">Body</a></li>
 <li class="toc-entry toc-h3"><a href="#titles-text-and-links">Titles, text, and links</a></li>
 <li class="toc-entry toc-h3"><a href="#images">Images</a></li>
 <li class="toc-entry toc-h3"><a href="#buttons">Buttons</a></li>
@@ -573,6 +574,23 @@
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    This is some text within a card body.
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="body-1">Body</h3>
+
+<p>To have smaller version of our card-body, we provide a card-body-slim class.</p>
+
+<div class="bd-example">
+<div class="card">
+  <div class="card-body card-body-slim">
+    This is some text within a card body.
+  </div>
+</div>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body card-body-slim"</span><span class="nt">&gt;</span>
     This is some text within a card body.
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -2848,6 +2866,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
-<script src="/assets/js/vendor/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="/dist/js/bootstrap.min.js" integrity="sha384-e5NmTwRcmGgQH0qI/mntj+ywyvLceIM0aiGuNdOZy/ucOk+4fF0kLPjeCFeafMKj" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/assets/js/docs.min.js"></script>
+<script src="/assets/js/vendor/popper.min.js"></script><script src="/dist/js/bootstrap.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/assets/js/vendor/anchor.min.js"></script>
+  <script src="/assets/js/vendor/clipboard.min.js"></script>
+  <script src="/assets/js/vendor/holder.min.js"></script>
+  <script src="/assets/js/src/application.js"></script>
+  <script src="/assets/js/src/search.js"></script>
+  <script src="/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="/assets/js/src/pwa.js"></script>
   </body>
 </html>
