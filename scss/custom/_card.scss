@@ -173,13 +173,13 @@ a.card-body { /* stylelint-disable-line selector-no-qualifying-type */
 
   .card {
     display: flex;
-    flex-basis: 17.5rem;
+    flex-basis: 15.3rem;
     flex-direction: column;
   }
 
   @include media-breakpoint-down(md) {
     .card {
-      flex: 1 0 17.5rem;
+      flex: 1 0 13.5rem;
     }
   }
 }
