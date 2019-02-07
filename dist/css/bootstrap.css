@@ -10141,16 +10141,16 @@ a.card-body:hover, a.card-body:focus {
 .card-grid .card {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 17.5rem;
-  flex-basis: 17.5rem;
+  -ms-flex-preferred-size: 15.3rem;
+  flex-basis: 15.3rem;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
 @media (max-width: 991.98px) {
   .card-grid .card {
-    -ms-flex: 1 0 17.5rem;
-    flex: 1 0 17.5rem;
+    -ms-flex: 1 0 13.5rem;
+    flex: 1 0 13.5rem;
   }
 }
 
