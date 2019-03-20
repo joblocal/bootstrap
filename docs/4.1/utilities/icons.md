@@ -525,14 +525,6 @@ All icons that are currently available for use
         <code>.icon-burger-menu</code>
       </td>
     </tr>
-    <tr>
-      <td>
-        <p class="icon-kununu"></p>
-      </td>
-      <td>
-        <code>.icon-kununu</code>
-      </td>
-    </tr>
   </body>
 </table>
 
