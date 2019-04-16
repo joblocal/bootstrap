@@ -10153,6 +10153,13 @@ a.card-body:hover, a.card-body:focus {
 
 @media (max-width: 991.98px) {
   .card-grid .card {
+    -ms-flex: 0 0 13.5rem;
+    flex: 0 0 13.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .card-grid .card {
     -ms-flex: 1 0 13.5rem;
     flex: 1 0 13.5rem;
   }
