@@ -179,6 +179,12 @@ a.card-body { /* stylelint-disable-line selector-no-qualifying-type */
 
   @include media-breakpoint-down(md) {
     .card {
+      flex: 0 0 13.5rem;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .card {
       flex: 1 0 13.5rem;
     }
   }
