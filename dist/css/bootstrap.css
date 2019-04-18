@@ -10158,10 +10158,17 @@ a.card-body:hover, a.card-body:focus {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .card-grid .card {
-    -ms-flex: 1 0 17.5rem;
-    flex: 1 0 17.5rem;
+    -ms-flex: 1 0 13.5rem;
+    flex: 1 0 13.5rem;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 574px) {
+  .card-grid .card {
+    -ms-flex: 0 0 12.5rem;
+    flex: 0 0 12.5rem;
   }
 }
 
