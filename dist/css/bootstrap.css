@@ -10608,38 +10608,50 @@ a.card-body:hover, a.card-body:focus {
   padding: 0.5rem 1rem;
 }
 
-.wysiwyg p,
-.wysiwyg dd,
-.wysiwyg blockquote,
-.wysiwyg ul,
-.wysiwyg ol {
-  margin: 0;
-}
-
-.wysiwyg .heading-1,
+.wysiwyg-headings .heading-1, .wysiwyg .heading-1,
+.wysiwyg-headings .heading-2,
 .wysiwyg .heading-2,
+.wysiwyg-headings .heading-3,
 .wysiwyg .heading-3,
+.wysiwyg-headings .heading-4,
 .wysiwyg .heading-4,
+.wysiwyg-headings .heading-5,
 .wysiwyg .heading-5,
+.wysiwyg-headings .heading-6,
 .wysiwyg .heading-6 {
   margin-bottom: 1rem;
   font-weight: bold;
   /* stylelint-disable-line */
 }
 
-.wysiwyg .heading-1,
+.wysiwyg-headings .heading-1, .wysiwyg .heading-1,
+.wysiwyg-headings .heading-2,
 .wysiwyg .heading-2 {
   font-size: 1.125rem;
 }
 
+
+.wysiwyg-headings .heading-3,
 .wysiwyg .heading-3 {
   font-size: 1rem;
 }
 
+
+.wysiwyg-headings .heading-4,
 .wysiwyg .heading-4,
+.wysiwyg-headings .heading-5,
 .wysiwyg .heading-5,
+.wysiwyg-headings .heading-6,
 .wysiwyg .heading-6 {
   font-size: 0.875rem;
+}
+
+.wysiwyg p,
+.wysiwyg dd,
+.wysiwyg blockquote,
+.wysiwyg ul,
+.wysiwyg ol {
+  margin: 0;
 }
 
 .breadcrumb {
