@@ -1,11 +1,4 @@
-.wysiwyg {
-  p,
-  dd,
-  blockquote,
-  ul,
-  ol {
-    margin: 0;
-  }
+.wysiwyg-headings {
   .heading-1,
   .heading-2,
   .heading-3,
@@ -27,4 +20,15 @@
   .heading-6 {
     font-size: $h4-font-size;
   }
+}
+
+.wysiwyg {
+  p,
+  dd,
+  blockquote,
+  ul,
+  ol {
+    margin: 0;
+  }
+  @extend .wysiwyg-headings;
 }
