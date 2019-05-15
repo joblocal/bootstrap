@@ -654,7 +654,18 @@
       "grid": 0,
       "tags": [
         "kununu"
-      ]
+      ],
+      "defaultCode": 59708
+    },
+    {
+      "paths": [
+        "M1024 365.714q0 14.857-10.857 25.714l-292.571 292.571q-10.857 10.857-25.714 10.857t-25.714-10.857-10.857-25.714v-146.286h-128q-56 0-100.286 3.429t-88 12.286-76 24.286-60.286 39.714-45.714 57.714-27.714 79.143-10 103.429q0 31.429 2.857 70.286 0 3.429 1.429 13.429t1.429 15.143q0 8.571-4.857 14.286t-13.429 5.714q-9.143 0-16-9.714-4-5.143-7.429-12.571t-7.714-17.143-6-13.714q-72.571-162.857-72.571-257.714 0-113.714 30.286-190.286 92.571-230.286 500-230.286h128v-146.286q0-14.857 10.857-25.714t25.714-10.857 25.714 10.857l292.571 292.571q10.857 10.857 10.857 25.714z"
+      ],
+      "grid": 0,
+      "tags": [
+        "share"
+      ],
+      "defaultCode": 59711
     }
   ],
   "height": 1024,
@@ -662,10 +673,10 @@
     "name": "joblocal-icons",
     "url": "http://joblocal.de",
     "importSize": {
-      "width": 16,
-      "height": 16
+      "width": 1792,
+      "height": 1792
     },
-    "iconsHash": 634074906
+    "iconsHash": 2076216233
   },
   "preferences": {
     "showGlyphs": true,
@@ -708,323 +719,329 @@
   },
   "selection": [
     {
-      "order": 3,
+      "order": 33,
       "name": "arrow-top",
       "prevSize": 32
     },
     {
-      "order": 4,
+      "order": 34,
       "name": "arrow-right",
       "prevSize": 32
     },
     {
-      "order": 5,
+      "order": 35,
       "name": "arrow-bottom",
       "prevSize": 32
     },
     {
-      "order": 44,
+      "order": 36,
       "name": "arrow-left",
       "prevSize": 32
     },
     {
-      "order": 45,
+      "order": 37,
       "name": "star",
       "prevSize": 32
     },
     {
-      "order": 46,
+      "order": 38,
       "name": "more",
       "prevSize": 32
     },
     {
-      "order": 74,
+      "order": 39,
       "name": "less",
       "prevSize": 32
     },
     {
-      "order": 75,
+      "order": 40,
       "name": "benefit-barrier-free",
       "prevSize": 32
     },
     {
-      "order": 76,
+      "order": 41,
       "name": "benefit-canteen",
       "prevSize": 32
     },
     {
-      "order": 77,
+      "order": 42,
       "name": "benefit-childcare",
       "prevSize": 32
     },
     {
-      "order": 67,
+      "order": 43,
       "name": "benefit-coaching",
       "prevSize": 32
     },
     {
-      "order": 66,
+      "order": 44,
       "name": "benefit-company-car",
       "prevSize": 32
     },
     {
-      "order": 65,
+      "order": 45,
       "name": "benefit-company-doctor",
       "prevSize": 32
     },
     {
-      "order": 64,
+      "order": 46,
       "name": "benefit-dogs-allowed",
       "prevSize": 32
     },
     {
-      "order": 63,
+      "order": 47,
       "name": "benefit-employee-discount",
       "prevSize": 32
     },
     {
-      "order": 62,
+      "order": 48,
       "name": "benefit-employee-events",
       "prevSize": 32
     },
     {
-      "order": 61,
+      "order": 49,
       "name": "benefit-employee-mobile-phone",
       "prevSize": 32
     },
     {
-      "order": 60,
+      "order": 50,
       "name": "benefit-employee-shareholding",
       "prevSize": 32
     },
     {
-      "order": 9,
+      "order": 51,
       "name": "benefit-flexible-working-hours",
       "prevSize": 32
     },
     {
-      "order": 10,
+      "order": 52,
       "name": "benefit-food-allowance",
       "prevSize": 32
     },
     {
-      "order": 11,
+      "order": 53,
       "name": "benefit-further-education",
       "prevSize": 32
     },
     {
-      "order": 12,
+      "order": 54,
       "name": "benefit-health-measures",
       "prevSize": 32
     },
     {
-      "order": 13,
+      "order": 55,
       "name": "benefit-homeoffice",
       "prevSize": 32
     },
     {
-      "order": 14,
+      "order": 56,
       "name": "benefit-internet-use",
       "prevSize": 32
     },
     {
-      "order": 15,
+      "order": 57,
       "name": "benefit-paid-training",
       "prevSize": 32
     },
     {
-      "order": 78,
+      "order": 58,
       "name": "benefit-parking",
       "prevSize": 32
     },
     {
-      "order": 79,
+      "order": 59,
       "name": "benefit-pension",
       "prevSize": 32
     },
     {
-      "order": 80,
+      "order": 60,
       "name": "benefit-ride-cost-refunds",
       "prevSize": 32
     },
     {
-      "order": 81,
+      "order": 61,
       "name": "benefit-traffic-connections",
       "prevSize": 32
     },
     {
-      "order": 52,
+      "order": 62,
       "name": "benefit-work-clothes",
       "prevSize": 32
     },
     {
-      "order": 53,
+      "order": 63,
       "name": "caret-top",
       "prevSize": 32
     },
     {
-      "order": 54,
+      "order": 64,
       "name": "caret-right",
       "prevSize": 32
     },
     {
-      "order": 55,
+      "order": 65,
       "name": "caret-bottom",
       "prevSize": 32
     },
     {
-      "order": 56,
+      "order": 66,
       "name": "caret-left",
       "prevSize": 32
     },
     {
-      "order": 57,
+      "order": 67,
       "name": "search",
       "prevSize": 32
     },
     {
-      "order": 58,
+      "order": 68,
       "name": "close",
       "prevSize": 32
     },
     {
-      "order": 59,
+      "order": 69,
       "name": "remove",
       "prevSize": 32
     },
     {
-      "order": 16,
+      "order": 70,
       "name": "heart",
       "prevSize": 32
     },
     {
-      "order": 17,
+      "order": 71,
       "name": "heart-outline",
       "prevSize": 32
     },
     {
-      "order": 18,
+      "order": 72,
       "name": "location",
       "prevSize": 32
     },
     {
-      "order": 19,
+      "order": 73,
       "name": "swipe",
       "prevSize": 32
     },
     {
-      "order": 20,
+      "order": 74,
       "name": "external",
       "prevSize": 32
     },
     {
-      "order": 21,
+      "order": 75,
       "name": "application",
       "prevSize": 32
     },
     {
-      "order": 47,
+      "order": 76,
       "name": "arrow-filled-down",
       "prevSize": 32
     },
     {
-      "order": 82,
+      "order": 77,
       "name": "bookmark",
       "prevSize": 32
     },
     {
-      "order": 83,
+      "order": 78,
       "name": "company",
       "prevSize": 32
     },
     {
-      "order": 84,
+      "order": 79,
       "name": "cv",
       "prevSize": 32
     },
     {
-      "order": 85,
+      "order": 80,
       "name": "gear",
       "prevSize": 32
     },
     {
-      "order": 34,
+      "order": 81,
       "name": "job",
       "prevSize": 32
     },
     {
-      "order": 35,
+      "order": 82,
       "name": "logout",
       "prevSize": 32
     },
     {
-      "order": 36,
+      "order": 83,
       "name": "overview",
       "prevSize": 32
     },
     {
-      "order": 37,
+      "order": 84,
       "name": "company-profile-settings",
       "prevSize": 32
     },
     {
-      "order": 38,
+      "order": 85,
       "name": "eye",
       "prevSize": 32
     },
     {
-      "order": 39,
+      "order": 86,
       "name": "eye-hidden",
       "prevSize": 32
     },
     {
-      "order": 40,
+      "order": 87,
       "name": "instagram",
       "prevSize": 32
     },
     {
-      "order": 41,
+      "order": 88,
       "name": "twitter",
       "prevSize": 32
     },
     {
-      "order": 23,
+      "order": 89,
       "name": "pinterest",
       "prevSize": 32
     },
     {
-      "order": 24,
+      "order": 90,
       "name": "linkedin",
       "prevSize": 32
     },
     {
-      "order": 25,
+      "order": 91,
       "name": "facebook",
       "prevSize": 32
     },
     {
-      "order": 26,
+      "order": 92,
       "name": "xing",
       "prevSize": 32
     },
     {
-      "order": 27,
+      "order": 93,
       "name": "youtube",
       "prevSize": 32
     },
     {
-      "order": 28,
+      "order": 94,
       "name": "social-media-placeholder",
       "prevSize": 32
     },
     {
-      "order": 2,
+      "order": 95,
       "name": "burger-menu",
       "prevSize": 32
     },
     {
-      "order": 87,
-      "name": "kununu"
+      "order": 96,
+      "name": "kununu",
+      "prevSize": 32
+    },
+    {
+      "order": 32,
+      "name": "share",
+      "prevSize": 32
     }
   ],
   "prevSize": 32,

@@ -533,6 +533,14 @@ All icons that are currently available for use
         <code>.icon-kununu</code>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="icon-share"></p>
+      </td>
+      <td>
+        <code>.icon-share</code>
+      </td>
+    </tr>
   </body>
 </table>
 
