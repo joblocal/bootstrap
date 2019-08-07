@@ -357,6 +357,46 @@ All icons that are currently available for use
         <code>.icon-external</code>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="icon-icon-eye"></p>
+      </td>
+      <td>
+        <code>.icon-icon-eye</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-icon-eye-off"></p>
+      </td>
+      <td>
+        <code>.icon-icon-eye-off</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-icon-pencil"></p>
+      </td>
+      <td>
+        <code>.icon-icon-pencil</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-icon-trash"></p>
+      </td>
+      <td>
+        <code>.icon-icon-trash</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-icon-plus"></p>
+      </td>
+      <td>
+        <code>.icon-icon-plus</code>
+      </td>
+    </tr>
   </body>
 </table>
 
