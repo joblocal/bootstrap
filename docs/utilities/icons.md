@@ -362,7 +362,7 @@ All icons that are currently available for use
         <p class="icon-icon-eye"></p>
       </td>
       <td>
-        <code>.icon-icon-eye</code>
+        <code>.icon-eye</code>
       </td>
     </tr>
     <tr>
@@ -370,7 +370,7 @@ All icons that are currently available for use
         <p class="icon-icon-eye-off"></p>
       </td>
       <td>
-        <code>.icon-icon-eye-off</code>
+        <code>.icon-eye-off</code>
       </td>
     </tr>
     <tr>
@@ -378,7 +378,7 @@ All icons that are currently available for use
         <p class="icon-icon-pencil"></p>
       </td>
       <td>
-        <code>.icon-icon-pencil</code>
+        <code>.icon-pencil</code>
       </td>
     </tr>
     <tr>
@@ -386,7 +386,7 @@ All icons that are currently available for use
         <p class="icon-icon-trash"></p>
       </td>
       <td>
-        <code>.icon-icon-trash</code>
+        <code>.icon-trash</code>
       </td>
     </tr>
     <tr>
@@ -394,7 +394,7 @@ All icons that are currently available for use
         <p class="icon-icon-plus"></p>
       </td>
       <td>
-        <code>.icon-icon-plus</code>
+        <code>.icon-plus</code>
       </td>
     </tr>
   </body>
