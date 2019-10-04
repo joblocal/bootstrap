@@ -9674,7 +9674,7 @@ a.text-inverse:hover, a.text-inverse:focus {
 }
 
 .icon-check-mark::before {
-  content: "";
+  content: "";
 }
 
 .icon-xs::before {
