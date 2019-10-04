@@ -397,6 +397,14 @@ All icons that are currently available for use
         <code>.icon-plus</code>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="icon-check-mark"></p>
+      </td>
+      <td>
+        <code>.icon-check-mark</code>
+      </td>
+    </tr>
   </body>
 </table>
 
