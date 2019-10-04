@@ -9668,6 +9668,10 @@ a.text-inverse:hover, a.text-inverse:focus {
   content: "";
 }
 
+.icon-check-mark::before {
+  content: "";
+}
+
 .icon-xs::before {
   font-size: 0.625rem;
 }
