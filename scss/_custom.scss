@@ -116,6 +116,7 @@ $gray-lighter:  #d7d7d7 !default;
 $gray-lightest: #f6f6f6 !default;
 $gray-card:     #eaeaea !default;
 
+
 // Reassign color vars to semantic color scheme
 $primary:             $joblocal-orange !default;
 $secondary:           $joblocal-gray !default;
@@ -132,7 +133,8 @@ $theme-colors: (
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
-  "inverse":    $inverse
+  "inverse":    $inverse,
+  "gray-lighter": $gray-lighter
 );
 
 $border-color: $gray-lighter;
@@ -393,6 +395,7 @@ $icon-pencil: "\e940";
 $icon-trash: "\e941";
 $icon-plus: "\e942";
 $icon-check-mark: "\e943";
+$icon-envelop: "\e944";
 
 
 // Components
