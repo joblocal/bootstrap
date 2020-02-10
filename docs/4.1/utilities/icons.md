@@ -541,6 +541,14 @@ All icons that are currently available for use
         <code>.icon-share</code>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="icon-envelop"></p>
+      </td>
+      <td>
+        <code>.icon-envelop</code>
+      </td>
+    </tr>
   </body>
 </table>
 
