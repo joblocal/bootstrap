@@ -133,6 +133,10 @@
   font-size: $font-size-xl;
 }
 
+.icon-xxl::before {
+  font-size: $font-size-xxl;
+}
+
 .icon-right {
   float: right;
 }
