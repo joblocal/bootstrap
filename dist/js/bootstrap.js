@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap v4.3.1-0 (https://getbootstrap.com/)
+  * Bootstrap v4.3.1-7 (https://getbootstrap.com/)
   * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
@@ -45,7 +45,7 @@
 
   function _objectSpread(target) {
     for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i] != null ? arguments[i] : {};
+      var source = arguments[i] != null ? Object(arguments[i]) : {};
       var ownKeys = Object.keys(source);
 
       if (typeof Object.getOwnPropertySymbols === 'function') {
@@ -232,17 +232,14 @@
       ALERT: 'alert',
       FADE: 'fade',
       SHOW: 'show'
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var Alert =
-    /*#__PURE__*/
-    function () {
+    var Alert = /*#__PURE__*/function () {
       function Alert(element) {
         this._element = element;
       } // Getters
@@ -410,17 +407,14 @@
     var Event = {
       CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY,
       FOCUS_BLUR_DATA_API: "focus" + EVENT_KEY + DATA_API_KEY + " " + ("blur" + EVENT_KEY + DATA_API_KEY)
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var Button =
-    /*#__PURE__*/
-    function () {
+    var Button = /*#__PURE__*/function () {
       function Button(element) {
         this._element = element;
       } // Getters
@@ -613,17 +607,14 @@
       INDICATORS: '.carousel-indicators',
       DATA_SLIDE: '[data-slide], [data-slide-to]',
       DATA_RIDE: '[data-ride="carousel"]'
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var Carousel =
-    /*#__PURE__*/
-    function () {
+    var Carousel = /*#__PURE__*/function () {
       function Carousel(element, config) {
         this._items = null;
         this._interval = null;
@@ -1088,17 +1079,14 @@
     var Selector = {
       ACTIVES: '.show, .collapsing',
       DATA_TOGGLE: '[data-toggle="collapse"]'
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var Collapse =
-    /*#__PURE__*/
-    function () {
+    var Collapse = /*#__PURE__*/function () {
       function Collapse(element, config) {
         this._isTransitioning = false;
         this._element = element;
@@ -1483,17 +1471,14 @@
       boundary: '(string|element)',
       reference: '(string|element)',
       display: 'string'
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var Dropdown =
-    /*#__PURE__*/
-    function () {
+    var Dropdown = /*#__PURE__*/function () {
       function Dropdown(element, config) {
         this._element = element;
         this._popper = null;
@@ -1679,9 +1664,8 @@
             preventOverflow: {
               boundariesElement: this._config.boundary
             }
-          } // Disable Popper.js if we have a static display
-
-        };
+          }
+        }; // Disable Popper.js if we have a static display
 
         if (this._config.display === 'static') {
           popperConfig.modifiers.applyStyle = {
@@ -1943,17 +1927,14 @@
       FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
       STICKY_CONTENT: '.sticky-top',
       NAVBAR_TOGGLER: '.navbar-toggler'
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var Modal =
-    /*#__PURE__*/
-    function () {
+    var Modal = /*#__PURE__*/function () {
       function Modal(element, config) {
         this._config = this._getConfig(config);
         this._element = element;
@@ -2546,17 +2527,14 @@
       FOCUS: 'focus',
       CLICK: 'click',
       MANUAL: 'manual'
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var Tooltip =
-    /*#__PURE__*/
-    function () {
+    var Tooltip = /*#__PURE__*/function () {
       function Tooltip(element, config) {
         /**
          * Check for Popper dependency
@@ -3179,17 +3157,14 @@
       FOCUSOUT: "focusout" + EVENT_KEY,
       MOUSEENTER: "mouseenter" + EVENT_KEY,
       MOUSELEAVE: "mouseleave" + EVENT_KEY
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var Popover =
-    /*#__PURE__*/
-    function (_Tooltip) {
+    var Popover = /*#__PURE__*/function (_Tooltip) {
       _inheritsLoose(Popover, _Tooltip);
 
       function Popover() {
@@ -3378,17 +3353,14 @@
     var OffsetMethod = {
       OFFSET: 'offset',
       POSITION: 'position'
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var ScrollSpy =
-    /*#__PURE__*/
-    function () {
+    var ScrollSpy = /*#__PURE__*/function () {
       function ScrollSpy(element, config) {
         var _this = this;
 
@@ -3678,17 +3650,14 @@
       DATA_TOGGLE: '[data-toggle="tab"], [data-toggle="pill"], [data-toggle="list"]',
       DROPDOWN_TOGGLE: '.dropdown-toggle',
       DROPDOWN_ACTIVE_CHILD: '> .dropdown-menu .active'
-      /**
-       * ------------------------------------------------------------------------
-       * Class Definition
-       * ------------------------------------------------------------------------
-       */
-
     };
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
-    var Tab =
-    /*#__PURE__*/
-    function () {
+    var Tab = /*#__PURE__*/function () {
       function Tab(element) {
         this._element = element;
       } // Getters
