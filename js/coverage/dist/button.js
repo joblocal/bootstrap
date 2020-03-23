@@ -1,11 +1,11 @@
-var cov_1z9xlri6nn = function () {
-  var path = "/Users/asonnenholzner/Downloads/bootstrap/js/src/button.js",
-      hash = "56ad31b1a3a7596f590f26e359f124a549ef03d2",
+var cov_1u27fzudrs = function () {
+  var path = "/Users/victorchiriac/Sites/bootstrap/js/src/button.js",
+      hash = "c4f39ddaea503b563aa2aecd3cffb64b56a2ae5c",
       Function = function () {}.constructor,
       global = new Function('return this')(),
       gcv = "__coverage__",
       coverageData = {
-    path: "/Users/asonnenholzner/Downloads/bootstrap/js/src/button.js",
+    path: "/Users/victorchiriac/Sites/bootstrap/js/src/button.js",
     statementMap: {
       "0": {
         start: {
@@ -1422,49 +1422,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
-var Button = (cov_1z9xlri6nn.s[0]++, function ($) {
-  cov_1z9xlri6nn.f[0]++;
+var Button = (cov_1u27fzudrs.s[0]++, function ($) {
+  cov_1u27fzudrs.f[0]++;
 
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-  var NAME = (cov_1z9xlri6nn.s[1]++, 'button');
-  var VERSION = (cov_1z9xlri6nn.s[2]++, '4.1.1');
-  var DATA_KEY = (cov_1z9xlri6nn.s[3]++, 'bs.button');
-  var EVENT_KEY = (cov_1z9xlri6nn.s[4]++, "." + DATA_KEY);
-  var DATA_API_KEY = (cov_1z9xlri6nn.s[5]++, '.data-api');
-  var JQUERY_NO_CONFLICT = (cov_1z9xlri6nn.s[6]++, $.fn[NAME]);
-  var ClassName = (cov_1z9xlri6nn.s[7]++, {
+  var NAME = (cov_1u27fzudrs.s[1]++, 'button');
+  var VERSION = (cov_1u27fzudrs.s[2]++, '4.1.1');
+  var DATA_KEY = (cov_1u27fzudrs.s[3]++, 'bs.button');
+  var EVENT_KEY = (cov_1u27fzudrs.s[4]++, "." + DATA_KEY);
+  var DATA_API_KEY = (cov_1u27fzudrs.s[5]++, '.data-api');
+  var JQUERY_NO_CONFLICT = (cov_1u27fzudrs.s[6]++, $.fn[NAME]);
+  var ClassName = (cov_1u27fzudrs.s[7]++, {
     ACTIVE: 'active',
     BUTTON: 'btn',
     FOCUS: 'focus'
   });
-  var Selector = (cov_1z9xlri6nn.s[8]++, {
+  var Selector = (cov_1u27fzudrs.s[8]++, {
     DATA_TOGGLE_CARROT: '[data-toggle^="button"]',
     DATA_TOGGLE: '[data-toggle="buttons"]',
     INPUT: 'input',
     ACTIVE: '.active',
     BUTTON: '.btn'
   });
-  var Event = (cov_1z9xlri6nn.s[9]++, {
+  var Event = (cov_1u27fzudrs.s[9]++, {
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY,
     FOCUS_BLUR_DATA_API: "focus" + EVENT_KEY + DATA_API_KEY + " " + ("blur" + EVENT_KEY + DATA_API_KEY)
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
-
   });
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
 
-  var Button =
-  /*#__PURE__*/
-  function () {
+  var Button = /*#__PURE__*/function () {
     function Button(element) {
-      cov_1z9xlri6nn.f[1]++;
-      cov_1z9xlri6nn.s[10]++;
+      cov_1u27fzudrs.f[1]++;
+      cov_1u27fzudrs.s[10]++;
       this._element = element;
     } // Getters
 
@@ -1473,136 +1470,136 @@ var Button = (cov_1z9xlri6nn.s[0]++, function ($) {
 
     // Public
     _proto.toggle = function toggle() {
-      cov_1z9xlri6nn.f[3]++;
-      var triggerChangeEvent = (cov_1z9xlri6nn.s[12]++, true);
-      var addAriaPressed = (cov_1z9xlri6nn.s[13]++, true);
-      var rootElement = (cov_1z9xlri6nn.s[14]++, $(this._element).closest(Selector.DATA_TOGGLE)[0]);
-      cov_1z9xlri6nn.s[15]++;
+      cov_1u27fzudrs.f[3]++;
+      var triggerChangeEvent = (cov_1u27fzudrs.s[12]++, true);
+      var addAriaPressed = (cov_1u27fzudrs.s[13]++, true);
+      var rootElement = (cov_1u27fzudrs.s[14]++, $(this._element).closest(Selector.DATA_TOGGLE)[0]);
+      cov_1u27fzudrs.s[15]++;
 
       if (rootElement) {
-        cov_1z9xlri6nn.b[0][0]++;
-        var input = (cov_1z9xlri6nn.s[16]++, $(this._element).find(Selector.INPUT)[0]);
-        cov_1z9xlri6nn.s[17]++;
+        cov_1u27fzudrs.b[0][0]++;
+        var input = (cov_1u27fzudrs.s[16]++, $(this._element).find(Selector.INPUT)[0]);
+        cov_1u27fzudrs.s[17]++;
 
         if (input) {
-          cov_1z9xlri6nn.b[1][0]++;
-          cov_1z9xlri6nn.s[18]++;
+          cov_1u27fzudrs.b[1][0]++;
+          cov_1u27fzudrs.s[18]++;
 
           if (input.type === 'radio') {
-            cov_1z9xlri6nn.b[2][0]++;
-            cov_1z9xlri6nn.s[19]++;
+            cov_1u27fzudrs.b[2][0]++;
+            cov_1u27fzudrs.s[19]++;
 
-            if ((cov_1z9xlri6nn.b[4][0]++, input.checked) && (cov_1z9xlri6nn.b[4][1]++, $(this._element).hasClass(ClassName.ACTIVE))) {
-              cov_1z9xlri6nn.b[3][0]++;
-              cov_1z9xlri6nn.s[20]++;
+            if ((cov_1u27fzudrs.b[4][0]++, input.checked) && (cov_1u27fzudrs.b[4][1]++, $(this._element).hasClass(ClassName.ACTIVE))) {
+              cov_1u27fzudrs.b[3][0]++;
+              cov_1u27fzudrs.s[20]++;
               triggerChangeEvent = false;
             } else {
-              cov_1z9xlri6nn.b[3][1]++;
-              var activeElement = (cov_1z9xlri6nn.s[21]++, $(rootElement).find(Selector.ACTIVE)[0]);
-              cov_1z9xlri6nn.s[22]++;
+              cov_1u27fzudrs.b[3][1]++;
+              var activeElement = (cov_1u27fzudrs.s[21]++, $(rootElement).find(Selector.ACTIVE)[0]);
+              cov_1u27fzudrs.s[22]++;
 
               if (activeElement) {
-                cov_1z9xlri6nn.b[5][0]++;
-                cov_1z9xlri6nn.s[23]++;
+                cov_1u27fzudrs.b[5][0]++;
+                cov_1u27fzudrs.s[23]++;
                 $(activeElement).removeClass(ClassName.ACTIVE);
               } else {
-                cov_1z9xlri6nn.b[5][1]++;
+                cov_1u27fzudrs.b[5][1]++;
               }
             }
           } else {
-            cov_1z9xlri6nn.b[2][1]++;
+            cov_1u27fzudrs.b[2][1]++;
           }
 
-          cov_1z9xlri6nn.s[24]++;
+          cov_1u27fzudrs.s[24]++;
 
           if (triggerChangeEvent) {
-            cov_1z9xlri6nn.b[6][0]++;
-            cov_1z9xlri6nn.s[25]++;
+            cov_1u27fzudrs.b[6][0]++;
+            cov_1u27fzudrs.s[25]++;
 
-            if ((cov_1z9xlri6nn.b[8][0]++, input.hasAttribute('disabled')) || (cov_1z9xlri6nn.b[8][1]++, rootElement.hasAttribute('disabled')) || (cov_1z9xlri6nn.b[8][2]++, input.classList.contains('disabled')) || (cov_1z9xlri6nn.b[8][3]++, rootElement.classList.contains('disabled'))) {
-              cov_1z9xlri6nn.b[7][0]++;
-              cov_1z9xlri6nn.s[26]++;
+            if ((cov_1u27fzudrs.b[8][0]++, input.hasAttribute('disabled')) || (cov_1u27fzudrs.b[8][1]++, rootElement.hasAttribute('disabled')) || (cov_1u27fzudrs.b[8][2]++, input.classList.contains('disabled')) || (cov_1u27fzudrs.b[8][3]++, rootElement.classList.contains('disabled'))) {
+              cov_1u27fzudrs.b[7][0]++;
+              cov_1u27fzudrs.s[26]++;
               return;
             } else {
-              cov_1z9xlri6nn.b[7][1]++;
+              cov_1u27fzudrs.b[7][1]++;
             }
 
-            cov_1z9xlri6nn.s[27]++;
+            cov_1u27fzudrs.s[27]++;
             input.checked = !$(this._element).hasClass(ClassName.ACTIVE);
-            cov_1z9xlri6nn.s[28]++;
+            cov_1u27fzudrs.s[28]++;
             $(input).trigger('change');
           } else {
-            cov_1z9xlri6nn.b[6][1]++;
+            cov_1u27fzudrs.b[6][1]++;
           }
 
-          cov_1z9xlri6nn.s[29]++;
+          cov_1u27fzudrs.s[29]++;
           input.focus();
-          cov_1z9xlri6nn.s[30]++;
+          cov_1u27fzudrs.s[30]++;
           addAriaPressed = false;
         } else {
-          cov_1z9xlri6nn.b[1][1]++;
+          cov_1u27fzudrs.b[1][1]++;
         }
       } else {
-        cov_1z9xlri6nn.b[0][1]++;
+        cov_1u27fzudrs.b[0][1]++;
       }
 
-      cov_1z9xlri6nn.s[31]++;
+      cov_1u27fzudrs.s[31]++;
 
       if (addAriaPressed) {
-        cov_1z9xlri6nn.b[9][0]++;
-        cov_1z9xlri6nn.s[32]++;
+        cov_1u27fzudrs.b[9][0]++;
+        cov_1u27fzudrs.s[32]++;
 
         this._element.setAttribute('aria-pressed', !$(this._element).hasClass(ClassName.ACTIVE));
       } else {
-        cov_1z9xlri6nn.b[9][1]++;
+        cov_1u27fzudrs.b[9][1]++;
       }
 
-      cov_1z9xlri6nn.s[33]++;
+      cov_1u27fzudrs.s[33]++;
 
       if (triggerChangeEvent) {
-        cov_1z9xlri6nn.b[10][0]++;
-        cov_1z9xlri6nn.s[34]++;
+        cov_1u27fzudrs.b[10][0]++;
+        cov_1u27fzudrs.s[34]++;
         $(this._element).toggleClass(ClassName.ACTIVE);
       } else {
-        cov_1z9xlri6nn.b[10][1]++;
+        cov_1u27fzudrs.b[10][1]++;
       }
     };
 
     _proto.dispose = function dispose() {
-      cov_1z9xlri6nn.f[4]++;
-      cov_1z9xlri6nn.s[35]++;
+      cov_1u27fzudrs.f[4]++;
+      cov_1u27fzudrs.s[35]++;
       $.removeData(this._element, DATA_KEY);
-      cov_1z9xlri6nn.s[36]++;
+      cov_1u27fzudrs.s[36]++;
       this._element = null;
     }; // Static
 
 
     Button._jQueryInterface = function _jQueryInterface(config) {
-      cov_1z9xlri6nn.f[5]++;
-      cov_1z9xlri6nn.s[37]++;
+      cov_1u27fzudrs.f[5]++;
+      cov_1u27fzudrs.s[37]++;
       return this.each(function () {
-        cov_1z9xlri6nn.f[6]++;
-        var data = (cov_1z9xlri6nn.s[38]++, $(this).data(DATA_KEY));
-        cov_1z9xlri6nn.s[39]++;
+        cov_1u27fzudrs.f[6]++;
+        var data = (cov_1u27fzudrs.s[38]++, $(this).data(DATA_KEY));
+        cov_1u27fzudrs.s[39]++;
 
         if (!data) {
-          cov_1z9xlri6nn.b[11][0]++;
-          cov_1z9xlri6nn.s[40]++;
+          cov_1u27fzudrs.b[11][0]++;
+          cov_1u27fzudrs.s[40]++;
           data = new Button(this);
-          cov_1z9xlri6nn.s[41]++;
+          cov_1u27fzudrs.s[41]++;
           $(this).data(DATA_KEY, data);
         } else {
-          cov_1z9xlri6nn.b[11][1]++;
+          cov_1u27fzudrs.b[11][1]++;
         }
 
-        cov_1z9xlri6nn.s[42]++;
+        cov_1u27fzudrs.s[42]++;
 
         if (config === 'toggle') {
-          cov_1z9xlri6nn.b[12][0]++;
-          cov_1z9xlri6nn.s[43]++;
+          cov_1u27fzudrs.b[12][0]++;
+          cov_1u27fzudrs.s[43]++;
           data[config]();
         } else {
-          cov_1z9xlri6nn.b[12][1]++;
+          cov_1u27fzudrs.b[12][1]++;
         }
       });
     };
@@ -1610,8 +1607,8 @@ var Button = (cov_1z9xlri6nn.s[0]++, function ($) {
     _createClass(Button, null, [{
       key: "VERSION",
       get: function get() {
-        cov_1z9xlri6nn.f[2]++;
-        cov_1z9xlri6nn.s[11]++;
+        cov_1u27fzudrs.f[2]++;
+        cov_1u27fzudrs.s[11]++;
         return VERSION;
       }
     }]);
@@ -1625,29 +1622,29 @@ var Button = (cov_1z9xlri6nn.s[0]++, function ($) {
    */
 
 
-  cov_1z9xlri6nn.s[44]++;
+  cov_1u27fzudrs.s[44]++;
   $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE_CARROT, function (event) {
-    cov_1z9xlri6nn.f[7]++;
-    cov_1z9xlri6nn.s[45]++;
+    cov_1u27fzudrs.f[7]++;
+    cov_1u27fzudrs.s[45]++;
     event.preventDefault();
-    var button = (cov_1z9xlri6nn.s[46]++, event.target);
-    cov_1z9xlri6nn.s[47]++;
+    var button = (cov_1u27fzudrs.s[46]++, event.target);
+    cov_1u27fzudrs.s[47]++;
 
     if (!$(button).hasClass(ClassName.BUTTON)) {
-      cov_1z9xlri6nn.b[13][0]++;
-      cov_1z9xlri6nn.s[48]++;
+      cov_1u27fzudrs.b[13][0]++;
+      cov_1u27fzudrs.s[48]++;
       button = $(button).closest(Selector.BUTTON);
     } else {
-      cov_1z9xlri6nn.b[13][1]++;
+      cov_1u27fzudrs.b[13][1]++;
     }
 
-    cov_1z9xlri6nn.s[49]++;
+    cov_1u27fzudrs.s[49]++;
 
     Button._jQueryInterface.call($(button), 'toggle');
   }).on(Event.FOCUS_BLUR_DATA_API, Selector.DATA_TOGGLE_CARROT, function (event) {
-    cov_1z9xlri6nn.f[8]++;
-    var button = (cov_1z9xlri6nn.s[50]++, $(event.target).closest(Selector.BUTTON)[0]);
-    cov_1z9xlri6nn.s[51]++;
+    cov_1u27fzudrs.f[8]++;
+    var button = (cov_1u27fzudrs.s[50]++, $(event.target).closest(Selector.BUTTON)[0]);
+    cov_1u27fzudrs.s[51]++;
     $(button).toggleClass(ClassName.FOCUS, /^focus(in)?$/.test(event.type));
   });
   /**
@@ -1656,21 +1653,21 @@ var Button = (cov_1z9xlri6nn.s[0]++, function ($) {
    * ------------------------------------------------------------------------
    */
 
-  cov_1z9xlri6nn.s[52]++;
+  cov_1u27fzudrs.s[52]++;
   $.fn[NAME] = Button._jQueryInterface;
-  cov_1z9xlri6nn.s[53]++;
+  cov_1u27fzudrs.s[53]++;
   $.fn[NAME].Constructor = Button;
-  cov_1z9xlri6nn.s[54]++;
+  cov_1u27fzudrs.s[54]++;
 
   $.fn[NAME].noConflict = function () {
-    cov_1z9xlri6nn.f[9]++;
-    cov_1z9xlri6nn.s[55]++;
+    cov_1u27fzudrs.f[9]++;
+    cov_1u27fzudrs.s[55]++;
     $.fn[NAME] = JQUERY_NO_CONFLICT;
-    cov_1z9xlri6nn.s[56]++;
+    cov_1u27fzudrs.s[56]++;
     return Button._jQueryInterface;
   };
 
-  cov_1z9xlri6nn.s[57]++;
+  cov_1u27fzudrs.s[57]++;
   return Button;
 }($));
 //# sourceMappingURL=button.js.map

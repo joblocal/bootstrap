@@ -1,11 +1,11 @@
-var cov_s5t6dkzbf = function () {
-  var path = "/Users/asonnenholzner/Downloads/bootstrap/js/src/modal.js",
-      hash = "6d1953fd7516971b796845ba8daa4f4deb29c021",
+var cov_jl9s5aqsr = function () {
+  var path = "/Users/victorchiriac/Sites/bootstrap/js/src/modal.js",
+      hash = "c4d5827dff5f5e91ee716e621a11d13f82dd78b7",
       Function = function () {}.constructor,
       global = new Function('return this')(),
       gcv = "__coverage__",
       coverageData = {
-    path: "/Users/asonnenholzner/Downloads/bootstrap/js/src/modal.js",
+    path: "/Users/victorchiriac/Sites/bootstrap/js/src/modal.js",
     statementMap: {
       "0": {
         start: {
@@ -6004,7 +6004,7 @@ var cov_s5t6dkzbf = function () {
   return coverage[path] = coverageData;
 }();
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? Object(arguments[i]) : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -6018,35 +6018,35 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
-var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
-  cov_s5t6dkzbf.f[0]++;
+var Modal = (cov_jl9s5aqsr.s[0]++, function ($) {
+  cov_jl9s5aqsr.f[0]++;
 
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-  var NAME = (cov_s5t6dkzbf.s[1]++, 'modal');
-  var VERSION = (cov_s5t6dkzbf.s[2]++, '4.1.1');
-  var DATA_KEY = (cov_s5t6dkzbf.s[3]++, 'bs.modal');
-  var EVENT_KEY = (cov_s5t6dkzbf.s[4]++, "." + DATA_KEY);
-  var DATA_API_KEY = (cov_s5t6dkzbf.s[5]++, '.data-api');
-  var JQUERY_NO_CONFLICT = (cov_s5t6dkzbf.s[6]++, $.fn[NAME]);
-  var ESCAPE_KEYCODE = (cov_s5t6dkzbf.s[7]++, 27); // KeyboardEvent.which value for Escape (Esc) key
+  var NAME = (cov_jl9s5aqsr.s[1]++, 'modal');
+  var VERSION = (cov_jl9s5aqsr.s[2]++, '4.1.1');
+  var DATA_KEY = (cov_jl9s5aqsr.s[3]++, 'bs.modal');
+  var EVENT_KEY = (cov_jl9s5aqsr.s[4]++, "." + DATA_KEY);
+  var DATA_API_KEY = (cov_jl9s5aqsr.s[5]++, '.data-api');
+  var JQUERY_NO_CONFLICT = (cov_jl9s5aqsr.s[6]++, $.fn[NAME]);
+  var ESCAPE_KEYCODE = (cov_jl9s5aqsr.s[7]++, 27); // KeyboardEvent.which value for Escape (Esc) key
 
-  var Default = (cov_s5t6dkzbf.s[8]++, {
+  var Default = (cov_jl9s5aqsr.s[8]++, {
     backdrop: true,
     keyboard: true,
     focus: true,
     show: true
   });
-  var DefaultType = (cov_s5t6dkzbf.s[9]++, {
+  var DefaultType = (cov_jl9s5aqsr.s[9]++, {
     backdrop: '(boolean|string)',
     keyboard: 'boolean',
     focus: 'boolean',
     show: 'boolean'
   });
-  var Event = (cov_s5t6dkzbf.s[10]++, {
+  var Event = (cov_jl9s5aqsr.s[10]++, {
     HIDE: "hide" + EVENT_KEY,
     HIDDEN: "hidden" + EVENT_KEY,
     SHOW: "show" + EVENT_KEY,
@@ -6059,48 +6059,45 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
     MOUSEDOWN_DISMISS: "mousedown.dismiss" + EVENT_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   });
-  var ClassName = (cov_s5t6dkzbf.s[11]++, {
+  var ClassName = (cov_jl9s5aqsr.s[11]++, {
     SCROLLBAR_MEASURER: 'modal-scrollbar-measure',
     BACKDROP: 'modal-backdrop',
     OPEN: 'modal-open',
     FADE: 'fade',
     SHOW: 'show'
   });
-  var Selector = (cov_s5t6dkzbf.s[12]++, {
+  var Selector = (cov_jl9s5aqsr.s[12]++, {
     DIALOG: '.modal-dialog',
     DATA_TOGGLE: '[data-toggle="modal"]',
     DATA_DISMISS: '[data-dismiss="modal"]',
     FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
     STICKY_CONTENT: '.sticky-top',
     NAVBAR_TOGGLER: '.navbar-toggler'
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
-
   });
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
 
-  var Modal =
-  /*#__PURE__*/
-  function () {
+  var Modal = /*#__PURE__*/function () {
     function Modal(element, config) {
-      cov_s5t6dkzbf.f[1]++;
-      cov_s5t6dkzbf.s[13]++;
+      cov_jl9s5aqsr.f[1]++;
+      cov_jl9s5aqsr.s[13]++;
       this._config = this._getConfig(config);
-      cov_s5t6dkzbf.s[14]++;
+      cov_jl9s5aqsr.s[14]++;
       this._element = element;
-      cov_s5t6dkzbf.s[15]++;
+      cov_jl9s5aqsr.s[15]++;
       this._dialog = $(element).find(Selector.DIALOG)[0];
-      cov_s5t6dkzbf.s[16]++;
+      cov_jl9s5aqsr.s[16]++;
       this._backdrop = null;
-      cov_s5t6dkzbf.s[17]++;
+      cov_jl9s5aqsr.s[17]++;
       this._isShown = false;
-      cov_s5t6dkzbf.s[18]++;
+      cov_jl9s5aqsr.s[18]++;
       this._isBodyOverflowing = false;
-      cov_s5t6dkzbf.s[19]++;
+      cov_jl9s5aqsr.s[19]++;
       this._ignoreBackdropClick = false;
-      cov_s5t6dkzbf.s[20]++;
+      cov_jl9s5aqsr.s[20]++;
       this._scrollbarWidth = 0;
     } // Getters
 
@@ -6109,102 +6106,102 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
 
     // Public
     _proto.toggle = function toggle(relatedTarget) {
-      cov_s5t6dkzbf.f[4]++;
-      cov_s5t6dkzbf.s[23]++;
-      return this._isShown ? (cov_s5t6dkzbf.b[0][0]++, this.hide()) : (cov_s5t6dkzbf.b[0][1]++, this.show(relatedTarget));
+      cov_jl9s5aqsr.f[4]++;
+      cov_jl9s5aqsr.s[23]++;
+      return this._isShown ? (cov_jl9s5aqsr.b[0][0]++, this.hide()) : (cov_jl9s5aqsr.b[0][1]++, this.show(relatedTarget));
     };
 
     _proto.show = function show(relatedTarget) {
       var _this = this;
 
-      cov_s5t6dkzbf.f[5]++;
-      cov_s5t6dkzbf.s[24]++;
+      cov_jl9s5aqsr.f[5]++;
+      cov_jl9s5aqsr.s[24]++;
 
-      if ((cov_s5t6dkzbf.b[2][0]++, this._isTransitioning) || (cov_s5t6dkzbf.b[2][1]++, this._isShown)) {
-        cov_s5t6dkzbf.b[1][0]++;
-        cov_s5t6dkzbf.s[25]++;
+      if ((cov_jl9s5aqsr.b[2][0]++, this._isTransitioning) || (cov_jl9s5aqsr.b[2][1]++, this._isShown)) {
+        cov_jl9s5aqsr.b[1][0]++;
+        cov_jl9s5aqsr.s[25]++;
         return;
       } else {
-        cov_s5t6dkzbf.b[1][1]++;
+        cov_jl9s5aqsr.b[1][1]++;
       }
 
-      cov_s5t6dkzbf.s[26]++;
+      cov_jl9s5aqsr.s[26]++;
 
       if ($(this._element).hasClass(ClassName.FADE)) {
-        cov_s5t6dkzbf.b[3][0]++;
-        cov_s5t6dkzbf.s[27]++;
+        cov_jl9s5aqsr.b[3][0]++;
+        cov_jl9s5aqsr.s[27]++;
         this._isTransitioning = true;
       } else {
-        cov_s5t6dkzbf.b[3][1]++;
+        cov_jl9s5aqsr.b[3][1]++;
       }
 
-      var showEvent = (cov_s5t6dkzbf.s[28]++, $.Event(Event.SHOW, {
+      var showEvent = (cov_jl9s5aqsr.s[28]++, $.Event(Event.SHOW, {
         relatedTarget: relatedTarget
       }));
-      cov_s5t6dkzbf.s[29]++;
+      cov_jl9s5aqsr.s[29]++;
       $(this._element).trigger(showEvent);
-      cov_s5t6dkzbf.s[30]++;
+      cov_jl9s5aqsr.s[30]++;
 
-      if ((cov_s5t6dkzbf.b[5][0]++, this._isShown) || (cov_s5t6dkzbf.b[5][1]++, showEvent.isDefaultPrevented())) {
-        cov_s5t6dkzbf.b[4][0]++;
-        cov_s5t6dkzbf.s[31]++;
+      if ((cov_jl9s5aqsr.b[5][0]++, this._isShown) || (cov_jl9s5aqsr.b[5][1]++, showEvent.isDefaultPrevented())) {
+        cov_jl9s5aqsr.b[4][0]++;
+        cov_jl9s5aqsr.s[31]++;
         return;
       } else {
-        cov_s5t6dkzbf.b[4][1]++;
+        cov_jl9s5aqsr.b[4][1]++;
       }
 
-      cov_s5t6dkzbf.s[32]++;
+      cov_jl9s5aqsr.s[32]++;
       this._isShown = true;
-      cov_s5t6dkzbf.s[33]++;
+      cov_jl9s5aqsr.s[33]++;
 
       this._checkScrollbar();
 
-      cov_s5t6dkzbf.s[34]++;
+      cov_jl9s5aqsr.s[34]++;
 
       this._setScrollbar();
 
-      cov_s5t6dkzbf.s[35]++;
+      cov_jl9s5aqsr.s[35]++;
 
       this._adjustDialog();
 
-      cov_s5t6dkzbf.s[36]++;
+      cov_jl9s5aqsr.s[36]++;
       $(document.body).addClass(ClassName.OPEN);
-      cov_s5t6dkzbf.s[37]++;
+      cov_jl9s5aqsr.s[37]++;
 
       this._setEscapeEvent();
 
-      cov_s5t6dkzbf.s[38]++;
+      cov_jl9s5aqsr.s[38]++;
 
       this._setResizeEvent();
 
-      cov_s5t6dkzbf.s[39]++;
+      cov_jl9s5aqsr.s[39]++;
       $(this._element).on(Event.CLICK_DISMISS, Selector.DATA_DISMISS, function (event) {
-        cov_s5t6dkzbf.f[6]++;
-        cov_s5t6dkzbf.s[40]++;
+        cov_jl9s5aqsr.f[6]++;
+        cov_jl9s5aqsr.s[40]++;
         return _this.hide(event);
       });
-      cov_s5t6dkzbf.s[41]++;
+      cov_jl9s5aqsr.s[41]++;
       $(this._dialog).on(Event.MOUSEDOWN_DISMISS, function () {
-        cov_s5t6dkzbf.f[7]++;
-        cov_s5t6dkzbf.s[42]++;
+        cov_jl9s5aqsr.f[7]++;
+        cov_jl9s5aqsr.s[42]++;
         $(_this._element).one(Event.MOUSEUP_DISMISS, function (event) {
-          cov_s5t6dkzbf.f[8]++;
-          cov_s5t6dkzbf.s[43]++;
+          cov_jl9s5aqsr.f[8]++;
+          cov_jl9s5aqsr.s[43]++;
 
           if ($(event.target).is(_this._element)) {
-            cov_s5t6dkzbf.b[6][0]++;
-            cov_s5t6dkzbf.s[44]++;
+            cov_jl9s5aqsr.b[6][0]++;
+            cov_jl9s5aqsr.s[44]++;
             _this._ignoreBackdropClick = true;
           } else {
-            cov_s5t6dkzbf.b[6][1]++;
+            cov_jl9s5aqsr.b[6][1]++;
           }
         });
       });
-      cov_s5t6dkzbf.s[45]++;
+      cov_jl9s5aqsr.s[45]++;
 
       this._showBackdrop(function () {
-        cov_s5t6dkzbf.f[9]++;
-        cov_s5t6dkzbf.s[46]++;
+        cov_jl9s5aqsr.f[9]++;
+        cov_jl9s5aqsr.s[46]++;
         return _this._showElement(relatedTarget);
       });
     };
@@ -6212,211 +6209,211 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
     _proto.hide = function hide(event) {
       var _this2 = this;
 
-      cov_s5t6dkzbf.f[10]++;
-      cov_s5t6dkzbf.s[47]++;
+      cov_jl9s5aqsr.f[10]++;
+      cov_jl9s5aqsr.s[47]++;
 
       if (event) {
-        cov_s5t6dkzbf.b[7][0]++;
-        cov_s5t6dkzbf.s[48]++;
+        cov_jl9s5aqsr.b[7][0]++;
+        cov_jl9s5aqsr.s[48]++;
         event.preventDefault();
       } else {
-        cov_s5t6dkzbf.b[7][1]++;
+        cov_jl9s5aqsr.b[7][1]++;
       }
 
-      cov_s5t6dkzbf.s[49]++;
+      cov_jl9s5aqsr.s[49]++;
 
-      if ((cov_s5t6dkzbf.b[9][0]++, this._isTransitioning) || (cov_s5t6dkzbf.b[9][1]++, !this._isShown)) {
-        cov_s5t6dkzbf.b[8][0]++;
-        cov_s5t6dkzbf.s[50]++;
+      if ((cov_jl9s5aqsr.b[9][0]++, this._isTransitioning) || (cov_jl9s5aqsr.b[9][1]++, !this._isShown)) {
+        cov_jl9s5aqsr.b[8][0]++;
+        cov_jl9s5aqsr.s[50]++;
         return;
       } else {
-        cov_s5t6dkzbf.b[8][1]++;
+        cov_jl9s5aqsr.b[8][1]++;
       }
 
-      var hideEvent = (cov_s5t6dkzbf.s[51]++, $.Event(Event.HIDE));
-      cov_s5t6dkzbf.s[52]++;
+      var hideEvent = (cov_jl9s5aqsr.s[51]++, $.Event(Event.HIDE));
+      cov_jl9s5aqsr.s[52]++;
       $(this._element).trigger(hideEvent);
-      cov_s5t6dkzbf.s[53]++;
+      cov_jl9s5aqsr.s[53]++;
 
-      if ((cov_s5t6dkzbf.b[11][0]++, !this._isShown) || (cov_s5t6dkzbf.b[11][1]++, hideEvent.isDefaultPrevented())) {
-        cov_s5t6dkzbf.b[10][0]++;
-        cov_s5t6dkzbf.s[54]++;
+      if ((cov_jl9s5aqsr.b[11][0]++, !this._isShown) || (cov_jl9s5aqsr.b[11][1]++, hideEvent.isDefaultPrevented())) {
+        cov_jl9s5aqsr.b[10][0]++;
+        cov_jl9s5aqsr.s[54]++;
         return;
       } else {
-        cov_s5t6dkzbf.b[10][1]++;
+        cov_jl9s5aqsr.b[10][1]++;
       }
 
-      cov_s5t6dkzbf.s[55]++;
+      cov_jl9s5aqsr.s[55]++;
       this._isShown = false;
-      var transition = (cov_s5t6dkzbf.s[56]++, $(this._element).hasClass(ClassName.FADE));
-      cov_s5t6dkzbf.s[57]++;
+      var transition = (cov_jl9s5aqsr.s[56]++, $(this._element).hasClass(ClassName.FADE));
+      cov_jl9s5aqsr.s[57]++;
 
       if (transition) {
-        cov_s5t6dkzbf.b[12][0]++;
-        cov_s5t6dkzbf.s[58]++;
+        cov_jl9s5aqsr.b[12][0]++;
+        cov_jl9s5aqsr.s[58]++;
         this._isTransitioning = true;
       } else {
-        cov_s5t6dkzbf.b[12][1]++;
+        cov_jl9s5aqsr.b[12][1]++;
       }
 
-      cov_s5t6dkzbf.s[59]++;
+      cov_jl9s5aqsr.s[59]++;
 
       this._setEscapeEvent();
 
-      cov_s5t6dkzbf.s[60]++;
+      cov_jl9s5aqsr.s[60]++;
 
       this._setResizeEvent();
 
-      cov_s5t6dkzbf.s[61]++;
+      cov_jl9s5aqsr.s[61]++;
       $(document).off(Event.FOCUSIN);
-      cov_s5t6dkzbf.s[62]++;
+      cov_jl9s5aqsr.s[62]++;
       $(this._element).removeClass(ClassName.SHOW);
-      cov_s5t6dkzbf.s[63]++;
+      cov_jl9s5aqsr.s[63]++;
       $(this._element).off(Event.CLICK_DISMISS);
-      cov_s5t6dkzbf.s[64]++;
+      cov_jl9s5aqsr.s[64]++;
       $(this._dialog).off(Event.MOUSEDOWN_DISMISS);
-      cov_s5t6dkzbf.s[65]++;
+      cov_jl9s5aqsr.s[65]++;
 
       if (transition) {
-        cov_s5t6dkzbf.b[13][0]++;
-        var transitionDuration = (cov_s5t6dkzbf.s[66]++, Util.getTransitionDurationFromElement(this._element));
-        cov_s5t6dkzbf.s[67]++;
+        cov_jl9s5aqsr.b[13][0]++;
+        var transitionDuration = (cov_jl9s5aqsr.s[66]++, Util.getTransitionDurationFromElement(this._element));
+        cov_jl9s5aqsr.s[67]++;
         $(this._element).one(Util.TRANSITION_END, function (event) {
-          cov_s5t6dkzbf.f[11]++;
-          cov_s5t6dkzbf.s[68]++;
+          cov_jl9s5aqsr.f[11]++;
+          cov_jl9s5aqsr.s[68]++;
           return _this2._hideModal(event);
         }).emulateTransitionEnd(transitionDuration);
       } else {
-        cov_s5t6dkzbf.b[13][1]++;
-        cov_s5t6dkzbf.s[69]++;
+        cov_jl9s5aqsr.b[13][1]++;
+        cov_jl9s5aqsr.s[69]++;
 
         this._hideModal();
       }
     };
 
     _proto.dispose = function dispose() {
-      cov_s5t6dkzbf.f[12]++;
-      cov_s5t6dkzbf.s[70]++;
+      cov_jl9s5aqsr.f[12]++;
+      cov_jl9s5aqsr.s[70]++;
       $.removeData(this._element, DATA_KEY);
-      cov_s5t6dkzbf.s[71]++;
+      cov_jl9s5aqsr.s[71]++;
       $(window, document, this._element, this._backdrop).off(EVENT_KEY);
-      cov_s5t6dkzbf.s[72]++;
+      cov_jl9s5aqsr.s[72]++;
       this._config = null;
-      cov_s5t6dkzbf.s[73]++;
+      cov_jl9s5aqsr.s[73]++;
       this._element = null;
-      cov_s5t6dkzbf.s[74]++;
+      cov_jl9s5aqsr.s[74]++;
       this._dialog = null;
-      cov_s5t6dkzbf.s[75]++;
+      cov_jl9s5aqsr.s[75]++;
       this._backdrop = null;
-      cov_s5t6dkzbf.s[76]++;
+      cov_jl9s5aqsr.s[76]++;
       this._isShown = null;
-      cov_s5t6dkzbf.s[77]++;
+      cov_jl9s5aqsr.s[77]++;
       this._isBodyOverflowing = null;
-      cov_s5t6dkzbf.s[78]++;
+      cov_jl9s5aqsr.s[78]++;
       this._ignoreBackdropClick = null;
-      cov_s5t6dkzbf.s[79]++;
+      cov_jl9s5aqsr.s[79]++;
       this._scrollbarWidth = null;
     };
 
     _proto.handleUpdate = function handleUpdate() {
-      cov_s5t6dkzbf.f[13]++;
-      cov_s5t6dkzbf.s[80]++;
+      cov_jl9s5aqsr.f[13]++;
+      cov_jl9s5aqsr.s[80]++;
 
       this._adjustDialog();
     }; // Private
 
 
     _proto._getConfig = function _getConfig(config) {
-      cov_s5t6dkzbf.f[14]++;
-      cov_s5t6dkzbf.s[81]++;
+      cov_jl9s5aqsr.f[14]++;
+      cov_jl9s5aqsr.s[81]++;
       config = _objectSpread({}, Default, config);
-      cov_s5t6dkzbf.s[82]++;
+      cov_jl9s5aqsr.s[82]++;
       Util.typeCheckConfig(NAME, config, DefaultType);
-      cov_s5t6dkzbf.s[83]++;
+      cov_jl9s5aqsr.s[83]++;
       return config;
     };
 
     _proto._showElement = function _showElement(relatedTarget) {
       var _this3 = this;
 
-      cov_s5t6dkzbf.f[15]++;
-      var transition = (cov_s5t6dkzbf.s[84]++, $(this._element).hasClass(ClassName.FADE));
-      cov_s5t6dkzbf.s[85]++;
+      cov_jl9s5aqsr.f[15]++;
+      var transition = (cov_jl9s5aqsr.s[84]++, $(this._element).hasClass(ClassName.FADE));
+      cov_jl9s5aqsr.s[85]++;
 
-      if ((cov_s5t6dkzbf.b[15][0]++, !this._element.parentNode) || (cov_s5t6dkzbf.b[15][1]++, this._element.parentNode.nodeType !== Node.ELEMENT_NODE)) {
-        cov_s5t6dkzbf.b[14][0]++;
-        cov_s5t6dkzbf.s[86]++;
+      if ((cov_jl9s5aqsr.b[15][0]++, !this._element.parentNode) || (cov_jl9s5aqsr.b[15][1]++, this._element.parentNode.nodeType !== Node.ELEMENT_NODE)) {
+        cov_jl9s5aqsr.b[14][0]++;
+        cov_jl9s5aqsr.s[86]++;
         // Don't move modal's DOM position
         document.body.appendChild(this._element);
       } else {
-        cov_s5t6dkzbf.b[14][1]++;
+        cov_jl9s5aqsr.b[14][1]++;
       }
 
-      cov_s5t6dkzbf.s[87]++;
+      cov_jl9s5aqsr.s[87]++;
       this._element.style.display = 'block';
-      cov_s5t6dkzbf.s[88]++;
+      cov_jl9s5aqsr.s[88]++;
 
       this._element.removeAttribute('aria-hidden');
 
-      cov_s5t6dkzbf.s[89]++;
+      cov_jl9s5aqsr.s[89]++;
       this._element.scrollTop = 0;
-      cov_s5t6dkzbf.s[90]++;
+      cov_jl9s5aqsr.s[90]++;
 
       if (transition) {
-        cov_s5t6dkzbf.b[16][0]++;
-        cov_s5t6dkzbf.s[91]++;
+        cov_jl9s5aqsr.b[16][0]++;
+        cov_jl9s5aqsr.s[91]++;
         Util.reflow(this._element);
       } else {
-        cov_s5t6dkzbf.b[16][1]++;
+        cov_jl9s5aqsr.b[16][1]++;
       }
 
-      cov_s5t6dkzbf.s[92]++;
+      cov_jl9s5aqsr.s[92]++;
       $(this._element).addClass(ClassName.SHOW);
-      cov_s5t6dkzbf.s[93]++;
+      cov_jl9s5aqsr.s[93]++;
 
       if (this._config.focus) {
-        cov_s5t6dkzbf.b[17][0]++;
-        cov_s5t6dkzbf.s[94]++;
+        cov_jl9s5aqsr.b[17][0]++;
+        cov_jl9s5aqsr.s[94]++;
 
         this._enforceFocus();
       } else {
-        cov_s5t6dkzbf.b[17][1]++;
+        cov_jl9s5aqsr.b[17][1]++;
       }
 
-      var shownEvent = (cov_s5t6dkzbf.s[95]++, $.Event(Event.SHOWN, {
+      var shownEvent = (cov_jl9s5aqsr.s[95]++, $.Event(Event.SHOWN, {
         relatedTarget: relatedTarget
       }));
-      cov_s5t6dkzbf.s[96]++;
+      cov_jl9s5aqsr.s[96]++;
 
       var transitionComplete = function transitionComplete() {
-        cov_s5t6dkzbf.f[16]++;
-        cov_s5t6dkzbf.s[97]++;
+        cov_jl9s5aqsr.f[16]++;
+        cov_jl9s5aqsr.s[97]++;
 
         if (_this3._config.focus) {
-          cov_s5t6dkzbf.b[18][0]++;
-          cov_s5t6dkzbf.s[98]++;
+          cov_jl9s5aqsr.b[18][0]++;
+          cov_jl9s5aqsr.s[98]++;
 
           _this3._element.focus();
         } else {
-          cov_s5t6dkzbf.b[18][1]++;
+          cov_jl9s5aqsr.b[18][1]++;
         }
 
-        cov_s5t6dkzbf.s[99]++;
+        cov_jl9s5aqsr.s[99]++;
         _this3._isTransitioning = false;
-        cov_s5t6dkzbf.s[100]++;
+        cov_jl9s5aqsr.s[100]++;
         $(_this3._element).trigger(shownEvent);
       };
 
-      cov_s5t6dkzbf.s[101]++;
+      cov_jl9s5aqsr.s[101]++;
 
       if (transition) {
-        cov_s5t6dkzbf.b[19][0]++;
-        var transitionDuration = (cov_s5t6dkzbf.s[102]++, Util.getTransitionDurationFromElement(this._element));
-        cov_s5t6dkzbf.s[103]++;
+        cov_jl9s5aqsr.b[19][0]++;
+        var transitionDuration = (cov_jl9s5aqsr.s[102]++, Util.getTransitionDurationFromElement(this._element));
+        cov_jl9s5aqsr.s[103]++;
         $(this._dialog).one(Util.TRANSITION_END, transitionComplete).emulateTransitionEnd(transitionDuration);
       } else {
-        cov_s5t6dkzbf.b[19][1]++;
-        cov_s5t6dkzbf.s[104]++;
+        cov_jl9s5aqsr.b[19][1]++;
+        cov_jl9s5aqsr.s[104]++;
         transitionComplete();
       }
     };
@@ -6424,20 +6421,20 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
     _proto._enforceFocus = function _enforceFocus() {
       var _this4 = this;
 
-      cov_s5t6dkzbf.f[17]++;
-      cov_s5t6dkzbf.s[105]++;
+      cov_jl9s5aqsr.f[17]++;
+      cov_jl9s5aqsr.s[105]++;
       $(document).off(Event.FOCUSIN) // Guard against infinite focus loop
       .on(Event.FOCUSIN, function (event) {
-        cov_s5t6dkzbf.f[18]++;
-        cov_s5t6dkzbf.s[106]++;
+        cov_jl9s5aqsr.f[18]++;
+        cov_jl9s5aqsr.s[106]++;
 
-        if ((cov_s5t6dkzbf.b[21][0]++, document !== event.target) && (cov_s5t6dkzbf.b[21][1]++, _this4._element !== event.target) && (cov_s5t6dkzbf.b[21][2]++, $(_this4._element).has(event.target).length === 0)) {
-          cov_s5t6dkzbf.b[20][0]++;
-          cov_s5t6dkzbf.s[107]++;
+        if ((cov_jl9s5aqsr.b[21][0]++, document !== event.target) && (cov_jl9s5aqsr.b[21][1]++, _this4._element !== event.target) && (cov_jl9s5aqsr.b[21][2]++, $(_this4._element).has(event.target).length === 0)) {
+          cov_jl9s5aqsr.b[20][0]++;
+          cov_jl9s5aqsr.s[107]++;
 
           _this4._element.focus();
         } else {
-          cov_s5t6dkzbf.b[20][1]++;
+          cov_jl9s5aqsr.b[20][1]++;
         }
       });
     };
@@ -6445,37 +6442,37 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
     _proto._setEscapeEvent = function _setEscapeEvent() {
       var _this5 = this;
 
-      cov_s5t6dkzbf.f[19]++;
-      cov_s5t6dkzbf.s[108]++;
+      cov_jl9s5aqsr.f[19]++;
+      cov_jl9s5aqsr.s[108]++;
 
-      if ((cov_s5t6dkzbf.b[23][0]++, this._isShown) && (cov_s5t6dkzbf.b[23][1]++, this._config.keyboard)) {
-        cov_s5t6dkzbf.b[22][0]++;
-        cov_s5t6dkzbf.s[109]++;
+      if ((cov_jl9s5aqsr.b[23][0]++, this._isShown) && (cov_jl9s5aqsr.b[23][1]++, this._config.keyboard)) {
+        cov_jl9s5aqsr.b[22][0]++;
+        cov_jl9s5aqsr.s[109]++;
         $(this._element).on(Event.KEYDOWN_DISMISS, function (event) {
-          cov_s5t6dkzbf.f[20]++;
-          cov_s5t6dkzbf.s[110]++;
+          cov_jl9s5aqsr.f[20]++;
+          cov_jl9s5aqsr.s[110]++;
 
           if (event.which === ESCAPE_KEYCODE) {
-            cov_s5t6dkzbf.b[24][0]++;
-            cov_s5t6dkzbf.s[111]++;
+            cov_jl9s5aqsr.b[24][0]++;
+            cov_jl9s5aqsr.s[111]++;
             event.preventDefault();
-            cov_s5t6dkzbf.s[112]++;
+            cov_jl9s5aqsr.s[112]++;
 
             _this5.hide();
           } else {
-            cov_s5t6dkzbf.b[24][1]++;
+            cov_jl9s5aqsr.b[24][1]++;
           }
         });
       } else {
-        cov_s5t6dkzbf.b[22][1]++;
-        cov_s5t6dkzbf.s[113]++;
+        cov_jl9s5aqsr.b[22][1]++;
+        cov_jl9s5aqsr.s[113]++;
 
         if (!this._isShown) {
-          cov_s5t6dkzbf.b[25][0]++;
-          cov_s5t6dkzbf.s[114]++;
+          cov_jl9s5aqsr.b[25][0]++;
+          cov_jl9s5aqsr.s[114]++;
           $(this._element).off(Event.KEYDOWN_DISMISS);
         } else {
-          cov_s5t6dkzbf.b[25][1]++;
+          cov_jl9s5aqsr.b[25][1]++;
         }
       }
     };
@@ -6483,20 +6480,20 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
     _proto._setResizeEvent = function _setResizeEvent() {
       var _this6 = this;
 
-      cov_s5t6dkzbf.f[21]++;
-      cov_s5t6dkzbf.s[115]++;
+      cov_jl9s5aqsr.f[21]++;
+      cov_jl9s5aqsr.s[115]++;
 
       if (this._isShown) {
-        cov_s5t6dkzbf.b[26][0]++;
-        cov_s5t6dkzbf.s[116]++;
+        cov_jl9s5aqsr.b[26][0]++;
+        cov_jl9s5aqsr.s[116]++;
         $(window).on(Event.RESIZE, function (event) {
-          cov_s5t6dkzbf.f[22]++;
-          cov_s5t6dkzbf.s[117]++;
+          cov_jl9s5aqsr.f[22]++;
+          cov_jl9s5aqsr.s[117]++;
           return _this6.handleUpdate(event);
         });
       } else {
-        cov_s5t6dkzbf.b[26][1]++;
-        cov_s5t6dkzbf.s[118]++;
+        cov_jl9s5aqsr.b[26][1]++;
+        cov_jl9s5aqsr.s[118]++;
         $(window).off(Event.RESIZE);
       }
     };
@@ -6504,201 +6501,201 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
     _proto._hideModal = function _hideModal() {
       var _this7 = this;
 
-      cov_s5t6dkzbf.f[23]++;
-      cov_s5t6dkzbf.s[119]++;
+      cov_jl9s5aqsr.f[23]++;
+      cov_jl9s5aqsr.s[119]++;
       this._element.style.display = 'none';
-      cov_s5t6dkzbf.s[120]++;
+      cov_jl9s5aqsr.s[120]++;
 
       this._element.setAttribute('aria-hidden', true);
 
-      cov_s5t6dkzbf.s[121]++;
+      cov_jl9s5aqsr.s[121]++;
       this._isTransitioning = false;
-      cov_s5t6dkzbf.s[122]++;
+      cov_jl9s5aqsr.s[122]++;
 
       this._showBackdrop(function () {
-        cov_s5t6dkzbf.f[24]++;
-        cov_s5t6dkzbf.s[123]++;
+        cov_jl9s5aqsr.f[24]++;
+        cov_jl9s5aqsr.s[123]++;
         $(document.body).removeClass(ClassName.OPEN);
-        cov_s5t6dkzbf.s[124]++;
+        cov_jl9s5aqsr.s[124]++;
 
         _this7._resetAdjustments();
 
-        cov_s5t6dkzbf.s[125]++;
+        cov_jl9s5aqsr.s[125]++;
 
         _this7._resetScrollbar();
 
-        cov_s5t6dkzbf.s[126]++;
+        cov_jl9s5aqsr.s[126]++;
         $(_this7._element).trigger(Event.HIDDEN);
       });
     };
 
     _proto._removeBackdrop = function _removeBackdrop() {
-      cov_s5t6dkzbf.f[25]++;
-      cov_s5t6dkzbf.s[127]++;
+      cov_jl9s5aqsr.f[25]++;
+      cov_jl9s5aqsr.s[127]++;
 
       if (this._backdrop) {
-        cov_s5t6dkzbf.b[27][0]++;
-        cov_s5t6dkzbf.s[128]++;
+        cov_jl9s5aqsr.b[27][0]++;
+        cov_jl9s5aqsr.s[128]++;
         $(this._backdrop).remove();
-        cov_s5t6dkzbf.s[129]++;
+        cov_jl9s5aqsr.s[129]++;
         this._backdrop = null;
       } else {
-        cov_s5t6dkzbf.b[27][1]++;
+        cov_jl9s5aqsr.b[27][1]++;
       }
     };
 
     _proto._showBackdrop = function _showBackdrop(callback) {
       var _this8 = this;
 
-      cov_s5t6dkzbf.f[26]++;
-      var animate = (cov_s5t6dkzbf.s[130]++, $(this._element).hasClass(ClassName.FADE) ? (cov_s5t6dkzbf.b[28][0]++, ClassName.FADE) : (cov_s5t6dkzbf.b[28][1]++, ''));
-      cov_s5t6dkzbf.s[131]++;
+      cov_jl9s5aqsr.f[26]++;
+      var animate = (cov_jl9s5aqsr.s[130]++, $(this._element).hasClass(ClassName.FADE) ? (cov_jl9s5aqsr.b[28][0]++, ClassName.FADE) : (cov_jl9s5aqsr.b[28][1]++, ''));
+      cov_jl9s5aqsr.s[131]++;
 
-      if ((cov_s5t6dkzbf.b[30][0]++, this._isShown) && (cov_s5t6dkzbf.b[30][1]++, this._config.backdrop)) {
-        cov_s5t6dkzbf.b[29][0]++;
-        cov_s5t6dkzbf.s[132]++;
+      if ((cov_jl9s5aqsr.b[30][0]++, this._isShown) && (cov_jl9s5aqsr.b[30][1]++, this._config.backdrop)) {
+        cov_jl9s5aqsr.b[29][0]++;
+        cov_jl9s5aqsr.s[132]++;
         this._backdrop = document.createElement('div');
-        cov_s5t6dkzbf.s[133]++;
+        cov_jl9s5aqsr.s[133]++;
         this._backdrop.className = ClassName.BACKDROP;
-        cov_s5t6dkzbf.s[134]++;
+        cov_jl9s5aqsr.s[134]++;
 
         if (animate) {
-          cov_s5t6dkzbf.b[31][0]++;
-          cov_s5t6dkzbf.s[135]++;
+          cov_jl9s5aqsr.b[31][0]++;
+          cov_jl9s5aqsr.s[135]++;
           $(this._backdrop).addClass(animate);
         } else {
-          cov_s5t6dkzbf.b[31][1]++;
+          cov_jl9s5aqsr.b[31][1]++;
         }
 
-        cov_s5t6dkzbf.s[136]++;
+        cov_jl9s5aqsr.s[136]++;
         $(this._backdrop).appendTo(document.body);
-        cov_s5t6dkzbf.s[137]++;
+        cov_jl9s5aqsr.s[137]++;
         $(this._element).on(Event.CLICK_DISMISS, function (event) {
-          cov_s5t6dkzbf.f[27]++;
-          cov_s5t6dkzbf.s[138]++;
+          cov_jl9s5aqsr.f[27]++;
+          cov_jl9s5aqsr.s[138]++;
 
           if (_this8._ignoreBackdropClick) {
-            cov_s5t6dkzbf.b[32][0]++;
-            cov_s5t6dkzbf.s[139]++;
+            cov_jl9s5aqsr.b[32][0]++;
+            cov_jl9s5aqsr.s[139]++;
             _this8._ignoreBackdropClick = false;
-            cov_s5t6dkzbf.s[140]++;
+            cov_jl9s5aqsr.s[140]++;
             return;
           } else {
-            cov_s5t6dkzbf.b[32][1]++;
+            cov_jl9s5aqsr.b[32][1]++;
           }
 
-          cov_s5t6dkzbf.s[141]++;
+          cov_jl9s5aqsr.s[141]++;
 
           if (event.target !== event.currentTarget) {
-            cov_s5t6dkzbf.b[33][0]++;
-            cov_s5t6dkzbf.s[142]++;
+            cov_jl9s5aqsr.b[33][0]++;
+            cov_jl9s5aqsr.s[142]++;
             return;
           } else {
-            cov_s5t6dkzbf.b[33][1]++;
+            cov_jl9s5aqsr.b[33][1]++;
           }
 
-          cov_s5t6dkzbf.s[143]++;
+          cov_jl9s5aqsr.s[143]++;
 
           if (_this8._config.backdrop === 'static') {
-            cov_s5t6dkzbf.b[34][0]++;
-            cov_s5t6dkzbf.s[144]++;
+            cov_jl9s5aqsr.b[34][0]++;
+            cov_jl9s5aqsr.s[144]++;
 
             _this8._element.focus();
           } else {
-            cov_s5t6dkzbf.b[34][1]++;
-            cov_s5t6dkzbf.s[145]++;
+            cov_jl9s5aqsr.b[34][1]++;
+            cov_jl9s5aqsr.s[145]++;
 
             _this8.hide();
           }
         });
-        cov_s5t6dkzbf.s[146]++;
+        cov_jl9s5aqsr.s[146]++;
 
         if (animate) {
-          cov_s5t6dkzbf.b[35][0]++;
-          cov_s5t6dkzbf.s[147]++;
+          cov_jl9s5aqsr.b[35][0]++;
+          cov_jl9s5aqsr.s[147]++;
           Util.reflow(this._backdrop);
         } else {
-          cov_s5t6dkzbf.b[35][1]++;
+          cov_jl9s5aqsr.b[35][1]++;
         }
 
-        cov_s5t6dkzbf.s[148]++;
+        cov_jl9s5aqsr.s[148]++;
         $(this._backdrop).addClass(ClassName.SHOW);
-        cov_s5t6dkzbf.s[149]++;
+        cov_jl9s5aqsr.s[149]++;
 
         if (!callback) {
-          cov_s5t6dkzbf.b[36][0]++;
-          cov_s5t6dkzbf.s[150]++;
+          cov_jl9s5aqsr.b[36][0]++;
+          cov_jl9s5aqsr.s[150]++;
           return;
         } else {
-          cov_s5t6dkzbf.b[36][1]++;
+          cov_jl9s5aqsr.b[36][1]++;
         }
 
-        cov_s5t6dkzbf.s[151]++;
+        cov_jl9s5aqsr.s[151]++;
 
         if (!animate) {
-          cov_s5t6dkzbf.b[37][0]++;
-          cov_s5t6dkzbf.s[152]++;
+          cov_jl9s5aqsr.b[37][0]++;
+          cov_jl9s5aqsr.s[152]++;
           callback();
-          cov_s5t6dkzbf.s[153]++;
+          cov_jl9s5aqsr.s[153]++;
           return;
         } else {
-          cov_s5t6dkzbf.b[37][1]++;
+          cov_jl9s5aqsr.b[37][1]++;
         }
 
-        var backdropTransitionDuration = (cov_s5t6dkzbf.s[154]++, Util.getTransitionDurationFromElement(this._backdrop));
-        cov_s5t6dkzbf.s[155]++;
+        var backdropTransitionDuration = (cov_jl9s5aqsr.s[154]++, Util.getTransitionDurationFromElement(this._backdrop));
+        cov_jl9s5aqsr.s[155]++;
         $(this._backdrop).one(Util.TRANSITION_END, callback).emulateTransitionEnd(backdropTransitionDuration);
       } else {
-        cov_s5t6dkzbf.b[29][1]++;
-        cov_s5t6dkzbf.s[156]++;
+        cov_jl9s5aqsr.b[29][1]++;
+        cov_jl9s5aqsr.s[156]++;
 
-        if ((cov_s5t6dkzbf.b[39][0]++, !this._isShown) && (cov_s5t6dkzbf.b[39][1]++, this._backdrop)) {
-          cov_s5t6dkzbf.b[38][0]++;
-          cov_s5t6dkzbf.s[157]++;
+        if ((cov_jl9s5aqsr.b[39][0]++, !this._isShown) && (cov_jl9s5aqsr.b[39][1]++, this._backdrop)) {
+          cov_jl9s5aqsr.b[38][0]++;
+          cov_jl9s5aqsr.s[157]++;
           $(this._backdrop).removeClass(ClassName.SHOW);
-          cov_s5t6dkzbf.s[158]++;
+          cov_jl9s5aqsr.s[158]++;
 
           var callbackRemove = function callbackRemove() {
-            cov_s5t6dkzbf.f[28]++;
-            cov_s5t6dkzbf.s[159]++;
+            cov_jl9s5aqsr.f[28]++;
+            cov_jl9s5aqsr.s[159]++;
 
             _this8._removeBackdrop();
 
-            cov_s5t6dkzbf.s[160]++;
+            cov_jl9s5aqsr.s[160]++;
 
             if (callback) {
-              cov_s5t6dkzbf.b[40][0]++;
-              cov_s5t6dkzbf.s[161]++;
+              cov_jl9s5aqsr.b[40][0]++;
+              cov_jl9s5aqsr.s[161]++;
               callback();
             } else {
-              cov_s5t6dkzbf.b[40][1]++;
+              cov_jl9s5aqsr.b[40][1]++;
             }
           };
 
-          cov_s5t6dkzbf.s[162]++;
+          cov_jl9s5aqsr.s[162]++;
 
           if ($(this._element).hasClass(ClassName.FADE)) {
-            cov_s5t6dkzbf.b[41][0]++;
+            cov_jl9s5aqsr.b[41][0]++;
 
-            var _backdropTransitionDuration = (cov_s5t6dkzbf.s[163]++, Util.getTransitionDurationFromElement(this._backdrop));
+            var _backdropTransitionDuration = (cov_jl9s5aqsr.s[163]++, Util.getTransitionDurationFromElement(this._backdrop));
 
-            cov_s5t6dkzbf.s[164]++;
+            cov_jl9s5aqsr.s[164]++;
             $(this._backdrop).one(Util.TRANSITION_END, callbackRemove).emulateTransitionEnd(_backdropTransitionDuration);
           } else {
-            cov_s5t6dkzbf.b[41][1]++;
-            cov_s5t6dkzbf.s[165]++;
+            cov_jl9s5aqsr.b[41][1]++;
+            cov_jl9s5aqsr.s[165]++;
             callbackRemove();
           }
         } else {
-          cov_s5t6dkzbf.b[38][1]++;
-          cov_s5t6dkzbf.s[166]++;
+          cov_jl9s5aqsr.b[38][1]++;
+          cov_jl9s5aqsr.s[166]++;
 
           if (callback) {
-            cov_s5t6dkzbf.b[42][0]++;
-            cov_s5t6dkzbf.s[167]++;
+            cov_jl9s5aqsr.b[42][0]++;
+            cov_jl9s5aqsr.s[167]++;
             callback();
           } else {
-            cov_s5t6dkzbf.b[42][1]++;
+            cov_jl9s5aqsr.b[42][1]++;
           }
         }
       }
@@ -6709,201 +6706,201 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
 
 
     _proto._adjustDialog = function _adjustDialog() {
-      cov_s5t6dkzbf.f[29]++;
-      var isModalOverflowing = (cov_s5t6dkzbf.s[168]++, this._element.scrollHeight > document.documentElement.clientHeight);
-      cov_s5t6dkzbf.s[169]++;
+      cov_jl9s5aqsr.f[29]++;
+      var isModalOverflowing = (cov_jl9s5aqsr.s[168]++, this._element.scrollHeight > document.documentElement.clientHeight);
+      cov_jl9s5aqsr.s[169]++;
 
-      if ((cov_s5t6dkzbf.b[44][0]++, !this._isBodyOverflowing) && (cov_s5t6dkzbf.b[44][1]++, isModalOverflowing)) {
-        cov_s5t6dkzbf.b[43][0]++;
-        cov_s5t6dkzbf.s[170]++;
+      if ((cov_jl9s5aqsr.b[44][0]++, !this._isBodyOverflowing) && (cov_jl9s5aqsr.b[44][1]++, isModalOverflowing)) {
+        cov_jl9s5aqsr.b[43][0]++;
+        cov_jl9s5aqsr.s[170]++;
         this._element.style.paddingLeft = this._scrollbarWidth + "px";
       } else {
-        cov_s5t6dkzbf.b[43][1]++;
+        cov_jl9s5aqsr.b[43][1]++;
       }
 
-      cov_s5t6dkzbf.s[171]++;
+      cov_jl9s5aqsr.s[171]++;
 
-      if ((cov_s5t6dkzbf.b[46][0]++, this._isBodyOverflowing) && (cov_s5t6dkzbf.b[46][1]++, !isModalOverflowing)) {
-        cov_s5t6dkzbf.b[45][0]++;
-        cov_s5t6dkzbf.s[172]++;
+      if ((cov_jl9s5aqsr.b[46][0]++, this._isBodyOverflowing) && (cov_jl9s5aqsr.b[46][1]++, !isModalOverflowing)) {
+        cov_jl9s5aqsr.b[45][0]++;
+        cov_jl9s5aqsr.s[172]++;
         this._element.style.paddingRight = this._scrollbarWidth + "px";
       } else {
-        cov_s5t6dkzbf.b[45][1]++;
+        cov_jl9s5aqsr.b[45][1]++;
       }
     };
 
     _proto._resetAdjustments = function _resetAdjustments() {
-      cov_s5t6dkzbf.f[30]++;
-      cov_s5t6dkzbf.s[173]++;
+      cov_jl9s5aqsr.f[30]++;
+      cov_jl9s5aqsr.s[173]++;
       this._element.style.paddingLeft = '';
-      cov_s5t6dkzbf.s[174]++;
+      cov_jl9s5aqsr.s[174]++;
       this._element.style.paddingRight = '';
     };
 
     _proto._checkScrollbar = function _checkScrollbar() {
-      cov_s5t6dkzbf.f[31]++;
-      var rect = (cov_s5t6dkzbf.s[175]++, document.body.getBoundingClientRect());
-      cov_s5t6dkzbf.s[176]++;
+      cov_jl9s5aqsr.f[31]++;
+      var rect = (cov_jl9s5aqsr.s[175]++, document.body.getBoundingClientRect());
+      cov_jl9s5aqsr.s[176]++;
       this._isBodyOverflowing = rect.left + rect.right < window.innerWidth;
-      cov_s5t6dkzbf.s[177]++;
+      cov_jl9s5aqsr.s[177]++;
       this._scrollbarWidth = this._getScrollbarWidth();
     };
 
     _proto._setScrollbar = function _setScrollbar() {
       var _this9 = this;
 
-      cov_s5t6dkzbf.f[32]++;
-      cov_s5t6dkzbf.s[178]++;
+      cov_jl9s5aqsr.f[32]++;
+      cov_jl9s5aqsr.s[178]++;
 
       if (this._isBodyOverflowing) {
-        cov_s5t6dkzbf.b[47][0]++;
-        cov_s5t6dkzbf.s[179]++;
+        cov_jl9s5aqsr.b[47][0]++;
+        cov_jl9s5aqsr.s[179]++;
         // Note: DOMNode.style.paddingRight returns the actual value or '' if not set
         //   while $(DOMNode).css('padding-right') returns the calculated value or 0 if not set
         // Adjust fixed content padding
         $(Selector.FIXED_CONTENT).each(function (index, element) {
-          cov_s5t6dkzbf.f[33]++;
-          var actualPadding = (cov_s5t6dkzbf.s[180]++, $(element)[0].style.paddingRight);
-          var calculatedPadding = (cov_s5t6dkzbf.s[181]++, $(element).css('padding-right'));
-          cov_s5t6dkzbf.s[182]++;
+          cov_jl9s5aqsr.f[33]++;
+          var actualPadding = (cov_jl9s5aqsr.s[180]++, $(element)[0].style.paddingRight);
+          var calculatedPadding = (cov_jl9s5aqsr.s[181]++, $(element).css('padding-right'));
+          cov_jl9s5aqsr.s[182]++;
           $(element).data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + _this9._scrollbarWidth + "px");
         }); // Adjust sticky content margin
 
-        cov_s5t6dkzbf.s[183]++;
+        cov_jl9s5aqsr.s[183]++;
         $(Selector.STICKY_CONTENT).each(function (index, element) {
-          cov_s5t6dkzbf.f[34]++;
-          var actualMargin = (cov_s5t6dkzbf.s[184]++, $(element)[0].style.marginRight);
-          var calculatedMargin = (cov_s5t6dkzbf.s[185]++, $(element).css('margin-right'));
-          cov_s5t6dkzbf.s[186]++;
+          cov_jl9s5aqsr.f[34]++;
+          var actualMargin = (cov_jl9s5aqsr.s[184]++, $(element)[0].style.marginRight);
+          var calculatedMargin = (cov_jl9s5aqsr.s[185]++, $(element).css('margin-right'));
+          cov_jl9s5aqsr.s[186]++;
           $(element).data('margin-right', actualMargin).css('margin-right', parseFloat(calculatedMargin) - _this9._scrollbarWidth + "px");
         }); // Adjust navbar-toggler margin
 
-        cov_s5t6dkzbf.s[187]++;
+        cov_jl9s5aqsr.s[187]++;
         $(Selector.NAVBAR_TOGGLER).each(function (index, element) {
-          cov_s5t6dkzbf.f[35]++;
-          var actualMargin = (cov_s5t6dkzbf.s[188]++, $(element)[0].style.marginRight);
-          var calculatedMargin = (cov_s5t6dkzbf.s[189]++, $(element).css('margin-right'));
-          cov_s5t6dkzbf.s[190]++;
+          cov_jl9s5aqsr.f[35]++;
+          var actualMargin = (cov_jl9s5aqsr.s[188]++, $(element)[0].style.marginRight);
+          var calculatedMargin = (cov_jl9s5aqsr.s[189]++, $(element).css('margin-right'));
+          cov_jl9s5aqsr.s[190]++;
           $(element).data('margin-right', actualMargin).css('margin-right', parseFloat(calculatedMargin) + _this9._scrollbarWidth + "px");
         }); // Adjust body padding
 
-        var actualPadding = (cov_s5t6dkzbf.s[191]++, document.body.style.paddingRight);
-        var calculatedPadding = (cov_s5t6dkzbf.s[192]++, $(document.body).css('padding-right'));
-        cov_s5t6dkzbf.s[193]++;
+        var actualPadding = (cov_jl9s5aqsr.s[191]++, document.body.style.paddingRight);
+        var calculatedPadding = (cov_jl9s5aqsr.s[192]++, $(document.body).css('padding-right'));
+        cov_jl9s5aqsr.s[193]++;
         $(document.body).data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + this._scrollbarWidth + "px");
       } else {
-        cov_s5t6dkzbf.b[47][1]++;
+        cov_jl9s5aqsr.b[47][1]++;
       }
     };
 
     _proto._resetScrollbar = function _resetScrollbar() {
-      cov_s5t6dkzbf.f[36]++;
-      cov_s5t6dkzbf.s[194]++;
+      cov_jl9s5aqsr.f[36]++;
+      cov_jl9s5aqsr.s[194]++;
       // Restore fixed content padding
       $(Selector.FIXED_CONTENT).each(function (index, element) {
-        cov_s5t6dkzbf.f[37]++;
-        var padding = (cov_s5t6dkzbf.s[195]++, $(element).data('padding-right'));
-        cov_s5t6dkzbf.s[196]++;
+        cov_jl9s5aqsr.f[37]++;
+        var padding = (cov_jl9s5aqsr.s[195]++, $(element).data('padding-right'));
+        cov_jl9s5aqsr.s[196]++;
 
         if (typeof padding !== 'undefined') {
-          cov_s5t6dkzbf.b[48][0]++;
-          cov_s5t6dkzbf.s[197]++;
+          cov_jl9s5aqsr.b[48][0]++;
+          cov_jl9s5aqsr.s[197]++;
           $(element).css('padding-right', padding).removeData('padding-right');
         } else {
-          cov_s5t6dkzbf.b[48][1]++;
+          cov_jl9s5aqsr.b[48][1]++;
         }
       }); // Restore sticky content and navbar-toggler margin
 
-      cov_s5t6dkzbf.s[198]++;
+      cov_jl9s5aqsr.s[198]++;
       $(Selector.STICKY_CONTENT + ", " + Selector.NAVBAR_TOGGLER).each(function (index, element) {
-        cov_s5t6dkzbf.f[38]++;
-        var margin = (cov_s5t6dkzbf.s[199]++, $(element).data('margin-right'));
-        cov_s5t6dkzbf.s[200]++;
+        cov_jl9s5aqsr.f[38]++;
+        var margin = (cov_jl9s5aqsr.s[199]++, $(element).data('margin-right'));
+        cov_jl9s5aqsr.s[200]++;
 
         if (typeof margin !== 'undefined') {
-          cov_s5t6dkzbf.b[49][0]++;
-          cov_s5t6dkzbf.s[201]++;
+          cov_jl9s5aqsr.b[49][0]++;
+          cov_jl9s5aqsr.s[201]++;
           $(element).css('margin-right', margin).removeData('margin-right');
         } else {
-          cov_s5t6dkzbf.b[49][1]++;
+          cov_jl9s5aqsr.b[49][1]++;
         }
       }); // Restore body padding
 
-      var padding = (cov_s5t6dkzbf.s[202]++, $(document.body).data('padding-right'));
-      cov_s5t6dkzbf.s[203]++;
+      var padding = (cov_jl9s5aqsr.s[202]++, $(document.body).data('padding-right'));
+      cov_jl9s5aqsr.s[203]++;
 
       if (typeof padding !== 'undefined') {
-        cov_s5t6dkzbf.b[50][0]++;
-        cov_s5t6dkzbf.s[204]++;
+        cov_jl9s5aqsr.b[50][0]++;
+        cov_jl9s5aqsr.s[204]++;
         $(document.body).css('padding-right', padding).removeData('padding-right');
       } else {
-        cov_s5t6dkzbf.b[50][1]++;
+        cov_jl9s5aqsr.b[50][1]++;
       }
     };
 
     _proto._getScrollbarWidth = function _getScrollbarWidth() {
-      cov_s5t6dkzbf.f[39]++;
+      cov_jl9s5aqsr.f[39]++;
       // thx d.walsh
-      var scrollDiv = (cov_s5t6dkzbf.s[205]++, document.createElement('div'));
-      cov_s5t6dkzbf.s[206]++;
+      var scrollDiv = (cov_jl9s5aqsr.s[205]++, document.createElement('div'));
+      cov_jl9s5aqsr.s[206]++;
       scrollDiv.className = ClassName.SCROLLBAR_MEASURER;
-      cov_s5t6dkzbf.s[207]++;
+      cov_jl9s5aqsr.s[207]++;
       document.body.appendChild(scrollDiv);
-      var scrollbarWidth = (cov_s5t6dkzbf.s[208]++, scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth);
-      cov_s5t6dkzbf.s[209]++;
+      var scrollbarWidth = (cov_jl9s5aqsr.s[208]++, scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth);
+      cov_jl9s5aqsr.s[209]++;
       document.body.removeChild(scrollDiv);
-      cov_s5t6dkzbf.s[210]++;
+      cov_jl9s5aqsr.s[210]++;
       return scrollbarWidth;
     }; // Static
 
 
     Modal._jQueryInterface = function _jQueryInterface(config, relatedTarget) {
-      cov_s5t6dkzbf.f[40]++;
-      cov_s5t6dkzbf.s[211]++;
+      cov_jl9s5aqsr.f[40]++;
+      cov_jl9s5aqsr.s[211]++;
       return this.each(function () {
-        cov_s5t6dkzbf.f[41]++;
-        var data = (cov_s5t6dkzbf.s[212]++, $(this).data(DATA_KEY));
+        cov_jl9s5aqsr.f[41]++;
+        var data = (cov_jl9s5aqsr.s[212]++, $(this).data(DATA_KEY));
 
-        var _config = (cov_s5t6dkzbf.s[213]++, _objectSpread({}, Default, $(this).data(), (cov_s5t6dkzbf.b[52][0]++, typeof config === 'object') && (cov_s5t6dkzbf.b[52][1]++, config) ? (cov_s5t6dkzbf.b[51][0]++, config) : (cov_s5t6dkzbf.b[51][1]++, {})));
+        var _config = (cov_jl9s5aqsr.s[213]++, _objectSpread({}, Default, $(this).data(), (cov_jl9s5aqsr.b[52][0]++, typeof config === 'object') && (cov_jl9s5aqsr.b[52][1]++, config) ? (cov_jl9s5aqsr.b[51][0]++, config) : (cov_jl9s5aqsr.b[51][1]++, {})));
 
-        cov_s5t6dkzbf.s[214]++;
+        cov_jl9s5aqsr.s[214]++;
 
         if (!data) {
-          cov_s5t6dkzbf.b[53][0]++;
-          cov_s5t6dkzbf.s[215]++;
+          cov_jl9s5aqsr.b[53][0]++;
+          cov_jl9s5aqsr.s[215]++;
           data = new Modal(this, _config);
-          cov_s5t6dkzbf.s[216]++;
+          cov_jl9s5aqsr.s[216]++;
           $(this).data(DATA_KEY, data);
         } else {
-          cov_s5t6dkzbf.b[53][1]++;
+          cov_jl9s5aqsr.b[53][1]++;
         }
 
-        cov_s5t6dkzbf.s[217]++;
+        cov_jl9s5aqsr.s[217]++;
 
         if (typeof config === 'string') {
-          cov_s5t6dkzbf.b[54][0]++;
-          cov_s5t6dkzbf.s[218]++;
+          cov_jl9s5aqsr.b[54][0]++;
+          cov_jl9s5aqsr.s[218]++;
 
           if (typeof data[config] === 'undefined') {
-            cov_s5t6dkzbf.b[55][0]++;
-            cov_s5t6dkzbf.s[219]++;
+            cov_jl9s5aqsr.b[55][0]++;
+            cov_jl9s5aqsr.s[219]++;
             throw new TypeError("No method named \"" + config + "\"");
           } else {
-            cov_s5t6dkzbf.b[55][1]++;
+            cov_jl9s5aqsr.b[55][1]++;
           }
 
-          cov_s5t6dkzbf.s[220]++;
+          cov_jl9s5aqsr.s[220]++;
           data[config](relatedTarget);
         } else {
-          cov_s5t6dkzbf.b[54][1]++;
-          cov_s5t6dkzbf.s[221]++;
+          cov_jl9s5aqsr.b[54][1]++;
+          cov_jl9s5aqsr.s[221]++;
 
           if (_config.show) {
-            cov_s5t6dkzbf.b[56][0]++;
-            cov_s5t6dkzbf.s[222]++;
+            cov_jl9s5aqsr.b[56][0]++;
+            cov_jl9s5aqsr.s[222]++;
             data.show(relatedTarget);
           } else {
-            cov_s5t6dkzbf.b[56][1]++;
+            cov_jl9s5aqsr.b[56][1]++;
           }
         }
       });
@@ -6912,15 +6909,15 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
     _createClass(Modal, null, [{
       key: "VERSION",
       get: function get() {
-        cov_s5t6dkzbf.f[2]++;
-        cov_s5t6dkzbf.s[21]++;
+        cov_jl9s5aqsr.f[2]++;
+        cov_jl9s5aqsr.s[21]++;
         return VERSION;
       }
     }, {
       key: "Default",
       get: function get() {
-        cov_s5t6dkzbf.f[3]++;
-        cov_s5t6dkzbf.s[22]++;
+        cov_jl9s5aqsr.f[3]++;
+        cov_jl9s5aqsr.s[22]++;
         return Default;
       }
     }]);
@@ -6934,63 +6931,63 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
    */
 
 
-  cov_s5t6dkzbf.s[223]++;
+  cov_jl9s5aqsr.s[223]++;
   $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
     var _this10 = this;
 
-    cov_s5t6dkzbf.f[42]++;
+    cov_jl9s5aqsr.f[42]++;
     var target;
-    var selector = (cov_s5t6dkzbf.s[224]++, Util.getSelectorFromElement(this));
-    cov_s5t6dkzbf.s[225]++;
+    var selector = (cov_jl9s5aqsr.s[224]++, Util.getSelectorFromElement(this));
+    cov_jl9s5aqsr.s[225]++;
 
     if (selector) {
-      cov_s5t6dkzbf.b[57][0]++;
-      cov_s5t6dkzbf.s[226]++;
+      cov_jl9s5aqsr.b[57][0]++;
+      cov_jl9s5aqsr.s[226]++;
       target = $(selector)[0];
     } else {
-      cov_s5t6dkzbf.b[57][1]++;
+      cov_jl9s5aqsr.b[57][1]++;
     }
 
-    var config = (cov_s5t6dkzbf.s[227]++, $(target).data(DATA_KEY) ? (cov_s5t6dkzbf.b[58][0]++, 'toggle') : (cov_s5t6dkzbf.b[58][1]++, _objectSpread({}, $(target).data(), $(this).data())));
-    cov_s5t6dkzbf.s[228]++;
+    var config = (cov_jl9s5aqsr.s[227]++, $(target).data(DATA_KEY) ? (cov_jl9s5aqsr.b[58][0]++, 'toggle') : (cov_jl9s5aqsr.b[58][1]++, _objectSpread({}, $(target).data(), $(this).data())));
+    cov_jl9s5aqsr.s[228]++;
 
-    if ((cov_s5t6dkzbf.b[60][0]++, this.tagName === 'A') || (cov_s5t6dkzbf.b[60][1]++, this.tagName === 'AREA')) {
-      cov_s5t6dkzbf.b[59][0]++;
-      cov_s5t6dkzbf.s[229]++;
+    if ((cov_jl9s5aqsr.b[60][0]++, this.tagName === 'A') || (cov_jl9s5aqsr.b[60][1]++, this.tagName === 'AREA')) {
+      cov_jl9s5aqsr.b[59][0]++;
+      cov_jl9s5aqsr.s[229]++;
       event.preventDefault();
     } else {
-      cov_s5t6dkzbf.b[59][1]++;
+      cov_jl9s5aqsr.b[59][1]++;
     }
 
-    var $target = (cov_s5t6dkzbf.s[230]++, $(target).one(Event.SHOW, function (showEvent) {
-      cov_s5t6dkzbf.f[43]++;
-      cov_s5t6dkzbf.s[231]++;
+    var $target = (cov_jl9s5aqsr.s[230]++, $(target).one(Event.SHOW, function (showEvent) {
+      cov_jl9s5aqsr.f[43]++;
+      cov_jl9s5aqsr.s[231]++;
 
       if (showEvent.isDefaultPrevented()) {
-        cov_s5t6dkzbf.b[61][0]++;
-        cov_s5t6dkzbf.s[232]++;
+        cov_jl9s5aqsr.b[61][0]++;
+        cov_jl9s5aqsr.s[232]++;
         // Only register focus restorer if modal will actually get shown
         return;
       } else {
-        cov_s5t6dkzbf.b[61][1]++;
+        cov_jl9s5aqsr.b[61][1]++;
       }
 
-      cov_s5t6dkzbf.s[233]++;
+      cov_jl9s5aqsr.s[233]++;
       $target.one(Event.HIDDEN, function () {
-        cov_s5t6dkzbf.f[44]++;
-        cov_s5t6dkzbf.s[234]++;
+        cov_jl9s5aqsr.f[44]++;
+        cov_jl9s5aqsr.s[234]++;
 
         if ($(_this10).is(':visible')) {
-          cov_s5t6dkzbf.b[62][0]++;
-          cov_s5t6dkzbf.s[235]++;
+          cov_jl9s5aqsr.b[62][0]++;
+          cov_jl9s5aqsr.s[235]++;
 
           _this10.focus();
         } else {
-          cov_s5t6dkzbf.b[62][1]++;
+          cov_jl9s5aqsr.b[62][1]++;
         }
       });
     }));
-    cov_s5t6dkzbf.s[236]++;
+    cov_jl9s5aqsr.s[236]++;
 
     Modal._jQueryInterface.call($(target), config, this);
   });
@@ -7000,21 +6997,21 @@ var Modal = (cov_s5t6dkzbf.s[0]++, function ($) {
    * ------------------------------------------------------------------------
    */
 
-  cov_s5t6dkzbf.s[237]++;
+  cov_jl9s5aqsr.s[237]++;
   $.fn[NAME] = Modal._jQueryInterface;
-  cov_s5t6dkzbf.s[238]++;
+  cov_jl9s5aqsr.s[238]++;
   $.fn[NAME].Constructor = Modal;
-  cov_s5t6dkzbf.s[239]++;
+  cov_jl9s5aqsr.s[239]++;
 
   $.fn[NAME].noConflict = function () {
-    cov_s5t6dkzbf.f[45]++;
-    cov_s5t6dkzbf.s[240]++;
+    cov_jl9s5aqsr.f[45]++;
+    cov_jl9s5aqsr.s[240]++;
     $.fn[NAME] = JQUERY_NO_CONFLICT;
-    cov_s5t6dkzbf.s[241]++;
+    cov_jl9s5aqsr.s[241]++;
     return Modal._jQueryInterface;
   };
 
-  cov_s5t6dkzbf.s[242]++;
+  cov_jl9s5aqsr.s[242]++;
   return Modal;
 }($));
 //# sourceMappingURL=modal.js.map

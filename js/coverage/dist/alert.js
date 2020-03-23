@@ -1,11 +1,11 @@
-var cov_y3p022b96 = function () {
-  var path = "/Users/asonnenholzner/Downloads/bootstrap/js/src/alert.js",
-      hash = "2a1049b5486a2c40e6c7e84072653ceac6dd39ca",
+var cov_1ek0pxrjyn = function () {
+  var path = "/Users/victorchiriac/Sites/bootstrap/js/src/alert.js",
+      hash = "5d4a3202cd0e311a2c9429f9df5acfb2466c7f06",
       Function = function () {}.constructor,
       global = new Function('return this')(),
       gcv = "__coverage__",
       coverageData = {
-    path: "/Users/asonnenholzner/Downloads/bootstrap/js/src/alert.js",
+    path: "/Users/victorchiriac/Sites/bootstrap/js/src/alert.js",
     statementMap: {
       "0": {
         start: {
@@ -1325,46 +1325,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
-var Alert = (cov_y3p022b96.s[0]++, function ($) {
-  cov_y3p022b96.f[0]++;
+var Alert = (cov_1ek0pxrjyn.s[0]++, function ($) {
+  cov_1ek0pxrjyn.f[0]++;
 
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-  var NAME = (cov_y3p022b96.s[1]++, 'alert');
-  var VERSION = (cov_y3p022b96.s[2]++, '4.1.1');
-  var DATA_KEY = (cov_y3p022b96.s[3]++, 'bs.alert');
-  var EVENT_KEY = (cov_y3p022b96.s[4]++, "." + DATA_KEY);
-  var DATA_API_KEY = (cov_y3p022b96.s[5]++, '.data-api');
-  var JQUERY_NO_CONFLICT = (cov_y3p022b96.s[6]++, $.fn[NAME]);
-  var Selector = (cov_y3p022b96.s[7]++, {
+  var NAME = (cov_1ek0pxrjyn.s[1]++, 'alert');
+  var VERSION = (cov_1ek0pxrjyn.s[2]++, '4.1.1');
+  var DATA_KEY = (cov_1ek0pxrjyn.s[3]++, 'bs.alert');
+  var EVENT_KEY = (cov_1ek0pxrjyn.s[4]++, "." + DATA_KEY);
+  var DATA_API_KEY = (cov_1ek0pxrjyn.s[5]++, '.data-api');
+  var JQUERY_NO_CONFLICT = (cov_1ek0pxrjyn.s[6]++, $.fn[NAME]);
+  var Selector = (cov_1ek0pxrjyn.s[7]++, {
     DISMISS: '[data-dismiss="alert"]'
   });
-  var Event = (cov_y3p022b96.s[8]++, {
+  var Event = (cov_1ek0pxrjyn.s[8]++, {
     CLOSE: "close" + EVENT_KEY,
     CLOSED: "closed" + EVENT_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   });
-  var ClassName = (cov_y3p022b96.s[9]++, {
+  var ClassName = (cov_1ek0pxrjyn.s[9]++, {
     ALERT: 'alert',
     FADE: 'fade',
     SHOW: 'show'
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
-
   });
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
 
-  var Alert =
-  /*#__PURE__*/
-  function () {
+  var Alert = /*#__PURE__*/function () {
     function Alert(element) {
-      cov_y3p022b96.f[1]++;
-      cov_y3p022b96.s[10]++;
+      cov_1ek0pxrjyn.f[1]++;
+      cov_1ek0pxrjyn.s[10]++;
       this._element = element;
     } // Getters
 
@@ -1373,163 +1370,163 @@ var Alert = (cov_y3p022b96.s[0]++, function ($) {
 
     // Public
     _proto.close = function close(element) {
-      cov_y3p022b96.f[3]++;
-      var rootElement = (cov_y3p022b96.s[12]++, this._element);
-      cov_y3p022b96.s[13]++;
+      cov_1ek0pxrjyn.f[3]++;
+      var rootElement = (cov_1ek0pxrjyn.s[12]++, this._element);
+      cov_1ek0pxrjyn.s[13]++;
 
       if (element) {
-        cov_y3p022b96.b[0][0]++;
-        cov_y3p022b96.s[14]++;
+        cov_1ek0pxrjyn.b[0][0]++;
+        cov_1ek0pxrjyn.s[14]++;
         rootElement = this._getRootElement(element);
       } else {
-        cov_y3p022b96.b[0][1]++;
+        cov_1ek0pxrjyn.b[0][1]++;
       }
 
-      var customEvent = (cov_y3p022b96.s[15]++, this._triggerCloseEvent(rootElement));
-      cov_y3p022b96.s[16]++;
+      var customEvent = (cov_1ek0pxrjyn.s[15]++, this._triggerCloseEvent(rootElement));
+      cov_1ek0pxrjyn.s[16]++;
 
       if (customEvent.isDefaultPrevented()) {
-        cov_y3p022b96.b[1][0]++;
-        cov_y3p022b96.s[17]++;
+        cov_1ek0pxrjyn.b[1][0]++;
+        cov_1ek0pxrjyn.s[17]++;
         return;
       } else {
-        cov_y3p022b96.b[1][1]++;
+        cov_1ek0pxrjyn.b[1][1]++;
       }
 
-      cov_y3p022b96.s[18]++;
+      cov_1ek0pxrjyn.s[18]++;
 
       this._removeElement(rootElement);
     };
 
     _proto.dispose = function dispose() {
-      cov_y3p022b96.f[4]++;
-      cov_y3p022b96.s[19]++;
+      cov_1ek0pxrjyn.f[4]++;
+      cov_1ek0pxrjyn.s[19]++;
       $.removeData(this._element, DATA_KEY);
-      cov_y3p022b96.s[20]++;
+      cov_1ek0pxrjyn.s[20]++;
       this._element = null;
     }; // Private
 
 
     _proto._getRootElement = function _getRootElement(element) {
-      cov_y3p022b96.f[5]++;
-      var selector = (cov_y3p022b96.s[21]++, Util.getSelectorFromElement(element));
-      var parent = (cov_y3p022b96.s[22]++, false);
-      cov_y3p022b96.s[23]++;
+      cov_1ek0pxrjyn.f[5]++;
+      var selector = (cov_1ek0pxrjyn.s[21]++, Util.getSelectorFromElement(element));
+      var parent = (cov_1ek0pxrjyn.s[22]++, false);
+      cov_1ek0pxrjyn.s[23]++;
 
       if (selector) {
-        cov_y3p022b96.b[2][0]++;
-        cov_y3p022b96.s[24]++;
+        cov_1ek0pxrjyn.b[2][0]++;
+        cov_1ek0pxrjyn.s[24]++;
         parent = $(selector)[0];
       } else {
-        cov_y3p022b96.b[2][1]++;
+        cov_1ek0pxrjyn.b[2][1]++;
       }
 
-      cov_y3p022b96.s[25]++;
+      cov_1ek0pxrjyn.s[25]++;
 
       if (!parent) {
-        cov_y3p022b96.b[3][0]++;
-        cov_y3p022b96.s[26]++;
+        cov_1ek0pxrjyn.b[3][0]++;
+        cov_1ek0pxrjyn.s[26]++;
         parent = $(element).closest("." + ClassName.ALERT)[0];
       } else {
-        cov_y3p022b96.b[3][1]++;
+        cov_1ek0pxrjyn.b[3][1]++;
       }
 
-      cov_y3p022b96.s[27]++;
+      cov_1ek0pxrjyn.s[27]++;
       return parent;
     };
 
     _proto._triggerCloseEvent = function _triggerCloseEvent(element) {
-      cov_y3p022b96.f[6]++;
-      var closeEvent = (cov_y3p022b96.s[28]++, $.Event(Event.CLOSE));
-      cov_y3p022b96.s[29]++;
+      cov_1ek0pxrjyn.f[6]++;
+      var closeEvent = (cov_1ek0pxrjyn.s[28]++, $.Event(Event.CLOSE));
+      cov_1ek0pxrjyn.s[29]++;
       $(element).trigger(closeEvent);
-      cov_y3p022b96.s[30]++;
+      cov_1ek0pxrjyn.s[30]++;
       return closeEvent;
     };
 
     _proto._removeElement = function _removeElement(element) {
       var _this = this;
 
-      cov_y3p022b96.f[7]++;
-      cov_y3p022b96.s[31]++;
+      cov_1ek0pxrjyn.f[7]++;
+      cov_1ek0pxrjyn.s[31]++;
       $(element).removeClass(ClassName.SHOW);
-      cov_y3p022b96.s[32]++;
+      cov_1ek0pxrjyn.s[32]++;
 
       if (!$(element).hasClass(ClassName.FADE)) {
-        cov_y3p022b96.b[4][0]++;
-        cov_y3p022b96.s[33]++;
+        cov_1ek0pxrjyn.b[4][0]++;
+        cov_1ek0pxrjyn.s[33]++;
 
         this._destroyElement(element);
 
-        cov_y3p022b96.s[34]++;
+        cov_1ek0pxrjyn.s[34]++;
         return;
       } else {
-        cov_y3p022b96.b[4][1]++;
+        cov_1ek0pxrjyn.b[4][1]++;
       }
 
-      var transitionDuration = (cov_y3p022b96.s[35]++, Util.getTransitionDurationFromElement(element));
-      cov_y3p022b96.s[36]++;
+      var transitionDuration = (cov_1ek0pxrjyn.s[35]++, Util.getTransitionDurationFromElement(element));
+      cov_1ek0pxrjyn.s[36]++;
       $(element).one(Util.TRANSITION_END, function (event) {
-        cov_y3p022b96.f[8]++;
-        cov_y3p022b96.s[37]++;
+        cov_1ek0pxrjyn.f[8]++;
+        cov_1ek0pxrjyn.s[37]++;
         return _this._destroyElement(element, event);
       }).emulateTransitionEnd(transitionDuration);
     };
 
     _proto._destroyElement = function _destroyElement(element) {
-      cov_y3p022b96.f[9]++;
-      cov_y3p022b96.s[38]++;
+      cov_1ek0pxrjyn.f[9]++;
+      cov_1ek0pxrjyn.s[38]++;
       $(element).detach().trigger(Event.CLOSED).remove();
     }; // Static
 
 
     Alert._jQueryInterface = function _jQueryInterface(config) {
-      cov_y3p022b96.f[10]++;
-      cov_y3p022b96.s[39]++;
+      cov_1ek0pxrjyn.f[10]++;
+      cov_1ek0pxrjyn.s[39]++;
       return this.each(function () {
-        cov_y3p022b96.f[11]++;
-        var $element = (cov_y3p022b96.s[40]++, $(this));
-        var data = (cov_y3p022b96.s[41]++, $element.data(DATA_KEY));
-        cov_y3p022b96.s[42]++;
+        cov_1ek0pxrjyn.f[11]++;
+        var $element = (cov_1ek0pxrjyn.s[40]++, $(this));
+        var data = (cov_1ek0pxrjyn.s[41]++, $element.data(DATA_KEY));
+        cov_1ek0pxrjyn.s[42]++;
 
         if (!data) {
-          cov_y3p022b96.b[5][0]++;
-          cov_y3p022b96.s[43]++;
+          cov_1ek0pxrjyn.b[5][0]++;
+          cov_1ek0pxrjyn.s[43]++;
           data = new Alert(this);
-          cov_y3p022b96.s[44]++;
+          cov_1ek0pxrjyn.s[44]++;
           $element.data(DATA_KEY, data);
         } else {
-          cov_y3p022b96.b[5][1]++;
+          cov_1ek0pxrjyn.b[5][1]++;
         }
 
-        cov_y3p022b96.s[45]++;
+        cov_1ek0pxrjyn.s[45]++;
 
         if (config === 'close') {
-          cov_y3p022b96.b[6][0]++;
-          cov_y3p022b96.s[46]++;
+          cov_1ek0pxrjyn.b[6][0]++;
+          cov_1ek0pxrjyn.s[46]++;
           data[config](this);
         } else {
-          cov_y3p022b96.b[6][1]++;
+          cov_1ek0pxrjyn.b[6][1]++;
         }
       });
     };
 
     Alert._handleDismiss = function _handleDismiss(alertInstance) {
-      cov_y3p022b96.f[12]++;
-      cov_y3p022b96.s[47]++;
+      cov_1ek0pxrjyn.f[12]++;
+      cov_1ek0pxrjyn.s[47]++;
       return function (event) {
-        cov_y3p022b96.f[13]++;
-        cov_y3p022b96.s[48]++;
+        cov_1ek0pxrjyn.f[13]++;
+        cov_1ek0pxrjyn.s[48]++;
 
         if (event) {
-          cov_y3p022b96.b[7][0]++;
-          cov_y3p022b96.s[49]++;
+          cov_1ek0pxrjyn.b[7][0]++;
+          cov_1ek0pxrjyn.s[49]++;
           event.preventDefault();
         } else {
-          cov_y3p022b96.b[7][1]++;
+          cov_1ek0pxrjyn.b[7][1]++;
         }
 
-        cov_y3p022b96.s[50]++;
+        cov_1ek0pxrjyn.s[50]++;
         alertInstance.close(this);
       };
     };
@@ -1537,8 +1534,8 @@ var Alert = (cov_y3p022b96.s[0]++, function ($) {
     _createClass(Alert, null, [{
       key: "VERSION",
       get: function get() {
-        cov_y3p022b96.f[2]++;
-        cov_y3p022b96.s[11]++;
+        cov_1ek0pxrjyn.f[2]++;
+        cov_1ek0pxrjyn.s[11]++;
         return VERSION;
       }
     }]);
@@ -1552,7 +1549,7 @@ var Alert = (cov_y3p022b96.s[0]++, function ($) {
    */
 
 
-  cov_y3p022b96.s[51]++;
+  cov_1ek0pxrjyn.s[51]++;
   $(document).on(Event.CLICK_DATA_API, Selector.DISMISS, Alert._handleDismiss(new Alert()));
   /**
    * ------------------------------------------------------------------------
@@ -1560,21 +1557,21 @@ var Alert = (cov_y3p022b96.s[0]++, function ($) {
    * ------------------------------------------------------------------------
    */
 
-  cov_y3p022b96.s[52]++;
+  cov_1ek0pxrjyn.s[52]++;
   $.fn[NAME] = Alert._jQueryInterface;
-  cov_y3p022b96.s[53]++;
+  cov_1ek0pxrjyn.s[53]++;
   $.fn[NAME].Constructor = Alert;
-  cov_y3p022b96.s[54]++;
+  cov_1ek0pxrjyn.s[54]++;
 
   $.fn[NAME].noConflict = function () {
-    cov_y3p022b96.f[14]++;
-    cov_y3p022b96.s[55]++;
+    cov_1ek0pxrjyn.f[14]++;
+    cov_1ek0pxrjyn.s[55]++;
     $.fn[NAME] = JQUERY_NO_CONFLICT;
-    cov_y3p022b96.s[56]++;
+    cov_1ek0pxrjyn.s[56]++;
     return Alert._jQueryInterface;
   };
 
-  cov_y3p022b96.s[57]++;
+  cov_1ek0pxrjyn.s[57]++;
   return Alert;
 }($));
 //# sourceMappingURL=alert.js.map

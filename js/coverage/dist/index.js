@@ -1,11 +1,11 @@
-var cov_5jzhofnwk = function () {
-  var path = "/Users/asonnenholzner/Downloads/bootstrap/js/src/index.js",
-      hash = "5c077fae119b2d4c5e1602a4526ee6d48f50df90",
+var cov_1jlqgstbbv = function () {
+  var path = "/Users/victorchiriac/Sites/bootstrap/js/src/index.js",
+      hash = "30a51a1ffad2d1a4c527c4cd1282a996d36a2e6c",
       Function = function () {}.constructor,
       global = new Function('return this')(),
       gcv = "__coverage__",
       coverageData = {
-    path: "/Users/asonnenholzner/Downloads/bootstrap/js/src/index.js",
+    path: "/Users/victorchiriac/Sites/bootstrap/js/src/index.js",
     statementMap: {
       "0": {
         start: {
@@ -314,7 +314,7 @@ var cov_5jzhofnwk = function () {
   return coverage[path] = coverageData;
 }();
 
-cov_5jzhofnwk.s[0]++;
+cov_1jlqgstbbv.s[0]++;
 
 /**
  * --------------------------------------------------------------------------
@@ -323,31 +323,31 @@ cov_5jzhofnwk.s[0]++;
  * --------------------------------------------------------------------------
  */
 (function ($) {
-  cov_5jzhofnwk.f[0]++;
-  cov_5jzhofnwk.s[1]++;
+  cov_1jlqgstbbv.f[0]++;
+  cov_1jlqgstbbv.s[1]++;
 
   if (typeof $ === 'undefined') {
-    cov_5jzhofnwk.b[0][0]++;
-    cov_5jzhofnwk.s[2]++;
+    cov_1jlqgstbbv.b[0][0]++;
+    cov_1jlqgstbbv.s[2]++;
     throw new TypeError('Bootstrap\'s JavaScript requires jQuery. jQuery must be included before Bootstrap\'s JavaScript.');
   } else {
-    cov_5jzhofnwk.b[0][1]++;
+    cov_1jlqgstbbv.b[0][1]++;
   }
 
-  var version = (cov_5jzhofnwk.s[3]++, $.fn.jquery.split(' ')[0].split('.'));
-  var minMajor = (cov_5jzhofnwk.s[4]++, 1);
-  var ltMajor = (cov_5jzhofnwk.s[5]++, 2);
-  var minMinor = (cov_5jzhofnwk.s[6]++, 9);
-  var minPatch = (cov_5jzhofnwk.s[7]++, 1);
-  var maxMajor = (cov_5jzhofnwk.s[8]++, 4);
-  cov_5jzhofnwk.s[9]++;
+  var version = (cov_1jlqgstbbv.s[3]++, $.fn.jquery.split(' ')[0].split('.'));
+  var minMajor = (cov_1jlqgstbbv.s[4]++, 1);
+  var ltMajor = (cov_1jlqgstbbv.s[5]++, 2);
+  var minMinor = (cov_1jlqgstbbv.s[6]++, 9);
+  var minPatch = (cov_1jlqgstbbv.s[7]++, 1);
+  var maxMajor = (cov_1jlqgstbbv.s[8]++, 4);
+  cov_1jlqgstbbv.s[9]++;
 
-  if ((cov_5jzhofnwk.b[2][0]++, version[0] < ltMajor) && (cov_5jzhofnwk.b[2][1]++, version[1] < minMinor) || (cov_5jzhofnwk.b[2][2]++, version[0] === minMajor) && (cov_5jzhofnwk.b[2][3]++, version[1] === minMinor) && (cov_5jzhofnwk.b[2][4]++, version[2] < minPatch) || (cov_5jzhofnwk.b[2][5]++, version[0] >= maxMajor)) {
-    cov_5jzhofnwk.b[1][0]++;
-    cov_5jzhofnwk.s[10]++;
+  if ((cov_1jlqgstbbv.b[2][0]++, version[0] < ltMajor) && (cov_1jlqgstbbv.b[2][1]++, version[1] < minMinor) || (cov_1jlqgstbbv.b[2][2]++, version[0] === minMajor) && (cov_1jlqgstbbv.b[2][3]++, version[1] === minMinor) && (cov_1jlqgstbbv.b[2][4]++, version[2] < minPatch) || (cov_1jlqgstbbv.b[2][5]++, version[0] >= maxMajor)) {
+    cov_1jlqgstbbv.b[1][0]++;
+    cov_1jlqgstbbv.s[10]++;
     throw new Error('Bootstrap\'s JavaScript requires at least jQuery v1.9.1 but less than v4.0.0');
   } else {
-    cov_5jzhofnwk.b[1][1]++;
+    cov_1jlqgstbbv.b[1][1]++;
   }
 })($);
 //# sourceMappingURL=index.js.map

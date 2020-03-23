@@ -1,11 +1,11 @@
-var cov_7q18jdgcc = function () {
-  var path = "/Users/asonnenholzner/Downloads/bootstrap/js/src/tooltip.js",
-      hash = "1058b166a9ddff661ad0559c3f9105e4fd4edfe3",
+var cov_1qou27nk45 = function () {
+  var path = "/Users/victorchiriac/Sites/bootstrap/js/src/tooltip.js",
+      hash = "88a884a38cc5571f9f4d038629bae6319f589c74",
       Function = function () {}.constructor,
       global = new Function('return this')(),
       gcv = "__coverage__",
       coverageData = {
-    path: "/Users/asonnenholzner/Downloads/bootstrap/js/src/tooltip.js",
+    path: "/Users/victorchiriac/Sites/bootstrap/js/src/tooltip.js",
     statementMap: {
       "0": {
         start: {
@@ -6874,7 +6874,7 @@ var cov_7q18jdgcc = function () {
   return coverage[path] = coverageData;
 }();
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? Object(arguments[i]) : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -6888,22 +6888,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
-var Tooltip = (cov_7q18jdgcc.s[0]++, function ($) {
-  cov_7q18jdgcc.f[0]++;
+var Tooltip = (cov_1qou27nk45.s[0]++, function ($) {
+  cov_1qou27nk45.f[0]++;
 
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-  var NAME = (cov_7q18jdgcc.s[1]++, 'tooltip');
-  var VERSION = (cov_7q18jdgcc.s[2]++, '4.1.1');
-  var DATA_KEY = (cov_7q18jdgcc.s[3]++, 'bs.tooltip');
-  var EVENT_KEY = (cov_7q18jdgcc.s[4]++, "." + DATA_KEY);
-  var JQUERY_NO_CONFLICT = (cov_7q18jdgcc.s[5]++, $.fn[NAME]);
-  var CLASS_PREFIX = (cov_7q18jdgcc.s[6]++, 'bs-tooltip');
-  var BSCLS_PREFIX_REGEX = (cov_7q18jdgcc.s[7]++, new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g'));
-  var DefaultType = (cov_7q18jdgcc.s[8]++, {
+  var NAME = (cov_1qou27nk45.s[1]++, 'tooltip');
+  var VERSION = (cov_1qou27nk45.s[2]++, '4.1.1');
+  var DATA_KEY = (cov_1qou27nk45.s[3]++, 'bs.tooltip');
+  var EVENT_KEY = (cov_1qou27nk45.s[4]++, "." + DATA_KEY);
+  var JQUERY_NO_CONFLICT = (cov_1qou27nk45.s[5]++, $.fn[NAME]);
+  var CLASS_PREFIX = (cov_1qou27nk45.s[6]++, 'bs-tooltip');
+  var BSCLS_PREFIX_REGEX = (cov_1qou27nk45.s[7]++, new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g'));
+  var DefaultType = (cov_1qou27nk45.s[8]++, {
     animation: 'boolean',
     template: 'string',
     title: '(string|element|function)',
@@ -6917,14 +6917,14 @@ var Tooltip = (cov_7q18jdgcc.s[0]++, function ($) {
     fallbackPlacement: '(string|array)',
     boundary: '(string|element)'
   });
-  var AttachmentMap = (cov_7q18jdgcc.s[9]++, {
+  var AttachmentMap = (cov_1qou27nk45.s[9]++, {
     AUTO: 'auto',
     TOP: 'top',
     RIGHT: 'right',
     BOTTOM: 'bottom',
     LEFT: 'left'
   });
-  var Default = (cov_7q18jdgcc.s[10]++, {
+  var Default = (cov_1qou27nk45.s[10]++, {
     animation: true,
     template: '<div class="tooltip" role="tooltip">' + '<div class="arrow"></div>' + '<div class="tooltip-inner"></div></div>',
     trigger: 'hover focus',
@@ -6938,11 +6938,11 @@ var Tooltip = (cov_7q18jdgcc.s[0]++, function ($) {
     fallbackPlacement: 'flip',
     boundary: 'scrollParent'
   });
-  var HoverState = (cov_7q18jdgcc.s[11]++, {
+  var HoverState = (cov_1qou27nk45.s[11]++, {
     SHOW: 'show',
     OUT: 'out'
   });
-  var Event = (cov_7q18jdgcc.s[12]++, {
+  var Event = (cov_1qou27nk45.s[12]++, {
     HIDE: "hide" + EVENT_KEY,
     HIDDEN: "hidden" + EVENT_KEY,
     SHOW: "show" + EVENT_KEY,
@@ -6954,66 +6954,63 @@ var Tooltip = (cov_7q18jdgcc.s[0]++, function ($) {
     MOUSEENTER: "mouseenter" + EVENT_KEY,
     MOUSELEAVE: "mouseleave" + EVENT_KEY
   });
-  var ClassName = (cov_7q18jdgcc.s[13]++, {
+  var ClassName = (cov_1qou27nk45.s[13]++, {
     FADE: 'fade',
     SHOW: 'show'
   });
-  var Selector = (cov_7q18jdgcc.s[14]++, {
+  var Selector = (cov_1qou27nk45.s[14]++, {
     TOOLTIP: '.tooltip',
     TOOLTIP_INNER: '.tooltip-inner',
     ARROW: '.arrow'
   });
-  var Trigger = (cov_7q18jdgcc.s[15]++, {
+  var Trigger = (cov_1qou27nk45.s[15]++, {
     HOVER: 'hover',
     FOCUS: 'focus',
     CLICK: 'click',
     MANUAL: 'manual'
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
-
   });
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
 
-  var Tooltip =
-  /*#__PURE__*/
-  function () {
+  var Tooltip = /*#__PURE__*/function () {
     function Tooltip(element, config) {
-      cov_7q18jdgcc.f[1]++;
-      cov_7q18jdgcc.s[16]++;
+      cov_1qou27nk45.f[1]++;
+      cov_1qou27nk45.s[16]++;
 
       /**
        * Check for Popper dependency
        * Popper - https://popper.js.org
        */
       if (typeof Popper === 'undefined') {
-        cov_7q18jdgcc.b[0][0]++;
-        cov_7q18jdgcc.s[17]++;
+        cov_1qou27nk45.b[0][0]++;
+        cov_1qou27nk45.s[17]++;
         throw new TypeError('Bootstrap tooltips require Popper.js (https://popper.js.org)');
       } else {
-        cov_7q18jdgcc.b[0][1]++;
+        cov_1qou27nk45.b[0][1]++;
       } // private
 
 
-      cov_7q18jdgcc.s[18]++;
+      cov_1qou27nk45.s[18]++;
       this._isEnabled = true;
-      cov_7q18jdgcc.s[19]++;
+      cov_1qou27nk45.s[19]++;
       this._timeout = 0;
-      cov_7q18jdgcc.s[20]++;
+      cov_1qou27nk45.s[20]++;
       this._hoverState = '';
-      cov_7q18jdgcc.s[21]++;
+      cov_1qou27nk45.s[21]++;
       this._activeTrigger = {};
-      cov_7q18jdgcc.s[22]++;
+      cov_1qou27nk45.s[22]++;
       this._popper = null; // Protected
 
-      cov_7q18jdgcc.s[23]++;
+      cov_1qou27nk45.s[23]++;
       this.element = element;
-      cov_7q18jdgcc.s[24]++;
+      cov_1qou27nk45.s[24]++;
       this.config = this._getConfig(config);
-      cov_7q18jdgcc.s[25]++;
+      cov_1qou27nk45.s[25]++;
       this.tip = null;
-      cov_7q18jdgcc.s[26]++;
+      cov_1qou27nk45.s[26]++;
 
       this._setListeners();
     } // Getters
@@ -7023,209 +7020,209 @@ var Tooltip = (cov_7q18jdgcc.s[0]++, function ($) {
 
     // Public
     _proto.enable = function enable() {
-      cov_7q18jdgcc.f[9]++;
-      cov_7q18jdgcc.s[34]++;
+      cov_1qou27nk45.f[9]++;
+      cov_1qou27nk45.s[34]++;
       this._isEnabled = true;
     };
 
     _proto.disable = function disable() {
-      cov_7q18jdgcc.f[10]++;
-      cov_7q18jdgcc.s[35]++;
+      cov_1qou27nk45.f[10]++;
+      cov_1qou27nk45.s[35]++;
       this._isEnabled = false;
     };
 
     _proto.toggleEnabled = function toggleEnabled() {
-      cov_7q18jdgcc.f[11]++;
-      cov_7q18jdgcc.s[36]++;
+      cov_1qou27nk45.f[11]++;
+      cov_1qou27nk45.s[36]++;
       this._isEnabled = !this._isEnabled;
     };
 
     _proto.toggle = function toggle(event) {
-      cov_7q18jdgcc.f[12]++;
-      cov_7q18jdgcc.s[37]++;
+      cov_1qou27nk45.f[12]++;
+      cov_1qou27nk45.s[37]++;
 
       if (!this._isEnabled) {
-        cov_7q18jdgcc.b[1][0]++;
-        cov_7q18jdgcc.s[38]++;
+        cov_1qou27nk45.b[1][0]++;
+        cov_1qou27nk45.s[38]++;
         return;
       } else {
-        cov_7q18jdgcc.b[1][1]++;
+        cov_1qou27nk45.b[1][1]++;
       }
 
-      cov_7q18jdgcc.s[39]++;
+      cov_1qou27nk45.s[39]++;
 
       if (event) {
-        cov_7q18jdgcc.b[2][0]++;
-        var dataKey = (cov_7q18jdgcc.s[40]++, this.constructor.DATA_KEY);
-        var context = (cov_7q18jdgcc.s[41]++, $(event.currentTarget).data(dataKey));
-        cov_7q18jdgcc.s[42]++;
+        cov_1qou27nk45.b[2][0]++;
+        var dataKey = (cov_1qou27nk45.s[40]++, this.constructor.DATA_KEY);
+        var context = (cov_1qou27nk45.s[41]++, $(event.currentTarget).data(dataKey));
+        cov_1qou27nk45.s[42]++;
 
         if (!context) {
-          cov_7q18jdgcc.b[3][0]++;
-          cov_7q18jdgcc.s[43]++;
+          cov_1qou27nk45.b[3][0]++;
+          cov_1qou27nk45.s[43]++;
           context = new this.constructor(event.currentTarget, this._getDelegateConfig());
-          cov_7q18jdgcc.s[44]++;
+          cov_1qou27nk45.s[44]++;
           $(event.currentTarget).data(dataKey, context);
         } else {
-          cov_7q18jdgcc.b[3][1]++;
+          cov_1qou27nk45.b[3][1]++;
         }
 
-        cov_7q18jdgcc.s[45]++;
+        cov_1qou27nk45.s[45]++;
         context._activeTrigger.click = !context._activeTrigger.click;
-        cov_7q18jdgcc.s[46]++;
+        cov_1qou27nk45.s[46]++;
 
         if (context._isWithActiveTrigger()) {
-          cov_7q18jdgcc.b[4][0]++;
-          cov_7q18jdgcc.s[47]++;
+          cov_1qou27nk45.b[4][0]++;
+          cov_1qou27nk45.s[47]++;
 
           context._enter(null, context);
         } else {
-          cov_7q18jdgcc.b[4][1]++;
-          cov_7q18jdgcc.s[48]++;
+          cov_1qou27nk45.b[4][1]++;
+          cov_1qou27nk45.s[48]++;
 
           context._leave(null, context);
         }
       } else {
-        cov_7q18jdgcc.b[2][1]++;
-        cov_7q18jdgcc.s[49]++;
+        cov_1qou27nk45.b[2][1]++;
+        cov_1qou27nk45.s[49]++;
 
         if ($(this.getTipElement()).hasClass(ClassName.SHOW)) {
-          cov_7q18jdgcc.b[5][0]++;
-          cov_7q18jdgcc.s[50]++;
+          cov_1qou27nk45.b[5][0]++;
+          cov_1qou27nk45.s[50]++;
 
           this._leave(null, this);
 
-          cov_7q18jdgcc.s[51]++;
+          cov_1qou27nk45.s[51]++;
           return;
         } else {
-          cov_7q18jdgcc.b[5][1]++;
+          cov_1qou27nk45.b[5][1]++;
         }
 
-        cov_7q18jdgcc.s[52]++;
+        cov_1qou27nk45.s[52]++;
 
         this._enter(null, this);
       }
     };
 
     _proto.dispose = function dispose() {
-      cov_7q18jdgcc.f[13]++;
-      cov_7q18jdgcc.s[53]++;
+      cov_1qou27nk45.f[13]++;
+      cov_1qou27nk45.s[53]++;
       clearTimeout(this._timeout);
-      cov_7q18jdgcc.s[54]++;
+      cov_1qou27nk45.s[54]++;
       $.removeData(this.element, this.constructor.DATA_KEY);
-      cov_7q18jdgcc.s[55]++;
+      cov_1qou27nk45.s[55]++;
       $(this.element).off(this.constructor.EVENT_KEY);
-      cov_7q18jdgcc.s[56]++;
+      cov_1qou27nk45.s[56]++;
       $(this.element).closest('.modal').off('hide.bs.modal');
-      cov_7q18jdgcc.s[57]++;
+      cov_1qou27nk45.s[57]++;
 
       if (this.tip) {
-        cov_7q18jdgcc.b[6][0]++;
-        cov_7q18jdgcc.s[58]++;
+        cov_1qou27nk45.b[6][0]++;
+        cov_1qou27nk45.s[58]++;
         $(this.tip).remove();
       } else {
-        cov_7q18jdgcc.b[6][1]++;
+        cov_1qou27nk45.b[6][1]++;
       }
 
-      cov_7q18jdgcc.s[59]++;
+      cov_1qou27nk45.s[59]++;
       this._isEnabled = null;
-      cov_7q18jdgcc.s[60]++;
+      cov_1qou27nk45.s[60]++;
       this._timeout = null;
-      cov_7q18jdgcc.s[61]++;
+      cov_1qou27nk45.s[61]++;
       this._hoverState = null;
-      cov_7q18jdgcc.s[62]++;
+      cov_1qou27nk45.s[62]++;
       this._activeTrigger = null;
-      cov_7q18jdgcc.s[63]++;
+      cov_1qou27nk45.s[63]++;
 
       if (this._popper !== null) {
-        cov_7q18jdgcc.b[7][0]++;
-        cov_7q18jdgcc.s[64]++;
+        cov_1qou27nk45.b[7][0]++;
+        cov_1qou27nk45.s[64]++;
 
         this._popper.destroy();
       } else {
-        cov_7q18jdgcc.b[7][1]++;
+        cov_1qou27nk45.b[7][1]++;
       }
 
-      cov_7q18jdgcc.s[65]++;
+      cov_1qou27nk45.s[65]++;
       this._popper = null;
-      cov_7q18jdgcc.s[66]++;
+      cov_1qou27nk45.s[66]++;
       this.element = null;
-      cov_7q18jdgcc.s[67]++;
+      cov_1qou27nk45.s[67]++;
       this.config = null;
-      cov_7q18jdgcc.s[68]++;
+      cov_1qou27nk45.s[68]++;
       this.tip = null;
     };
 
     _proto.show = function show() {
       var _this = this;
 
-      cov_7q18jdgcc.f[14]++;
-      cov_7q18jdgcc.s[69]++;
+      cov_1qou27nk45.f[14]++;
+      cov_1qou27nk45.s[69]++;
 
       if ($(this.element).css('display') === 'none') {
-        cov_7q18jdgcc.b[8][0]++;
-        cov_7q18jdgcc.s[70]++;
+        cov_1qou27nk45.b[8][0]++;
+        cov_1qou27nk45.s[70]++;
         throw new Error('Please use show on visible elements');
       } else {
-        cov_7q18jdgcc.b[8][1]++;
+        cov_1qou27nk45.b[8][1]++;
       }
 
-      var showEvent = (cov_7q18jdgcc.s[71]++, $.Event(this.constructor.Event.SHOW));
-      cov_7q18jdgcc.s[72]++;
+      var showEvent = (cov_1qou27nk45.s[71]++, $.Event(this.constructor.Event.SHOW));
+      cov_1qou27nk45.s[72]++;
 
-      if ((cov_7q18jdgcc.b[10][0]++, this.isWithContent()) && (cov_7q18jdgcc.b[10][1]++, this._isEnabled)) {
-        cov_7q18jdgcc.b[9][0]++;
-        cov_7q18jdgcc.s[73]++;
+      if ((cov_1qou27nk45.b[10][0]++, this.isWithContent()) && (cov_1qou27nk45.b[10][1]++, this._isEnabled)) {
+        cov_1qou27nk45.b[9][0]++;
+        cov_1qou27nk45.s[73]++;
         $(this.element).trigger(showEvent);
-        var isInTheDom = (cov_7q18jdgcc.s[74]++, $.contains(this.element.ownerDocument.documentElement, this.element));
-        cov_7q18jdgcc.s[75]++;
+        var isInTheDom = (cov_1qou27nk45.s[74]++, $.contains(this.element.ownerDocument.documentElement, this.element));
+        cov_1qou27nk45.s[75]++;
 
-        if ((cov_7q18jdgcc.b[12][0]++, showEvent.isDefaultPrevented()) || (cov_7q18jdgcc.b[12][1]++, !isInTheDom)) {
-          cov_7q18jdgcc.b[11][0]++;
-          cov_7q18jdgcc.s[76]++;
+        if ((cov_1qou27nk45.b[12][0]++, showEvent.isDefaultPrevented()) || (cov_1qou27nk45.b[12][1]++, !isInTheDom)) {
+          cov_1qou27nk45.b[11][0]++;
+          cov_1qou27nk45.s[76]++;
           return;
         } else {
-          cov_7q18jdgcc.b[11][1]++;
+          cov_1qou27nk45.b[11][1]++;
         }
 
-        var tip = (cov_7q18jdgcc.s[77]++, this.getTipElement());
-        var tipId = (cov_7q18jdgcc.s[78]++, Util.getUID(this.constructor.NAME));
-        cov_7q18jdgcc.s[79]++;
+        var tip = (cov_1qou27nk45.s[77]++, this.getTipElement());
+        var tipId = (cov_1qou27nk45.s[78]++, Util.getUID(this.constructor.NAME));
+        cov_1qou27nk45.s[79]++;
         tip.setAttribute('id', tipId);
-        cov_7q18jdgcc.s[80]++;
+        cov_1qou27nk45.s[80]++;
         this.element.setAttribute('aria-describedby', tipId);
-        cov_7q18jdgcc.s[81]++;
+        cov_1qou27nk45.s[81]++;
         this.setContent();
-        cov_7q18jdgcc.s[82]++;
+        cov_1qou27nk45.s[82]++;
 
         if (this.config.animation) {
-          cov_7q18jdgcc.b[13][0]++;
-          cov_7q18jdgcc.s[83]++;
+          cov_1qou27nk45.b[13][0]++;
+          cov_1qou27nk45.s[83]++;
           $(tip).addClass(ClassName.FADE);
         } else {
-          cov_7q18jdgcc.b[13][1]++;
+          cov_1qou27nk45.b[13][1]++;
         }
 
-        var placement = (cov_7q18jdgcc.s[84]++, typeof this.config.placement === 'function' ? (cov_7q18jdgcc.b[14][0]++, this.config.placement.call(this, tip, this.element)) : (cov_7q18jdgcc.b[14][1]++, this.config.placement));
-        var attachment = (cov_7q18jdgcc.s[85]++, this._getAttachment(placement));
-        cov_7q18jdgcc.s[86]++;
+        var placement = (cov_1qou27nk45.s[84]++, typeof this.config.placement === 'function' ? (cov_1qou27nk45.b[14][0]++, this.config.placement.call(this, tip, this.element)) : (cov_1qou27nk45.b[14][1]++, this.config.placement));
+        var attachment = (cov_1qou27nk45.s[85]++, this._getAttachment(placement));
+        cov_1qou27nk45.s[86]++;
         this.addAttachmentClass(attachment);
-        var container = (cov_7q18jdgcc.s[87]++, this.config.container === false ? (cov_7q18jdgcc.b[15][0]++, document.body) : (cov_7q18jdgcc.b[15][1]++, $(this.config.container)));
-        cov_7q18jdgcc.s[88]++;
+        var container = (cov_1qou27nk45.s[87]++, this.config.container === false ? (cov_1qou27nk45.b[15][0]++, document.body) : (cov_1qou27nk45.b[15][1]++, $(this.config.container)));
+        cov_1qou27nk45.s[88]++;
         $(tip).data(this.constructor.DATA_KEY, this);
-        cov_7q18jdgcc.s[89]++;
+        cov_1qou27nk45.s[89]++;
 
         if (!$.contains(this.element.ownerDocument.documentElement, this.tip)) {
-          cov_7q18jdgcc.b[16][0]++;
-          cov_7q18jdgcc.s[90]++;
+          cov_1qou27nk45.b[16][0]++;
+          cov_1qou27nk45.s[90]++;
           $(tip).appendTo(container);
         } else {
-          cov_7q18jdgcc.b[16][1]++;
+          cov_1qou27nk45.b[16][1]++;
         }
 
-        cov_7q18jdgcc.s[91]++;
+        cov_1qou27nk45.s[91]++;
         $(this.element).trigger(this.constructor.Event.INSERTED);
-        cov_7q18jdgcc.s[92]++;
+        cov_1qou27nk45.s[92]++;
         this._popper = new Popper(this.element, tip, {
           placement: attachment,
           modifiers: {
@@ -7243,703 +7240,703 @@ var Tooltip = (cov_7q18jdgcc.s[0]++, function ($) {
             }
           },
           onCreate: function onCreate(data) {
-            cov_7q18jdgcc.f[15]++;
-            cov_7q18jdgcc.s[93]++;
+            cov_1qou27nk45.f[15]++;
+            cov_1qou27nk45.s[93]++;
 
             if (data.originalPlacement !== data.placement) {
-              cov_7q18jdgcc.b[17][0]++;
-              cov_7q18jdgcc.s[94]++;
+              cov_1qou27nk45.b[17][0]++;
+              cov_1qou27nk45.s[94]++;
 
               _this._handlePopperPlacementChange(data);
             } else {
-              cov_7q18jdgcc.b[17][1]++;
+              cov_1qou27nk45.b[17][1]++;
             }
           },
           onUpdate: function onUpdate(data) {
-            cov_7q18jdgcc.f[16]++;
-            cov_7q18jdgcc.s[95]++;
+            cov_1qou27nk45.f[16]++;
+            cov_1qou27nk45.s[95]++;
 
             _this._handlePopperPlacementChange(data);
           }
         });
-        cov_7q18jdgcc.s[96]++;
+        cov_1qou27nk45.s[96]++;
         $(tip).addClass(ClassName.SHOW); // If this is a touch-enabled device we add extra
         // empty mouseover listeners to the body's immediate children;
         // only needed because of broken event delegation on iOS
         // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
-        cov_7q18jdgcc.s[97]++;
+        cov_1qou27nk45.s[97]++;
 
         if ('ontouchstart' in document.documentElement) {
-          cov_7q18jdgcc.b[18][0]++;
-          cov_7q18jdgcc.s[98]++;
+          cov_1qou27nk45.b[18][0]++;
+          cov_1qou27nk45.s[98]++;
           $(document.body).children().on('mouseover', null, $.noop);
         } else {
-          cov_7q18jdgcc.b[18][1]++;
+          cov_1qou27nk45.b[18][1]++;
         }
 
-        cov_7q18jdgcc.s[99]++;
+        cov_1qou27nk45.s[99]++;
 
         var complete = function complete() {
-          cov_7q18jdgcc.f[17]++;
-          cov_7q18jdgcc.s[100]++;
+          cov_1qou27nk45.f[17]++;
+          cov_1qou27nk45.s[100]++;
 
           if (_this.config.animation) {
-            cov_7q18jdgcc.b[19][0]++;
-            cov_7q18jdgcc.s[101]++;
+            cov_1qou27nk45.b[19][0]++;
+            cov_1qou27nk45.s[101]++;
 
             _this._fixTransition();
           } else {
-            cov_7q18jdgcc.b[19][1]++;
+            cov_1qou27nk45.b[19][1]++;
           }
 
-          var prevHoverState = (cov_7q18jdgcc.s[102]++, _this._hoverState);
-          cov_7q18jdgcc.s[103]++;
+          var prevHoverState = (cov_1qou27nk45.s[102]++, _this._hoverState);
+          cov_1qou27nk45.s[103]++;
           _this._hoverState = null;
-          cov_7q18jdgcc.s[104]++;
+          cov_1qou27nk45.s[104]++;
           $(_this.element).trigger(_this.constructor.Event.SHOWN);
-          cov_7q18jdgcc.s[105]++;
+          cov_1qou27nk45.s[105]++;
 
           if (prevHoverState === HoverState.OUT) {
-            cov_7q18jdgcc.b[20][0]++;
-            cov_7q18jdgcc.s[106]++;
+            cov_1qou27nk45.b[20][0]++;
+            cov_1qou27nk45.s[106]++;
 
             _this._leave(null, _this);
           } else {
-            cov_7q18jdgcc.b[20][1]++;
+            cov_1qou27nk45.b[20][1]++;
           }
         };
 
-        cov_7q18jdgcc.s[107]++;
+        cov_1qou27nk45.s[107]++;
 
         if ($(this.tip).hasClass(ClassName.FADE)) {
-          cov_7q18jdgcc.b[21][0]++;
-          var transitionDuration = (cov_7q18jdgcc.s[108]++, Util.getTransitionDurationFromElement(this.tip));
-          cov_7q18jdgcc.s[109]++;
+          cov_1qou27nk45.b[21][0]++;
+          var transitionDuration = (cov_1qou27nk45.s[108]++, Util.getTransitionDurationFromElement(this.tip));
+          cov_1qou27nk45.s[109]++;
           $(this.tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
         } else {
-          cov_7q18jdgcc.b[21][1]++;
-          cov_7q18jdgcc.s[110]++;
+          cov_1qou27nk45.b[21][1]++;
+          cov_1qou27nk45.s[110]++;
           complete();
         }
       } else {
-        cov_7q18jdgcc.b[9][1]++;
+        cov_1qou27nk45.b[9][1]++;
       }
     };
 
     _proto.hide = function hide(callback) {
       var _this2 = this;
 
-      cov_7q18jdgcc.f[18]++;
-      var tip = (cov_7q18jdgcc.s[111]++, this.getTipElement());
-      var hideEvent = (cov_7q18jdgcc.s[112]++, $.Event(this.constructor.Event.HIDE));
-      cov_7q18jdgcc.s[113]++;
+      cov_1qou27nk45.f[18]++;
+      var tip = (cov_1qou27nk45.s[111]++, this.getTipElement());
+      var hideEvent = (cov_1qou27nk45.s[112]++, $.Event(this.constructor.Event.HIDE));
+      cov_1qou27nk45.s[113]++;
 
       var complete = function complete() {
-        cov_7q18jdgcc.f[19]++;
-        cov_7q18jdgcc.s[114]++;
+        cov_1qou27nk45.f[19]++;
+        cov_1qou27nk45.s[114]++;
 
-        if ((cov_7q18jdgcc.b[23][0]++, _this2._hoverState !== HoverState.SHOW) && (cov_7q18jdgcc.b[23][1]++, tip.parentNode)) {
-          cov_7q18jdgcc.b[22][0]++;
-          cov_7q18jdgcc.s[115]++;
+        if ((cov_1qou27nk45.b[23][0]++, _this2._hoverState !== HoverState.SHOW) && (cov_1qou27nk45.b[23][1]++, tip.parentNode)) {
+          cov_1qou27nk45.b[22][0]++;
+          cov_1qou27nk45.s[115]++;
           tip.parentNode.removeChild(tip);
         } else {
-          cov_7q18jdgcc.b[22][1]++;
+          cov_1qou27nk45.b[22][1]++;
         }
 
-        cov_7q18jdgcc.s[116]++;
+        cov_1qou27nk45.s[116]++;
 
         _this2._cleanTipClass();
 
-        cov_7q18jdgcc.s[117]++;
+        cov_1qou27nk45.s[117]++;
 
         _this2.element.removeAttribute('aria-describedby');
 
-        cov_7q18jdgcc.s[118]++;
+        cov_1qou27nk45.s[118]++;
         $(_this2.element).trigger(_this2.constructor.Event.HIDDEN);
-        cov_7q18jdgcc.s[119]++;
+        cov_1qou27nk45.s[119]++;
 
         if (_this2._popper !== null) {
-          cov_7q18jdgcc.b[24][0]++;
-          cov_7q18jdgcc.s[120]++;
+          cov_1qou27nk45.b[24][0]++;
+          cov_1qou27nk45.s[120]++;
 
           _this2._popper.destroy();
         } else {
-          cov_7q18jdgcc.b[24][1]++;
+          cov_1qou27nk45.b[24][1]++;
         }
 
-        cov_7q18jdgcc.s[121]++;
+        cov_1qou27nk45.s[121]++;
 
         if (callback) {
-          cov_7q18jdgcc.b[25][0]++;
-          cov_7q18jdgcc.s[122]++;
+          cov_1qou27nk45.b[25][0]++;
+          cov_1qou27nk45.s[122]++;
           callback();
         } else {
-          cov_7q18jdgcc.b[25][1]++;
+          cov_1qou27nk45.b[25][1]++;
         }
       };
 
-      cov_7q18jdgcc.s[123]++;
+      cov_1qou27nk45.s[123]++;
       $(this.element).trigger(hideEvent);
-      cov_7q18jdgcc.s[124]++;
+      cov_1qou27nk45.s[124]++;
 
       if (hideEvent.isDefaultPrevented()) {
-        cov_7q18jdgcc.b[26][0]++;
-        cov_7q18jdgcc.s[125]++;
+        cov_1qou27nk45.b[26][0]++;
+        cov_1qou27nk45.s[125]++;
         return;
       } else {
-        cov_7q18jdgcc.b[26][1]++;
+        cov_1qou27nk45.b[26][1]++;
       }
 
-      cov_7q18jdgcc.s[126]++;
+      cov_1qou27nk45.s[126]++;
       $(tip).removeClass(ClassName.SHOW); // If this is a touch-enabled device we remove the extra
       // empty mouseover listeners we added for iOS support
 
-      cov_7q18jdgcc.s[127]++;
+      cov_1qou27nk45.s[127]++;
 
       if ('ontouchstart' in document.documentElement) {
-        cov_7q18jdgcc.b[27][0]++;
-        cov_7q18jdgcc.s[128]++;
+        cov_1qou27nk45.b[27][0]++;
+        cov_1qou27nk45.s[128]++;
         $(document.body).children().off('mouseover', null, $.noop);
       } else {
-        cov_7q18jdgcc.b[27][1]++;
+        cov_1qou27nk45.b[27][1]++;
       }
 
-      cov_7q18jdgcc.s[129]++;
+      cov_1qou27nk45.s[129]++;
       this._activeTrigger[Trigger.CLICK] = false;
-      cov_7q18jdgcc.s[130]++;
+      cov_1qou27nk45.s[130]++;
       this._activeTrigger[Trigger.FOCUS] = false;
-      cov_7q18jdgcc.s[131]++;
+      cov_1qou27nk45.s[131]++;
       this._activeTrigger[Trigger.HOVER] = false;
-      cov_7q18jdgcc.s[132]++;
+      cov_1qou27nk45.s[132]++;
 
       if ($(this.tip).hasClass(ClassName.FADE)) {
-        cov_7q18jdgcc.b[28][0]++;
-        var transitionDuration = (cov_7q18jdgcc.s[133]++, Util.getTransitionDurationFromElement(tip));
-        cov_7q18jdgcc.s[134]++;
+        cov_1qou27nk45.b[28][0]++;
+        var transitionDuration = (cov_1qou27nk45.s[133]++, Util.getTransitionDurationFromElement(tip));
+        cov_1qou27nk45.s[134]++;
         $(tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
       } else {
-        cov_7q18jdgcc.b[28][1]++;
-        cov_7q18jdgcc.s[135]++;
+        cov_1qou27nk45.b[28][1]++;
+        cov_1qou27nk45.s[135]++;
         complete();
       }
 
-      cov_7q18jdgcc.s[136]++;
+      cov_1qou27nk45.s[136]++;
       this._hoverState = '';
     };
 
     _proto.update = function update() {
-      cov_7q18jdgcc.f[20]++;
-      cov_7q18jdgcc.s[137]++;
+      cov_1qou27nk45.f[20]++;
+      cov_1qou27nk45.s[137]++;
 
       if (this._popper !== null) {
-        cov_7q18jdgcc.b[29][0]++;
-        cov_7q18jdgcc.s[138]++;
+        cov_1qou27nk45.b[29][0]++;
+        cov_1qou27nk45.s[138]++;
 
         this._popper.scheduleUpdate();
       } else {
-        cov_7q18jdgcc.b[29][1]++;
+        cov_1qou27nk45.b[29][1]++;
       }
     }; // Protected
 
 
     _proto.isWithContent = function isWithContent() {
-      cov_7q18jdgcc.f[21]++;
-      cov_7q18jdgcc.s[139]++;
+      cov_1qou27nk45.f[21]++;
+      cov_1qou27nk45.s[139]++;
       return Boolean(this.getTitle());
     };
 
     _proto.addAttachmentClass = function addAttachmentClass(attachment) {
-      cov_7q18jdgcc.f[22]++;
-      cov_7q18jdgcc.s[140]++;
+      cov_1qou27nk45.f[22]++;
+      cov_1qou27nk45.s[140]++;
       $(this.getTipElement()).addClass(CLASS_PREFIX + "-" + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
-      cov_7q18jdgcc.f[23]++;
-      cov_7q18jdgcc.s[141]++;
-      this.tip = (cov_7q18jdgcc.b[30][0]++, this.tip) || (cov_7q18jdgcc.b[30][1]++, $(this.config.template)[0]);
-      cov_7q18jdgcc.s[142]++;
+      cov_1qou27nk45.f[23]++;
+      cov_1qou27nk45.s[141]++;
+      this.tip = (cov_1qou27nk45.b[30][0]++, this.tip) || (cov_1qou27nk45.b[30][1]++, $(this.config.template)[0]);
+      cov_1qou27nk45.s[142]++;
       return this.tip;
     };
 
     _proto.setContent = function setContent() {
-      cov_7q18jdgcc.f[24]++;
-      var $tip = (cov_7q18jdgcc.s[143]++, $(this.getTipElement()));
-      cov_7q18jdgcc.s[144]++;
+      cov_1qou27nk45.f[24]++;
+      var $tip = (cov_1qou27nk45.s[143]++, $(this.getTipElement()));
+      cov_1qou27nk45.s[144]++;
       this.setElementContent($tip.find(Selector.TOOLTIP_INNER), this.getTitle());
-      cov_7q18jdgcc.s[145]++;
+      cov_1qou27nk45.s[145]++;
       $tip.removeClass(ClassName.FADE + " " + ClassName.SHOW);
     };
 
     _proto.setElementContent = function setElementContent($element, content) {
-      cov_7q18jdgcc.f[25]++;
-      var html = (cov_7q18jdgcc.s[146]++, this.config.html);
-      cov_7q18jdgcc.s[147]++;
+      cov_1qou27nk45.f[25]++;
+      var html = (cov_1qou27nk45.s[146]++, this.config.html);
+      cov_1qou27nk45.s[147]++;
 
-      if ((cov_7q18jdgcc.b[32][0]++, typeof content === 'object') && ((cov_7q18jdgcc.b[32][1]++, content.nodeType) || (cov_7q18jdgcc.b[32][2]++, content.jquery))) {
-        cov_7q18jdgcc.b[31][0]++;
-        cov_7q18jdgcc.s[148]++;
+      if ((cov_1qou27nk45.b[32][0]++, typeof content === 'object') && ((cov_1qou27nk45.b[32][1]++, content.nodeType) || (cov_1qou27nk45.b[32][2]++, content.jquery))) {
+        cov_1qou27nk45.b[31][0]++;
+        cov_1qou27nk45.s[148]++;
 
         // Content is a DOM node or a jQuery
         if (html) {
-          cov_7q18jdgcc.b[33][0]++;
-          cov_7q18jdgcc.s[149]++;
+          cov_1qou27nk45.b[33][0]++;
+          cov_1qou27nk45.s[149]++;
 
           if (!$(content).parent().is($element)) {
-            cov_7q18jdgcc.b[34][0]++;
-            cov_7q18jdgcc.s[150]++;
+            cov_1qou27nk45.b[34][0]++;
+            cov_1qou27nk45.s[150]++;
             $element.empty().append(content);
           } else {
-            cov_7q18jdgcc.b[34][1]++;
+            cov_1qou27nk45.b[34][1]++;
           }
         } else {
-          cov_7q18jdgcc.b[33][1]++;
-          cov_7q18jdgcc.s[151]++;
+          cov_1qou27nk45.b[33][1]++;
+          cov_1qou27nk45.s[151]++;
           $element.text($(content).text());
         }
       } else {
-        cov_7q18jdgcc.b[31][1]++;
-        cov_7q18jdgcc.s[152]++;
-        $element[html ? (cov_7q18jdgcc.b[35][0]++, 'html') : (cov_7q18jdgcc.b[35][1]++, 'text')](content);
+        cov_1qou27nk45.b[31][1]++;
+        cov_1qou27nk45.s[152]++;
+        $element[html ? (cov_1qou27nk45.b[35][0]++, 'html') : (cov_1qou27nk45.b[35][1]++, 'text')](content);
       }
     };
 
     _proto.getTitle = function getTitle() {
-      cov_7q18jdgcc.f[26]++;
-      var title = (cov_7q18jdgcc.s[153]++, this.element.getAttribute('data-original-title'));
-      cov_7q18jdgcc.s[154]++;
+      cov_1qou27nk45.f[26]++;
+      var title = (cov_1qou27nk45.s[153]++, this.element.getAttribute('data-original-title'));
+      cov_1qou27nk45.s[154]++;
 
       if (!title) {
-        cov_7q18jdgcc.b[36][0]++;
-        cov_7q18jdgcc.s[155]++;
-        title = typeof this.config.title === 'function' ? (cov_7q18jdgcc.b[37][0]++, this.config.title.call(this.element)) : (cov_7q18jdgcc.b[37][1]++, this.config.title);
+        cov_1qou27nk45.b[36][0]++;
+        cov_1qou27nk45.s[155]++;
+        title = typeof this.config.title === 'function' ? (cov_1qou27nk45.b[37][0]++, this.config.title.call(this.element)) : (cov_1qou27nk45.b[37][1]++, this.config.title);
       } else {
-        cov_7q18jdgcc.b[36][1]++;
+        cov_1qou27nk45.b[36][1]++;
       }
 
-      cov_7q18jdgcc.s[156]++;
+      cov_1qou27nk45.s[156]++;
       return title;
     }; // Private
 
 
     _proto._getAttachment = function _getAttachment(placement) {
-      cov_7q18jdgcc.f[27]++;
-      cov_7q18jdgcc.s[157]++;
+      cov_1qou27nk45.f[27]++;
+      cov_1qou27nk45.s[157]++;
       return AttachmentMap[placement.toUpperCase()];
     };
 
     _proto._setListeners = function _setListeners() {
       var _this3 = this;
 
-      cov_7q18jdgcc.f[28]++;
-      var triggers = (cov_7q18jdgcc.s[158]++, this.config.trigger.split(' '));
-      cov_7q18jdgcc.s[159]++;
+      cov_1qou27nk45.f[28]++;
+      var triggers = (cov_1qou27nk45.s[158]++, this.config.trigger.split(' '));
+      cov_1qou27nk45.s[159]++;
       triggers.forEach(function (trigger) {
-        cov_7q18jdgcc.f[29]++;
-        cov_7q18jdgcc.s[160]++;
+        cov_1qou27nk45.f[29]++;
+        cov_1qou27nk45.s[160]++;
 
         if (trigger === 'click') {
-          cov_7q18jdgcc.b[38][0]++;
-          cov_7q18jdgcc.s[161]++;
+          cov_1qou27nk45.b[38][0]++;
+          cov_1qou27nk45.s[161]++;
           $(_this3.element).on(_this3.constructor.Event.CLICK, _this3.config.selector, function (event) {
-            cov_7q18jdgcc.f[30]++;
-            cov_7q18jdgcc.s[162]++;
+            cov_1qou27nk45.f[30]++;
+            cov_1qou27nk45.s[162]++;
             return _this3.toggle(event);
           });
         } else {
-          cov_7q18jdgcc.b[38][1]++;
-          cov_7q18jdgcc.s[163]++;
+          cov_1qou27nk45.b[38][1]++;
+          cov_1qou27nk45.s[163]++;
 
           if (trigger !== Trigger.MANUAL) {
-            cov_7q18jdgcc.b[39][0]++;
-            var eventIn = (cov_7q18jdgcc.s[164]++, trigger === Trigger.HOVER ? (cov_7q18jdgcc.b[40][0]++, _this3.constructor.Event.MOUSEENTER) : (cov_7q18jdgcc.b[40][1]++, _this3.constructor.Event.FOCUSIN));
-            var eventOut = (cov_7q18jdgcc.s[165]++, trigger === Trigger.HOVER ? (cov_7q18jdgcc.b[41][0]++, _this3.constructor.Event.MOUSELEAVE) : (cov_7q18jdgcc.b[41][1]++, _this3.constructor.Event.FOCUSOUT));
-            cov_7q18jdgcc.s[166]++;
+            cov_1qou27nk45.b[39][0]++;
+            var eventIn = (cov_1qou27nk45.s[164]++, trigger === Trigger.HOVER ? (cov_1qou27nk45.b[40][0]++, _this3.constructor.Event.MOUSEENTER) : (cov_1qou27nk45.b[40][1]++, _this3.constructor.Event.FOCUSIN));
+            var eventOut = (cov_1qou27nk45.s[165]++, trigger === Trigger.HOVER ? (cov_1qou27nk45.b[41][0]++, _this3.constructor.Event.MOUSELEAVE) : (cov_1qou27nk45.b[41][1]++, _this3.constructor.Event.FOCUSOUT));
+            cov_1qou27nk45.s[166]++;
             $(_this3.element).on(eventIn, _this3.config.selector, function (event) {
-              cov_7q18jdgcc.f[31]++;
-              cov_7q18jdgcc.s[167]++;
+              cov_1qou27nk45.f[31]++;
+              cov_1qou27nk45.s[167]++;
               return _this3._enter(event);
             }).on(eventOut, _this3.config.selector, function (event) {
-              cov_7q18jdgcc.f[32]++;
-              cov_7q18jdgcc.s[168]++;
+              cov_1qou27nk45.f[32]++;
+              cov_1qou27nk45.s[168]++;
               return _this3._leave(event);
             });
           } else {
-            cov_7q18jdgcc.b[39][1]++;
+            cov_1qou27nk45.b[39][1]++;
           }
         }
 
-        cov_7q18jdgcc.s[169]++;
+        cov_1qou27nk45.s[169]++;
         $(_this3.element).closest('.modal').on('hide.bs.modal', function () {
-          cov_7q18jdgcc.f[33]++;
-          cov_7q18jdgcc.s[170]++;
+          cov_1qou27nk45.f[33]++;
+          cov_1qou27nk45.s[170]++;
           return _this3.hide();
         });
       });
-      cov_7q18jdgcc.s[171]++;
+      cov_1qou27nk45.s[171]++;
 
       if (this.config.selector) {
-        cov_7q18jdgcc.b[42][0]++;
-        cov_7q18jdgcc.s[172]++;
+        cov_1qou27nk45.b[42][0]++;
+        cov_1qou27nk45.s[172]++;
         this.config = _objectSpread({}, this.config, {
           trigger: 'manual',
           selector: ''
         });
       } else {
-        cov_7q18jdgcc.b[42][1]++;
-        cov_7q18jdgcc.s[173]++;
+        cov_1qou27nk45.b[42][1]++;
+        cov_1qou27nk45.s[173]++;
 
         this._fixTitle();
       }
     };
 
     _proto._fixTitle = function _fixTitle() {
-      cov_7q18jdgcc.f[34]++;
-      var titleType = (cov_7q18jdgcc.s[174]++, typeof this.element.getAttribute('data-original-title'));
-      cov_7q18jdgcc.s[175]++;
+      cov_1qou27nk45.f[34]++;
+      var titleType = (cov_1qou27nk45.s[174]++, typeof this.element.getAttribute('data-original-title'));
+      cov_1qou27nk45.s[175]++;
 
-      if ((cov_7q18jdgcc.b[44][0]++, this.element.getAttribute('title')) || (cov_7q18jdgcc.b[44][1]++, titleType !== 'string')) {
-        cov_7q18jdgcc.b[43][0]++;
-        cov_7q18jdgcc.s[176]++;
-        this.element.setAttribute('data-original-title', (cov_7q18jdgcc.b[45][0]++, this.element.getAttribute('title')) || (cov_7q18jdgcc.b[45][1]++, ''));
-        cov_7q18jdgcc.s[177]++;
+      if ((cov_1qou27nk45.b[44][0]++, this.element.getAttribute('title')) || (cov_1qou27nk45.b[44][1]++, titleType !== 'string')) {
+        cov_1qou27nk45.b[43][0]++;
+        cov_1qou27nk45.s[176]++;
+        this.element.setAttribute('data-original-title', (cov_1qou27nk45.b[45][0]++, this.element.getAttribute('title')) || (cov_1qou27nk45.b[45][1]++, ''));
+        cov_1qou27nk45.s[177]++;
         this.element.setAttribute('title', '');
       } else {
-        cov_7q18jdgcc.b[43][1]++;
+        cov_1qou27nk45.b[43][1]++;
       }
     };
 
     _proto._enter = function _enter(event, context) {
-      cov_7q18jdgcc.f[35]++;
-      var dataKey = (cov_7q18jdgcc.s[178]++, this.constructor.DATA_KEY);
-      cov_7q18jdgcc.s[179]++;
-      context = (cov_7q18jdgcc.b[46][0]++, context) || (cov_7q18jdgcc.b[46][1]++, $(event.currentTarget).data(dataKey));
-      cov_7q18jdgcc.s[180]++;
+      cov_1qou27nk45.f[35]++;
+      var dataKey = (cov_1qou27nk45.s[178]++, this.constructor.DATA_KEY);
+      cov_1qou27nk45.s[179]++;
+      context = (cov_1qou27nk45.b[46][0]++, context) || (cov_1qou27nk45.b[46][1]++, $(event.currentTarget).data(dataKey));
+      cov_1qou27nk45.s[180]++;
 
       if (!context) {
-        cov_7q18jdgcc.b[47][0]++;
-        cov_7q18jdgcc.s[181]++;
+        cov_1qou27nk45.b[47][0]++;
+        cov_1qou27nk45.s[181]++;
         context = new this.constructor(event.currentTarget, this._getDelegateConfig());
-        cov_7q18jdgcc.s[182]++;
+        cov_1qou27nk45.s[182]++;
         $(event.currentTarget).data(dataKey, context);
       } else {
-        cov_7q18jdgcc.b[47][1]++;
+        cov_1qou27nk45.b[47][1]++;
       }
 
-      cov_7q18jdgcc.s[183]++;
+      cov_1qou27nk45.s[183]++;
 
       if (event) {
-        cov_7q18jdgcc.b[48][0]++;
-        cov_7q18jdgcc.s[184]++;
-        context._activeTrigger[event.type === 'focusin' ? (cov_7q18jdgcc.b[49][0]++, Trigger.FOCUS) : (cov_7q18jdgcc.b[49][1]++, Trigger.HOVER)] = true;
+        cov_1qou27nk45.b[48][0]++;
+        cov_1qou27nk45.s[184]++;
+        context._activeTrigger[event.type === 'focusin' ? (cov_1qou27nk45.b[49][0]++, Trigger.FOCUS) : (cov_1qou27nk45.b[49][1]++, Trigger.HOVER)] = true;
       } else {
-        cov_7q18jdgcc.b[48][1]++;
+        cov_1qou27nk45.b[48][1]++;
       }
 
-      cov_7q18jdgcc.s[185]++;
+      cov_1qou27nk45.s[185]++;
 
-      if ((cov_7q18jdgcc.b[51][0]++, $(context.getTipElement()).hasClass(ClassName.SHOW)) || (cov_7q18jdgcc.b[51][1]++, context._hoverState === HoverState.SHOW)) {
-        cov_7q18jdgcc.b[50][0]++;
-        cov_7q18jdgcc.s[186]++;
+      if ((cov_1qou27nk45.b[51][0]++, $(context.getTipElement()).hasClass(ClassName.SHOW)) || (cov_1qou27nk45.b[51][1]++, context._hoverState === HoverState.SHOW)) {
+        cov_1qou27nk45.b[50][0]++;
+        cov_1qou27nk45.s[186]++;
         context._hoverState = HoverState.SHOW;
-        cov_7q18jdgcc.s[187]++;
+        cov_1qou27nk45.s[187]++;
         return;
       } else {
-        cov_7q18jdgcc.b[50][1]++;
+        cov_1qou27nk45.b[50][1]++;
       }
 
-      cov_7q18jdgcc.s[188]++;
+      cov_1qou27nk45.s[188]++;
       clearTimeout(context._timeout);
-      cov_7q18jdgcc.s[189]++;
+      cov_1qou27nk45.s[189]++;
       context._hoverState = HoverState.SHOW;
-      cov_7q18jdgcc.s[190]++;
+      cov_1qou27nk45.s[190]++;
 
-      if ((cov_7q18jdgcc.b[53][0]++, !context.config.delay) || (cov_7q18jdgcc.b[53][1]++, !context.config.delay.show)) {
-        cov_7q18jdgcc.b[52][0]++;
-        cov_7q18jdgcc.s[191]++;
+      if ((cov_1qou27nk45.b[53][0]++, !context.config.delay) || (cov_1qou27nk45.b[53][1]++, !context.config.delay.show)) {
+        cov_1qou27nk45.b[52][0]++;
+        cov_1qou27nk45.s[191]++;
         context.show();
-        cov_7q18jdgcc.s[192]++;
+        cov_1qou27nk45.s[192]++;
         return;
       } else {
-        cov_7q18jdgcc.b[52][1]++;
+        cov_1qou27nk45.b[52][1]++;
       }
 
-      cov_7q18jdgcc.s[193]++;
+      cov_1qou27nk45.s[193]++;
       context._timeout = setTimeout(function () {
-        cov_7q18jdgcc.f[36]++;
-        cov_7q18jdgcc.s[194]++;
+        cov_1qou27nk45.f[36]++;
+        cov_1qou27nk45.s[194]++;
 
         if (context._hoverState === HoverState.SHOW) {
-          cov_7q18jdgcc.b[54][0]++;
-          cov_7q18jdgcc.s[195]++;
+          cov_1qou27nk45.b[54][0]++;
+          cov_1qou27nk45.s[195]++;
           context.show();
         } else {
-          cov_7q18jdgcc.b[54][1]++;
+          cov_1qou27nk45.b[54][1]++;
         }
       }, context.config.delay.show);
     };
 
     _proto._leave = function _leave(event, context) {
-      cov_7q18jdgcc.f[37]++;
-      var dataKey = (cov_7q18jdgcc.s[196]++, this.constructor.DATA_KEY);
-      cov_7q18jdgcc.s[197]++;
-      context = (cov_7q18jdgcc.b[55][0]++, context) || (cov_7q18jdgcc.b[55][1]++, $(event.currentTarget).data(dataKey));
-      cov_7q18jdgcc.s[198]++;
+      cov_1qou27nk45.f[37]++;
+      var dataKey = (cov_1qou27nk45.s[196]++, this.constructor.DATA_KEY);
+      cov_1qou27nk45.s[197]++;
+      context = (cov_1qou27nk45.b[55][0]++, context) || (cov_1qou27nk45.b[55][1]++, $(event.currentTarget).data(dataKey));
+      cov_1qou27nk45.s[198]++;
 
       if (!context) {
-        cov_7q18jdgcc.b[56][0]++;
-        cov_7q18jdgcc.s[199]++;
+        cov_1qou27nk45.b[56][0]++;
+        cov_1qou27nk45.s[199]++;
         context = new this.constructor(event.currentTarget, this._getDelegateConfig());
-        cov_7q18jdgcc.s[200]++;
+        cov_1qou27nk45.s[200]++;
         $(event.currentTarget).data(dataKey, context);
       } else {
-        cov_7q18jdgcc.b[56][1]++;
+        cov_1qou27nk45.b[56][1]++;
       }
 
-      cov_7q18jdgcc.s[201]++;
+      cov_1qou27nk45.s[201]++;
 
       if (event) {
-        cov_7q18jdgcc.b[57][0]++;
-        cov_7q18jdgcc.s[202]++;
-        context._activeTrigger[event.type === 'focusout' ? (cov_7q18jdgcc.b[58][0]++, Trigger.FOCUS) : (cov_7q18jdgcc.b[58][1]++, Trigger.HOVER)] = false;
+        cov_1qou27nk45.b[57][0]++;
+        cov_1qou27nk45.s[202]++;
+        context._activeTrigger[event.type === 'focusout' ? (cov_1qou27nk45.b[58][0]++, Trigger.FOCUS) : (cov_1qou27nk45.b[58][1]++, Trigger.HOVER)] = false;
       } else {
-        cov_7q18jdgcc.b[57][1]++;
+        cov_1qou27nk45.b[57][1]++;
       }
 
-      cov_7q18jdgcc.s[203]++;
+      cov_1qou27nk45.s[203]++;
 
       if (context._isWithActiveTrigger()) {
-        cov_7q18jdgcc.b[59][0]++;
-        cov_7q18jdgcc.s[204]++;
+        cov_1qou27nk45.b[59][0]++;
+        cov_1qou27nk45.s[204]++;
         return;
       } else {
-        cov_7q18jdgcc.b[59][1]++;
+        cov_1qou27nk45.b[59][1]++;
       }
 
-      cov_7q18jdgcc.s[205]++;
+      cov_1qou27nk45.s[205]++;
       clearTimeout(context._timeout);
-      cov_7q18jdgcc.s[206]++;
+      cov_1qou27nk45.s[206]++;
       context._hoverState = HoverState.OUT;
-      cov_7q18jdgcc.s[207]++;
+      cov_1qou27nk45.s[207]++;
 
-      if ((cov_7q18jdgcc.b[61][0]++, !context.config.delay) || (cov_7q18jdgcc.b[61][1]++, !context.config.delay.hide)) {
-        cov_7q18jdgcc.b[60][0]++;
-        cov_7q18jdgcc.s[208]++;
+      if ((cov_1qou27nk45.b[61][0]++, !context.config.delay) || (cov_1qou27nk45.b[61][1]++, !context.config.delay.hide)) {
+        cov_1qou27nk45.b[60][0]++;
+        cov_1qou27nk45.s[208]++;
         context.hide();
-        cov_7q18jdgcc.s[209]++;
+        cov_1qou27nk45.s[209]++;
         return;
       } else {
-        cov_7q18jdgcc.b[60][1]++;
+        cov_1qou27nk45.b[60][1]++;
       }
 
-      cov_7q18jdgcc.s[210]++;
+      cov_1qou27nk45.s[210]++;
       context._timeout = setTimeout(function () {
-        cov_7q18jdgcc.f[38]++;
-        cov_7q18jdgcc.s[211]++;
+        cov_1qou27nk45.f[38]++;
+        cov_1qou27nk45.s[211]++;
 
         if (context._hoverState === HoverState.OUT) {
-          cov_7q18jdgcc.b[62][0]++;
-          cov_7q18jdgcc.s[212]++;
+          cov_1qou27nk45.b[62][0]++;
+          cov_1qou27nk45.s[212]++;
           context.hide();
         } else {
-          cov_7q18jdgcc.b[62][1]++;
+          cov_1qou27nk45.b[62][1]++;
         }
       }, context.config.delay.hide);
     };
 
     _proto._isWithActiveTrigger = function _isWithActiveTrigger() {
-      cov_7q18jdgcc.f[39]++;
-      cov_7q18jdgcc.s[213]++;
+      cov_1qou27nk45.f[39]++;
+      cov_1qou27nk45.s[213]++;
 
       for (var trigger in this._activeTrigger) {
-        cov_7q18jdgcc.s[214]++;
+        cov_1qou27nk45.s[214]++;
 
         if (this._activeTrigger[trigger]) {
-          cov_7q18jdgcc.b[63][0]++;
-          cov_7q18jdgcc.s[215]++;
+          cov_1qou27nk45.b[63][0]++;
+          cov_1qou27nk45.s[215]++;
           return true;
         } else {
-          cov_7q18jdgcc.b[63][1]++;
+          cov_1qou27nk45.b[63][1]++;
         }
       }
 
-      cov_7q18jdgcc.s[216]++;
+      cov_1qou27nk45.s[216]++;
       return false;
     };
 
     _proto._getConfig = function _getConfig(config) {
-      cov_7q18jdgcc.f[40]++;
-      cov_7q18jdgcc.s[217]++;
-      config = _objectSpread({}, this.constructor.Default, $(this.element).data(), (cov_7q18jdgcc.b[65][0]++, typeof config === 'object') && (cov_7q18jdgcc.b[65][1]++, config) ? (cov_7q18jdgcc.b[64][0]++, config) : (cov_7q18jdgcc.b[64][1]++, {}));
-      cov_7q18jdgcc.s[218]++;
+      cov_1qou27nk45.f[40]++;
+      cov_1qou27nk45.s[217]++;
+      config = _objectSpread({}, this.constructor.Default, $(this.element).data(), (cov_1qou27nk45.b[65][0]++, typeof config === 'object') && (cov_1qou27nk45.b[65][1]++, config) ? (cov_1qou27nk45.b[64][0]++, config) : (cov_1qou27nk45.b[64][1]++, {}));
+      cov_1qou27nk45.s[218]++;
 
       if (typeof config.delay === 'number') {
-        cov_7q18jdgcc.b[66][0]++;
-        cov_7q18jdgcc.s[219]++;
+        cov_1qou27nk45.b[66][0]++;
+        cov_1qou27nk45.s[219]++;
         config.delay = {
           show: config.delay,
           hide: config.delay
         };
       } else {
-        cov_7q18jdgcc.b[66][1]++;
+        cov_1qou27nk45.b[66][1]++;
       }
 
-      cov_7q18jdgcc.s[220]++;
+      cov_1qou27nk45.s[220]++;
 
       if (typeof config.title === 'number') {
-        cov_7q18jdgcc.b[67][0]++;
-        cov_7q18jdgcc.s[221]++;
+        cov_1qou27nk45.b[67][0]++;
+        cov_1qou27nk45.s[221]++;
         config.title = config.title.toString();
       } else {
-        cov_7q18jdgcc.b[67][1]++;
+        cov_1qou27nk45.b[67][1]++;
       }
 
-      cov_7q18jdgcc.s[222]++;
+      cov_1qou27nk45.s[222]++;
 
       if (typeof config.content === 'number') {
-        cov_7q18jdgcc.b[68][0]++;
-        cov_7q18jdgcc.s[223]++;
+        cov_1qou27nk45.b[68][0]++;
+        cov_1qou27nk45.s[223]++;
         config.content = config.content.toString();
       } else {
-        cov_7q18jdgcc.b[68][1]++;
+        cov_1qou27nk45.b[68][1]++;
       }
 
-      cov_7q18jdgcc.s[224]++;
+      cov_1qou27nk45.s[224]++;
       Util.typeCheckConfig(NAME, config, this.constructor.DefaultType);
-      cov_7q18jdgcc.s[225]++;
+      cov_1qou27nk45.s[225]++;
       return config;
     };
 
     _proto._getDelegateConfig = function _getDelegateConfig() {
-      cov_7q18jdgcc.f[41]++;
-      var config = (cov_7q18jdgcc.s[226]++, {});
-      cov_7q18jdgcc.s[227]++;
+      cov_1qou27nk45.f[41]++;
+      var config = (cov_1qou27nk45.s[226]++, {});
+      cov_1qou27nk45.s[227]++;
 
       if (this.config) {
-        cov_7q18jdgcc.b[69][0]++;
-        cov_7q18jdgcc.s[228]++;
+        cov_1qou27nk45.b[69][0]++;
+        cov_1qou27nk45.s[228]++;
 
         for (var key in this.config) {
-          cov_7q18jdgcc.s[229]++;
+          cov_1qou27nk45.s[229]++;
 
           if (this.constructor.Default[key] !== this.config[key]) {
-            cov_7q18jdgcc.b[70][0]++;
-            cov_7q18jdgcc.s[230]++;
+            cov_1qou27nk45.b[70][0]++;
+            cov_1qou27nk45.s[230]++;
             config[key] = this.config[key];
           } else {
-            cov_7q18jdgcc.b[70][1]++;
+            cov_1qou27nk45.b[70][1]++;
           }
         }
       } else {
-        cov_7q18jdgcc.b[69][1]++;
+        cov_1qou27nk45.b[69][1]++;
       }
 
-      cov_7q18jdgcc.s[231]++;
+      cov_1qou27nk45.s[231]++;
       return config;
     };
 
     _proto._cleanTipClass = function _cleanTipClass() {
-      cov_7q18jdgcc.f[42]++;
-      var $tip = (cov_7q18jdgcc.s[232]++, $(this.getTipElement()));
-      var tabClass = (cov_7q18jdgcc.s[233]++, $tip.attr('class').match(BSCLS_PREFIX_REGEX));
-      cov_7q18jdgcc.s[234]++;
+      cov_1qou27nk45.f[42]++;
+      var $tip = (cov_1qou27nk45.s[232]++, $(this.getTipElement()));
+      var tabClass = (cov_1qou27nk45.s[233]++, $tip.attr('class').match(BSCLS_PREFIX_REGEX));
+      cov_1qou27nk45.s[234]++;
 
-      if ((cov_7q18jdgcc.b[72][0]++, tabClass !== null) && (cov_7q18jdgcc.b[72][1]++, tabClass.length > 0)) {
-        cov_7q18jdgcc.b[71][0]++;
-        cov_7q18jdgcc.s[235]++;
+      if ((cov_1qou27nk45.b[72][0]++, tabClass !== null) && (cov_1qou27nk45.b[72][1]++, tabClass.length > 0)) {
+        cov_1qou27nk45.b[71][0]++;
+        cov_1qou27nk45.s[235]++;
         $tip.removeClass(tabClass.join(''));
       } else {
-        cov_7q18jdgcc.b[71][1]++;
+        cov_1qou27nk45.b[71][1]++;
       }
     };
 
     _proto._handlePopperPlacementChange = function _handlePopperPlacementChange(data) {
-      cov_7q18jdgcc.f[43]++;
-      cov_7q18jdgcc.s[236]++;
+      cov_1qou27nk45.f[43]++;
+      cov_1qou27nk45.s[236]++;
 
       this._cleanTipClass();
 
-      cov_7q18jdgcc.s[237]++;
+      cov_1qou27nk45.s[237]++;
       this.addAttachmentClass(this._getAttachment(data.placement));
     };
 
     _proto._fixTransition = function _fixTransition() {
-      cov_7q18jdgcc.f[44]++;
-      var tip = (cov_7q18jdgcc.s[238]++, this.getTipElement());
-      var initConfigAnimation = (cov_7q18jdgcc.s[239]++, this.config.animation);
-      cov_7q18jdgcc.s[240]++;
+      cov_1qou27nk45.f[44]++;
+      var tip = (cov_1qou27nk45.s[238]++, this.getTipElement());
+      var initConfigAnimation = (cov_1qou27nk45.s[239]++, this.config.animation);
+      cov_1qou27nk45.s[240]++;
 
       if (tip.getAttribute('x-placement') !== null) {
-        cov_7q18jdgcc.b[73][0]++;
-        cov_7q18jdgcc.s[241]++;
+        cov_1qou27nk45.b[73][0]++;
+        cov_1qou27nk45.s[241]++;
         return;
       } else {
-        cov_7q18jdgcc.b[73][1]++;
+        cov_1qou27nk45.b[73][1]++;
       }
 
-      cov_7q18jdgcc.s[242]++;
+      cov_1qou27nk45.s[242]++;
       $(tip).removeClass(ClassName.FADE);
-      cov_7q18jdgcc.s[243]++;
+      cov_1qou27nk45.s[243]++;
       this.config.animation = false;
-      cov_7q18jdgcc.s[244]++;
+      cov_1qou27nk45.s[244]++;
       this.hide();
-      cov_7q18jdgcc.s[245]++;
+      cov_1qou27nk45.s[245]++;
       this.show();
-      cov_7q18jdgcc.s[246]++;
+      cov_1qou27nk45.s[246]++;
       this.config.animation = initConfigAnimation;
     }; // Static
 
 
     Tooltip._jQueryInterface = function _jQueryInterface(config) {
-      cov_7q18jdgcc.f[45]++;
-      cov_7q18jdgcc.s[247]++;
+      cov_1qou27nk45.f[45]++;
+      cov_1qou27nk45.s[247]++;
       return this.each(function () {
-        cov_7q18jdgcc.f[46]++;
-        var data = (cov_7q18jdgcc.s[248]++, $(this).data(DATA_KEY));
+        cov_1qou27nk45.f[46]++;
+        var data = (cov_1qou27nk45.s[248]++, $(this).data(DATA_KEY));
 
-        var _config = (cov_7q18jdgcc.s[249]++, (cov_7q18jdgcc.b[74][0]++, typeof config === 'object') && (cov_7q18jdgcc.b[74][1]++, config));
+        var _config = (cov_1qou27nk45.s[249]++, (cov_1qou27nk45.b[74][0]++, typeof config === 'object') && (cov_1qou27nk45.b[74][1]++, config));
 
-        cov_7q18jdgcc.s[250]++;
+        cov_1qou27nk45.s[250]++;
 
-        if ((cov_7q18jdgcc.b[76][0]++, !data) && (cov_7q18jdgcc.b[76][1]++, /dispose|hide/.test(config))) {
-          cov_7q18jdgcc.b[75][0]++;
-          cov_7q18jdgcc.s[251]++;
+        if ((cov_1qou27nk45.b[76][0]++, !data) && (cov_1qou27nk45.b[76][1]++, /dispose|hide/.test(config))) {
+          cov_1qou27nk45.b[75][0]++;
+          cov_1qou27nk45.s[251]++;
           return;
         } else {
-          cov_7q18jdgcc.b[75][1]++;
+          cov_1qou27nk45.b[75][1]++;
         }
 
-        cov_7q18jdgcc.s[252]++;
+        cov_1qou27nk45.s[252]++;
 
         if (!data) {
-          cov_7q18jdgcc.b[77][0]++;
-          cov_7q18jdgcc.s[253]++;
+          cov_1qou27nk45.b[77][0]++;
+          cov_1qou27nk45.s[253]++;
           data = new Tooltip(this, _config);
-          cov_7q18jdgcc.s[254]++;
+          cov_1qou27nk45.s[254]++;
           $(this).data(DATA_KEY, data);
         } else {
-          cov_7q18jdgcc.b[77][1]++;
+          cov_1qou27nk45.b[77][1]++;
         }
 
-        cov_7q18jdgcc.s[255]++;
+        cov_1qou27nk45.s[255]++;
 
         if (typeof config === 'string') {
-          cov_7q18jdgcc.b[78][0]++;
-          cov_7q18jdgcc.s[256]++;
+          cov_1qou27nk45.b[78][0]++;
+          cov_1qou27nk45.s[256]++;
 
           if (typeof data[config] === 'undefined') {
-            cov_7q18jdgcc.b[79][0]++;
-            cov_7q18jdgcc.s[257]++;
+            cov_1qou27nk45.b[79][0]++;
+            cov_1qou27nk45.s[257]++;
             throw new TypeError("No method named \"" + config + "\"");
           } else {
-            cov_7q18jdgcc.b[79][1]++;
+            cov_1qou27nk45.b[79][1]++;
           }
 
-          cov_7q18jdgcc.s[258]++;
+          cov_1qou27nk45.s[258]++;
           data[config]();
         } else {
-          cov_7q18jdgcc.b[78][1]++;
+          cov_1qou27nk45.b[78][1]++;
         }
       });
     };
@@ -7947,50 +7944,50 @@ var Tooltip = (cov_7q18jdgcc.s[0]++, function ($) {
     _createClass(Tooltip, null, [{
       key: "VERSION",
       get: function get() {
-        cov_7q18jdgcc.f[2]++;
-        cov_7q18jdgcc.s[27]++;
+        cov_1qou27nk45.f[2]++;
+        cov_1qou27nk45.s[27]++;
         return VERSION;
       }
     }, {
       key: "Default",
       get: function get() {
-        cov_7q18jdgcc.f[3]++;
-        cov_7q18jdgcc.s[28]++;
+        cov_1qou27nk45.f[3]++;
+        cov_1qou27nk45.s[28]++;
         return Default;
       }
     }, {
       key: "NAME",
       get: function get() {
-        cov_7q18jdgcc.f[4]++;
-        cov_7q18jdgcc.s[29]++;
+        cov_1qou27nk45.f[4]++;
+        cov_1qou27nk45.s[29]++;
         return NAME;
       }
     }, {
       key: "DATA_KEY",
       get: function get() {
-        cov_7q18jdgcc.f[5]++;
-        cov_7q18jdgcc.s[30]++;
+        cov_1qou27nk45.f[5]++;
+        cov_1qou27nk45.s[30]++;
         return DATA_KEY;
       }
     }, {
       key: "Event",
       get: function get() {
-        cov_7q18jdgcc.f[6]++;
-        cov_7q18jdgcc.s[31]++;
+        cov_1qou27nk45.f[6]++;
+        cov_1qou27nk45.s[31]++;
         return Event;
       }
     }, {
       key: "EVENT_KEY",
       get: function get() {
-        cov_7q18jdgcc.f[7]++;
-        cov_7q18jdgcc.s[32]++;
+        cov_1qou27nk45.f[7]++;
+        cov_1qou27nk45.s[32]++;
         return EVENT_KEY;
       }
     }, {
       key: "DefaultType",
       get: function get() {
-        cov_7q18jdgcc.f[8]++;
-        cov_7q18jdgcc.s[33]++;
+        cov_1qou27nk45.f[8]++;
+        cov_1qou27nk45.s[33]++;
         return DefaultType;
       }
     }]);
@@ -8004,21 +8001,21 @@ var Tooltip = (cov_7q18jdgcc.s[0]++, function ($) {
    */
 
 
-  cov_7q18jdgcc.s[259]++;
+  cov_1qou27nk45.s[259]++;
   $.fn[NAME] = Tooltip._jQueryInterface;
-  cov_7q18jdgcc.s[260]++;
+  cov_1qou27nk45.s[260]++;
   $.fn[NAME].Constructor = Tooltip;
-  cov_7q18jdgcc.s[261]++;
+  cov_1qou27nk45.s[261]++;
 
   $.fn[NAME].noConflict = function () {
-    cov_7q18jdgcc.f[47]++;
-    cov_7q18jdgcc.s[262]++;
+    cov_1qou27nk45.f[47]++;
+    cov_1qou27nk45.s[262]++;
     $.fn[NAME] = JQUERY_NO_CONFLICT;
-    cov_7q18jdgcc.s[263]++;
+    cov_1qou27nk45.s[263]++;
     return Tooltip._jQueryInterface;
   };
 
-  cov_7q18jdgcc.s[264]++;
+  cov_1qou27nk45.s[264]++;
   return Tooltip;
 }($, Popper));
 //# sourceMappingURL=tooltip.js.map
