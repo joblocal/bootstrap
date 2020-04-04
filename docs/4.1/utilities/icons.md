@@ -549,6 +549,22 @@ All icons that are currently available for use
         <code>.icon-envelop</code>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="icon-rounded-error"></p>
+      </td>
+      <td>
+        <code>.icon-rounded-error</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-rounded-success"></p>
+      </td>
+      <td>
+        <code>.icon-success</code>
+      </td>
+    </tr>
   </body>
 </table>
 
