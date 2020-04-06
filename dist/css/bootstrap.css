@@ -9841,6 +9841,14 @@ a.text-gray-lighter:hover, a.text-gray-lighter:focus {
   content: "";
 }
 
+.icon-rounded-error::before {
+  content: "";
+}
+
+.icon-rounded-success::before {
+  content: "";
+}
+
 .icon-xs::before {
   font-size: 0.625rem;
 }
