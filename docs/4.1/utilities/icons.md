@@ -562,7 +562,7 @@ All icons that are currently available for use
         <p class="icon-rounded-success"></p>
       </td>
       <td>
-        <code>.icon-success</code>
+        <code>.icon-rounded-success</code>
       </td>
     </tr>
   </body>
