@@ -9849,6 +9849,10 @@ a.text-gray-lighter:hover, a.text-gray-lighter:focus {
   content: "";
 }
 
+.icon-rounded-warning::before {
+  content: "";
+}
+
 .icon-xs::before {
   font-size: 0.625rem;
 }
