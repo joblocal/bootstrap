@@ -9853,6 +9853,18 @@ a.text-gray-lighter:hover, a.text-gray-lighter:focus {
   content: "";
 }
 
+.icon-rounded-star::before {
+  content: "";
+}
+
+.icon-magnifying-glass::before {
+  content: "";
+}
+
+.icon-stopwatch::before {
+  content: "";
+}
+
 .icon-xs::before {
   font-size: 0.625rem;
 }
