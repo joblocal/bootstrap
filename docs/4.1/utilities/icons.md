@@ -565,6 +565,30 @@ All icons that are currently available for use
         <code>.icon-rounded-success</code>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="icon-orange-star"></p>
+      </td>
+      <td>
+        <code>.icon-orange-star</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-magnifying-glass"></p>
+      </td>
+      <td>
+        <code>.icon-magnifying-glass</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="icon-stopwatch"></p>
+      </td>
+      <td>
+        <code>.icon-stopwatch</code>
+      </td>
+    </tr>
   </body>
 </table>
 
